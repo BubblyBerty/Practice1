@@ -1,0 +1,36 @@
+/* Specificy prioritisation of selectors:
+*, then explicit selectors, then .class, then #id
+ */
+* {
+    font-family: 'Nova Square', sans-serif;
+    color: purple; 
+}
+* {
+  style: background-color: gold
+}
+header {
+     font-family: Georgia, 'Times New Roman', Times, serif
+}
+form {
+    
+} 
+body { 
+    img src="manuel-nageli-NsgsQjHA1mM-unsplash.png" alt="Orchestra in the background"  title="Orchestra" }
+    #header {
+    style: "font-size:640px;" background-color: gold;
+}
+#ul1{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.box {
+    width: 500px;
+    height: 300px;
+  }
+  
+  img {
+  
+  }
+ 
+  

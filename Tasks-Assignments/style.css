@@ -1,0 +1,29 @@
+body{
+    color: rgb(77, 3, 77);
+    background-image: url(./pexels-artem-podrez-7232413.gif);
+    background-color: rgb(227, 194, 4);
+    height: 100px; width: 50px;
+    background-position: center; /* Center the image */
+    background-repeat: repeat;
+}
+button{
+    border: 2px solid darkblue;
+    border-radius: 15px;
+    background-color: aqua;
+}
+a{    
+  text-decoration: none;
+}
+.photo{
+    box-shadow: 3px 3px black;
+}
+.flex-container {
+    display: flex;      
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 350px;
+    align-items: stretch;
+}
+article{
+    word-wrap: break-word;
+}

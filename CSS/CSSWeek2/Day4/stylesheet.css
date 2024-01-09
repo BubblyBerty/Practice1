@@ -1,0 +1,17 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color:brown
+}
+a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav {
+    background-color: yellow;
+    position: sticky;
+    top: 0px
+}

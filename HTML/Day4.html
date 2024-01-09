@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HNAt5uzM9ao?si=h5oEJbrPyBtXs5-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    </div>
+    <hr>
+    <iframe src="https://www.youtube.com/embed/g36ccprMbc0" frameborder="0" width="560" height="315"></iframe>
+    </iframe>
+    <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.8134391449266!2d-0.15497492338376376!3d51.44321997179879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605c562911975%3A0xc13178104ef4c6a7!2sBalham%20Station!5e0!3m2!1sen!2suk!4v1700733910714!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div> <!-- "Commented out because the pdf keeps needing to be saved with every character of code entered whilst in Preview"
+        <iframe src="/HTMLWeek1/Apostle_.pdf" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div>
+        <video width="640" height="360" frameborder="0">
+            <source src="1699715018195.mp4" type="video/mp4" />
+        </video>
+    </div> -->
+    <div><!--Adding entities--> 
+        &amp; &pound;
+        <hr><hr>
+    </div>
+    <table border="2" style=width: 100%>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+            
+            <th>Height</th>
+            <th>Weight</th>
+            
+        </tr>
+        <tr>
+            <th>Males</th>
+            <td>19</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>Females</th>
+            <td>17</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table><hr><hr>
+    <div>
+        <table border="2" style=width: 100%>
+            <tr>
+                <th colspan="2" bgcolor=green>
+                    <text Color="white"></text>Sign up form:</th>
+            </tr>
+            <tr bgcolor=orange>
+                <th>First name:</th>
+                <th><label for="fname"></label>
+                    <input type="text" id="fname" name="fname"><br><br>
+            </tr>
+            <tr bgcolor=orange>
+                <th>Last name:</th>
+                <th><label for="lname"></label>
+                    <input type="text" id="lname" name="lname"><br><br>
+            </tr>
+        </table>
+        <form action="/action_page.php">
+            <h2>This is a form</h2>
+            <label for="Color_Box">Color input type:</label>
+            <input type="color" id="Color_Box" name="Color_Box">  (Determine color with right-click palete)<br><br>
+            <!--I have left the name attribute from copied code to investigate its purpose in the code-->      
+            <label for="hidden">Hidden input type: (mysteriously unseen)</label>
+            <input type="hidden" id="hidden" namne="hidden"><br><br>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="Button"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            Contact No: <textarea name="" id="" cols="11" rows="1">
+            </textarea><label> 11 numerals</label><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Type Password" value="FakePSW"><br><br>
+            </label><input type="checkbox" onclick="MyFunctionForDisplayingPSW()">Show password</label><br><br>
+            <label for="gender">Gender:</label>
+            <!--Giving numerous radio buttons or checkboxs in a group the same name means that only one can be selected, ie either male or female-->
+            <input type="radio" id="gender" name="gender">Male</label>
+            <input type="radio" id="gender" name="gender">Female</label><br><br>
+            <label for="image">Image input type:</label>
+            <input type="image" id="image" name="image">
+            <input type="button" value="Browse"><br><br>
+            <label for="number">Number of items:</label>
+            <input type="number" id="number" name="number" value="0" min="1" max="9" step="1" ><br><br>
+            <input type="button" value="Press button for further functionality"><br><br></label>
+            <fieldset><legend>Salary required</legend>
+                <label for="range"></label>
+            £20,000<input type="range" id="range" name="range" min="20000" max="45000" />£45,000        
+            </fieldset>
+                <br>
+            <label for="Interests">Interests:</label>
+            <!--Note that the checkboxes in the list are not named, allowing for any number of them to be ticked-->
+            <input type="checkbox">Humanities</label>
+            <input type="checkbox">Sport</label>
+            <input type="checkbox">Science</label>
+            <input type="checkbox">Art</label><br><br>
+            <label for="afile">Attach a document:</label>
+            <input type="file" id="afile" name="afile"><br><br>
+            <label for="c_no">Contact number:</label>
+            <input type="text" id="c_no" name="c_no" max="11"><br><br>
+            </label><input type="checkbox">I agree to terms & conditions</label><br><br>
+            <label for="dayte">Date:</label>
+            <input type="date" id="dayte" name="datye"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+            <hr><hr><br><br>
+    
+    
+        <form action="/action_page.php">
+        
+    </div>
+</body>
+</html>

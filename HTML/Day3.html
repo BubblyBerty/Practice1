@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <h2>About me</h2>
+        <p>I'm a man</p>
+    </article>
+    <article>
+        <h2>More about me</h2>
+        <p>I'm not a woman</p>
+    </article>
+    <article>
+        <h2>Even more about me</h2>
+        <p>I'm splendidously sbrilliant</p>
+    </article>
+    <hr><hr>
+
+
+    <form action="/action_page.php">
+        <h2>This is a form</h2>
+        <label for="Color_Box">Color input type:</label>
+        <input type="color" id="Color_Box" name="Color_Box">  (Determine color with right-click palete)<br><br>
+        <!--I have left the name attribute from copied code to investigate its purpose in the code-->      
+        <label for="hidden">Hidden input type: (mysteriously unseen)</label>
+        <input type="hidden" id="hidden" namne="hidden"><br><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="Button"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        Contact No: <textarea name="" id="" cols="11" rows="1">
+        </textarea><label> 11 numerals</label><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Type Password" value="FakePSW"><br><br>
+        </label><input type="checkbox" onclick="MyFunctionForDisplayingPSW()">Show password</label><br><br>
+        <label for="gender">Gender:</label>
+        <!--Giving numerous radio buttons or checkboxs in a group the same name means that only one can be selected, ie either male or female-->
+        <input type="radio" id="gender" name="gender">Male</label>
+        <input type="radio" id="gender" name="gender">Female</label><br><br>
+        <label for="image">Image input type:</label>
+        <input type="image" id="image" name="image">
+        <input type="button" value="Browse"><br><br>
+        <label for="number">Number of items:</label>
+        <input type="number" id="number" name="number" value="0" min="1" max="9" step="1" ><br><br>
+        <input type="button" value="Press button for further functionality"><br><br></label>
+        <fieldset><legend>Salary required</legend>
+            <label for="range"></label>
+        £20,000<input type="range" id="range" name="range" min="20000" max="45000" />£45,000        
+        </fieldset>
+            <br>
+        <label for="Interests">Interests:</label>
+        <!--Note that the checkboxes in the list are not named, allowing for any number of them to be ticked-->
+        <input type="checkbox">Humanities</label>
+        <input type="checkbox">Sport</label>
+        <input type="checkbox">Science</label>
+        <input type="checkbox">Art</label><br><br>
+        <label for="afile">Attach a document:</label>
+        <input type="file" id="afile" name="afile"><br><br>
+        <label for="c_no">Contact number:</label>
+        <input type="text" id="c_no" name="c_no" max="11"><br><br>
+        </label><input type="checkbox">I agree to terms & conditions</label><br><br>
+        <label for="dayte">Date:</label>
+        <input type="date" id="dayte" name="datye"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+        <hr><hr><br><br>
+
+
+    <form action="/action_page.php">
+    
+    <fieldset><legend>Job Details</legend>
+    <form action="/action_page.php">
+        <label for="j_title">Job Title:</label>
+        <input type="text" id="j_title" name="j_title"><br><br>
+
+        <label>Description of duties and responsibilities</label>
+        <textarea name="" id="" cols="45" rows="5" maxlength="45">
+        </textarea>
+        
+        <label>Brief description should have no more than 225 characters</label><br><br>
+        <label for="cname">Company name:</label>
+        <input type="text" id="cname" name="cname"><br><br>
+        <label for="c_no">Contact number:</label>
+        <input type="text" id="c_no" name="c_no"><br><br>
+        <label for="c_per">Contact person:</label>
+        <input type="text" id="c_per" name="c_per"><br><br>
+        <label for="e_mail">Email:</label>
+        <input type="text" id="e_mail" name="e_mail"><br><br>
+        <label for="box">Work Status:</label>
+        <input type="checkbox" id="box" name="box"> F/T
+        <input type="checkbox" id="box" name="box"> P/T
+        <input type="checkbox" id="box" name="box"> Per Dim
+        <input type="checkbox" id="box" name="box"> Others<br><br>
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary">
+        <select name="" id="" width="10">      
+            <option value="USA">US Dollar (US$)</option>
+            <option value="">Canadian Dollar (CA$)</option>
+            <option value="">UK Pound Sterling (£)</option>
+            <option value="">Australian Dollar (AU$) </option>
+            <option value="">Euro (&euro;) </option>
+            <option value="">Deutsche Mark (DM) </option>
+            <option value="">Japanese Yen (&yen;)</option>
+            <option value="">S Korean Won (&#8361;)</option>
+            <option value="">Chinese Yuan (CNY)</option>
+        </select>
+        <select name="" id="" width="25">
+            <option value="">Yearly</option>
+            <option value="">Monthly</option>
+            <option value="">Weekly</option>
+            <option value="">Daily</option>
+            <option value="">Hourly</option>
+        </select><br><br>
+        <label for="exp">Experience (years):</label>
+        <input type="number" id="exp" name="exp" min="1" max="50" step="1"><br><br>
+        <label for="loc">Location (City):</label>
+        <input type="text" id="loc" name="loc"><br><br>
+        Qualifications: <select name="" id="" width="25">
+            <option value="">Any</option>
+            <option value="">School/Academy</option>
+            <option value="">Higher National Certificater</option>
+            <option value="">Higher National Diploma</option>
+            <option value="">Bachelor's Degree</option>
+            <option value="">Master's Degree</option>
+            <option value="">Doctorate Degree</option>
+            <option value="">Associate Qualification</option>
+        </select>
+        <input type="button" value="Add &#8667;"></input>
+        <input type="button" value="Remove &#8666;"></input>
+        <label for="quals"></label>
+        <input type="text" id="quals" name="quals" height="10" placeholder="Any"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </fieldset>
+</form>
+</body>
+</html>

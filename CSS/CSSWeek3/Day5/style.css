@@ -1,0 +1,38 @@
+body{
+    box-shadow: 5px 5px 50px 1px chartreuse;
+}
+.Div1{
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    background-color: blue;
+    box-shadow: 5px 5px 50px 1px rgb(255, 60, 0);
+    position: relative;
+}
+.Div2{
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    background-color: darkseagreen;
+    box-shadow: 5px 5px 50px 1px rgb(251, 255, 0);
+    position: relative;
+
+
+}
+.Div3{
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    background-color: red;
+    box-shadow: 5px 5px 50px 1px rgb(111, 0, 255);
+    position: relative;
+}
+.Div1:hover{
+    z-index: 1;
+}
+.Div2:hover{
+    z-index: 2;
+}
+.Div3:hover{
+    z-index: 3;
+}
