@@ -21,7 +21,8 @@ console.log(num1);
 myName = "Abdul";
 console.log(myName);
 
-
+let £cash = 1.00;
+let $cash = 1.00;
 
 // myName = "James";
 // console.log(myName);

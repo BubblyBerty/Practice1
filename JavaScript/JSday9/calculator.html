@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png" />
+
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Basic Calculator</h2>
+    <form class="container calculator">
+        <input type="text" id="numberone">
+        <p style="display: inline; color:snow;"> + </p>
+        
+        <select name="" id="dropD" width="10">      
+            <option value="operate">Operation</option>
+            <option value="plus">+ plus</option>
+            <option value="minus">- minus</option>
+            <option value="multiply">* multiply</option>
+            <option value="divide">/ divide</option>
+            <option value="power">^ power</option>
+        </select>
+        <input type="text" id="numbertwo" />
+        <input type="button" id="calc" value="Calculate!" onclick="calculate()" />
+        <input type="number" id="result" disabled /> <!-- JS will create a value and insert the result -->
+        <input type="reset" id="reset" name="reset">
+    </form>
+    <script src="/JavaScript/JSday9/calculator.js"></script>
+
+</body>
+</html>
