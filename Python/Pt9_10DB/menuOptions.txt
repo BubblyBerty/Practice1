@@ -1,8 +1,8 @@
 The Songs Menu options.
 Enter:
-1. Print all Members.
-2. Add a Member.
-3. Update a Member.
-4. Delete a Member.
+1. Print all songs.
+2. Add a song.
+3. Update a song.
+4. Delete a song.
 5. Report.
-6. Exit the Member App.
+6. Exit the song App.
