@@ -3,8 +3,8 @@ from connect import *
 def insert_songs():
     try: 
         dbCursor.execute("INSERT INTO tblFilms VALUES ('Fight Club', 1999, '4 stars - Solid acting, amazing direction, and elaborate production design make Fight Club a wild ride.', 139, 'Mystery & thriller/Drama')"),
-        dbCursor.execute("INSERT INTO tblFilms VALUES ('The Shining', 1980, `5 stars - Though it deviates from Stephen King's novel, Stanley Kubrick's The Shining is a chilling, often baroque journey into madness -- exemplified by an unforgettable turn from Jack Nicholson.`, 142, 'Mystery & thriller/Drama')"),  
-        dbCursor.execute("INSERT INTO tblFilms VALUES ('The Breakfast Club', 1985, '5 stars - The Breakfast Club is a warm, insightful, and very funny look into the inner lives of teenagers.', 92, 'Comedy/Drama')"),
+        """dbCursor.execute("INSERT INTO tblFilms VALUES ('The Shining', 1980, `5 stars - Though it deviates from Stephen King's novel, Stanley Kubrick's The Shining is a chilling, often baroque journey into madness -- exemplified by an unforgettable turn from Jack Nicholson.`, 142, 'Mystery & thriller/Drama')"),  
+        dbCursor.execute("INSERT INTO tblFilms VALUES ('The Breakfast Club', 1985, '5 stars - The Breakfast Club is a warm, insightful, and very funny look into the inner lives of teenagers.', 92, 'Comedy/Drama')"),"""
 
         dbCon.commit()
         print(f"{sTitle} inserted in the song table")
