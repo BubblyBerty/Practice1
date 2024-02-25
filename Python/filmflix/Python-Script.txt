@@ -1,0 +1,9 @@
+This document is to explain my reasoning for producing a Python Script file to 
+update one column of all fields in my DB.
+
+Ideally I wanted to insert real data into my DB with genuine ratings but struggled 
+to contrain my column widths for my terminal reports. I had hoped to format my 
+columns using Pandas but was unable to ascertain how to import its functionality.
+Therefore I descided to create a script in order to upate the data in my table in 
+one go. I can then develop that script into a useful file to allow the user to 
+update individual columns within the DB. 

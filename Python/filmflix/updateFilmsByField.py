@@ -1,7 +1,6 @@
 from connect import *
-from readFilms import *
  
-def update_all_fields():
+def update_selected_fields():
     try:
  
         filmID  = int(input("Enter the filmID of the record to update: "))
@@ -14,15 +13,14 @@ def update_all_fields():
         else:
             # print the details of the record to be updated to allow user to access data within it
             print(f"The following is the record ({filmID}) that you have selected to be updated in the films table")
-            # format output
             print("filmID | Title..........................| Year | Rating.............................................| Duration | Genre...............")
             print("-" * 133)
  
-            for aFilm in all_films:
-
-                print(f"{aFilm[0]:>6} | {aFilm[1]:<30} | {aFilm[2]} | {aFilm[3]:50} | {aFilm[4]:>8} | {aFilm[5]:<21}")
+            
+            print(f"{row[0]} | {row[1]:<30} | {row[2]} | {row[3]:<50} | {row[4]} | {row[5]:<20}")
 
         # get the values to update the respective fields
+        
         sTitle = input("Enter film Title: ")
         sDate = int(input("Enter film release date: "))
         sRating = input("Enter rating and brief comment: ")
@@ -49,4 +47,5 @@ def update_all_fields():
 
 # Because the menu.py file lists the various files to import this prevents the files to be automatically cascaded and invoked.
 if __name__ == "__main__": 
-    update_all_fields()
+    update_selected_fields()
+

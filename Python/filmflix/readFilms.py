@@ -10,11 +10,12 @@ def all_films():
  
         if allFilms:
             # format output
-            print("filmID  | Title..........| yearReleased | rating.................................| duration | Genre")
-            print("-" * 110)
+            print("filmID | Title..........................| Year | Rating.............................................| Duration | Genre...............")
+            print("-" * 133)
  
             for aFilm in allFilms:
-                print(f"{aFilm[0]} | {aFilm[1]:<20} | {aFilm[2]} | {aFilm[3]:<50} | {aFilm[4]} | {aFilm[5]:<18}")
+
+                print(f"{aFilm[0]:>6} | {aFilm[1]:<30} | {aFilm[2]} | {aFilm[3]:50} | {aFilm[4]:>8} | {aFilm[5]:<21}")
         else:
             print("No films found in the films table")
     except sql.ProgrammingError as pe:
