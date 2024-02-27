@@ -2,29 +2,29 @@ from connect import *
 
 def search_film():
         try:
-                #ask for the field to search by
-            field = input("Search by filmID, title, yearRelease, rating, duration, genre: ")
+            #ask for the field to search by
+            field = input("Search by filmID, Title, Year of Release, Rating, Duration, Genre: ")
 
-            if field == "filmID":
+            if field.upper() == "FILMID":
                 # search by filmID
                 idInput = int(input("Enter filmID: "))
-                dbCursor.execute("SELECT * FROM songs WHERE filmID = ?", (idInput,))
+                dbCursor.execute("SELECT * FROM tblFilms WHERE filmID = ?", (idInput,))
                 row = dbCursor.fetchone()
 
                 if row is None:
                     # if the filmID entered is not in the table 
                     print(f"No record with filmID {idInput} exists")
                 else:
-                    # if the filmID entered is exiata in the table 
+                    # if the filmID entered exists in the table 
                     for aFilm in row:
                         print(aFilm)
 
-            elif field in ["title", "yearRelease", "rating", "duration", "genre"]:
+            elif field in ["Title", "yearRelease", "Rating", "Duration", "Genre"]:
                 # search by title, yearRelease, rating, duration or genre
                 strInput= input(f"Enter the value for the field {field}: ")
-                #SELECT * FROM songs WHERE "Title", "Artist", "Genre"  LIKE "Dance" or "MJ" or "Rap"?
+                #SELECT * FROM tblFilms WHERE "Title", "Year", "Rating", "Duration", "Genre"  LIKE "Shin" or "2001" or "4 stars" or Horror?
 
-                dbCursor.execute(f"SELECT * FROM songs WHERE {field} LIKE '%{strInput}%'")
+                dbCursor.execute(f"SELECT * FROM tblFilms WHERE {field} LIKE '%{strInput}%'")
                 # dbCursor.execute(f"SELECT * FROM songs WHERE {field} LIKE '", (f"'%{strInput}%"))
                 rows = dbCursor.fetchall()
 
@@ -59,7 +59,7 @@ def search_film():
 
 # Because the menu.py file lists the various files to import this prevents the files to be automatically cascaded and invoked.
 if __name__ == "__main__":            
-    search_song()
+    search_film()
 
 """From James - in v1 search, i changed:
  

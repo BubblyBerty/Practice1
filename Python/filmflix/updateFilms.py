@@ -44,73 +44,76 @@ def update_selected_fields():
                 print(f"New duration: {sDuration}")
             sGenre = input("Enter film Genre (max 21 characters): ")
             if sGenre == '':
-                print(" has been skipped")
+                print("Genre has been skipped")
             else:
                 print(f"New Genre: {sGenre}")
                 
             # format output
-            print("\nfilmID | Title..........................| Year | Rating.............................................| Duration | Genre...............")
+            print("\nfilmID | Title | Year | Rating | Duration | Genre")
             print("-" * 133)
         
-            print(f"{sFilmID}:>6 | {sTitle}:<30 | {sYear} | {sRating}:50 | {sDuration}:>8 | {sGenre}:<21")
+            print(f"{sFilmID} | {sTitle} | {sYear} | {sRating} | {sDuration} | {sGenre}")
 
             # Verify changes
             sVerify = input("Do you want to continue with changes? (Y/N):")
             if sVerify.upper() == "Y":
+                print("User verified to update")
                 # continue
                 # Create a match menu to update only those fields chosen
-                for element in aFilm:
-                    match element:
-                        case [1]: # Title
-                            if sTitle == "":
-                                print(f"Title is {sTitle}")
-                            else:
-                                dbCursor.execute(f"UPDATE tblFilms SET Title = {sTitle}WHERE filmID = {sFilmID}")
-                                dbCon.commit()
-                                print("Title updated")
-                        case [2]: # Year of release
-                            if sYear == 0:
-                                print(f"Year is {sYear}")
-                            else:
-                                dbCursor.execute(f"UPDATE tblFilms SET Year = {sYear} WHERE filmID = {sFilmID}")
-                                dbCon.commit()
-                                print("Year updated")
-                        case [3]: # Rating
-                            if sRating == "":
-                                print(f"Rating is {sRating}")
-                            else:
-                                dbCursor.execute(f"UPDATE tblFilms SET Rating = {sRating} WHERE filmID = {sFilmID}")
-                                dbCon.commit()
-                                print("Rating updated")
-                        case [4]: # Duration
-                            if sDuration == 0:
-                                print(f"Duration is {sDuration} minutes")
-                            else:
-                                dbCursor.execute(f"UPDATE tblFilms SET Duration = {sDuration} WHERE filmID = {sFilmID}")
-                                dbCon.commit()
-                                print("Duration updated")
-                        case [5]: # Genre
-                            if sGenre == "":
-                                print(f"Genre is {sGenre}")
-                            else:
-                                dbCursor.execute(f"UPDATE tblFilms SET Genre = {sGenre} WHERE filmID = {sFilmID}")
-                                dbCon.commit()
-                                print("Genre updated")
+                if sTitle == "" or sTitle == None:
+                    print(f"Title will not be updated")
+                else:
+                    print(f"Starting else statement method for title: {sTitle}")
+                    dbCursor.execute("UPDATE tblFilms SET Title = ? WHERE filmID = ?", (sTitle,sFilmID))
+                    dbCon.commit()
+                    print("Title updated")
+
+                if sYear == 0:
+                    print(f"Year of release is: {sYear}")
+                else:
+                    print(f"Starting else statement method method for year of release: {sYear}")
+                    dbCursor.execute("UPDATE tblFilms SET yearReleased = ? WHERE filmID = ?", (sYear,sFilmID))
+                    dbCon.commit()
+                    print("Year of release updated")
+
+                if sRating == "":
+                    print(f"Rating is: {sRating}")
+                else:
+                    print(f"Starting else statement method for rating: {sRating}")
+                    dbCursor.execute("UPDATE tblFilms SET rating = ? WHERE filmID = ?", (sRating,sFilmID))
+                    dbCon.commit()
+                    print("Rating updated")
+
+                if sDuration == 0:
+                    print(f"Duration is {sDuration} minutes")
+                else:
+                    print(f"Starting else statement method for duration: {sDuration}")
+                    dbCursor.execute("UPDATE tblFilms SET duration = ? WHERE filmID = ?", (sDuration,sFilmID))
+                    dbCon.commit()
+
+                if sGenre == "":
+                    print(f"Genre is: {sGenre}")
+                else:
+                    dbCursor.execute("UPDATE tblFilms SET genre = ? WHERE filmID = ?", (sGenre,sFilmID))
+                    print(f"Starting else statement method for genre: {sGenre}")
+                    dbCon.commit()
+                    print("Genre updated")
                     
-                    print(f"Film {sFilmID} Updated")
-                    # format output
-                    print("\nfilmID | Title..........................| Year | Rating.............................................| Duration | Genre...............")
-                    print("-" * 133)
-                    print(f"{sFilmID}:>6 | {sTitle}:<30 | {sYear} | {sRating}:50 | {sDuration}:>8 | {sGenre}:<21")
+                # format output
+                print("\nfilmID | Title | Year | Rating | Duration | Genre")
+                print("-" * 133)
+                print(f"{sFilmID} | {sTitle} | {sYear} | {sRating} | {sDuration} | {sGenre}")
+
             elif sVerify.upper() == "N":
                 print("You have chosen not to update this record")
             elif sVerify.upper() == "":
                 print("You have chosen not to update this record")
-            else: # Allows for verification to escape
-                print("You have chosen not to update this record")
+            else:
+                print("ERROR: database not updated")
+
         else:
-            print("ERROR: database not updated")
-                
+            print(f"No record with filmID {sFilmID} exists")
+            
     except sql.ProgrammingError as pe:
         print(f"Not working because: {pe}")
     except sql.OperationalError as oe:

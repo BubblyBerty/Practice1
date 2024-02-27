@@ -3,8 +3,12 @@ from connect import *
 def all_films():
     try:
         # try to execute the sql statement below
-        dbCursor.execute("SELECT * FROM tblFilms")
- 
+        print("SELECT * FROM tblFilms")
+        if dbCursor.execute("SELECT * FROM tblFilms") == False:
+            print("I cannot presently determine if I was able to perform the SELECT command above")
+        else:
+            print("I think I was able to perform the SELECT command although I cannot fathom why I need this code (it seems to return a value?)")
+            
         # fetch all selected data(rows)
         allFilms = dbCursor.fetchall() # Fetchall fetches all the rows from the table
  
