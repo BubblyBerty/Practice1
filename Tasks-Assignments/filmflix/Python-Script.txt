@@ -1,0 +1,18 @@
+This document is to explain my reasoning for producing a Python Script file to 
+update text columns in my DB.
+
+Ideally I wanted to insert real data into my DB with genuine ratings but struggled 
+to contrain my column widths for my terminal reports.
+
+I had hoped to format my 
+columns using Pandas but was unable to ascertain how to import its functionality.
+
+I had also investigated string slicing in the print() function but, again,
+I couldn't get that to work.
+
+Despite these setbacks I realised that whatever method I could implement would only 
+give me a pre-selected string construction and, apart from the rating system at the 
+start of the string, the output may well have appeared meaningless.
+
+Therefore I descided to create a script in order to upate the data in my table in 
+one go - affording me to format the records as I wished.
