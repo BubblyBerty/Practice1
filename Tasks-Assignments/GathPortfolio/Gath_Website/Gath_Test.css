@@ -1,0 +1,193 @@
+/* Specificy prioritisation of selectors:
+*, then explicit selectors, then .class, then #id
+ */
+/* @font-face {
+  font-family: "myFont";
+  src: url("myFont.woff2");
+}*/
+ul {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  padding: 10px;
+}
+
+.all {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.headerBox{ 
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-style: italic;
+  color:rgb(80, 2, 80);
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  border: 10px black solid;
+  padding: 5px;
+  background-color:bisque;
+  opacity: 0.88;
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.headerItems {
+  margin-top: -70px
+}
+
+.header1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: -50px;  
+}
+
+.header2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+
+.myColumns {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.asideH {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  image-rendering: auto url("./images/Gath Portfilio Logo.png");
+  width: "275px";
+  height: "137px";
+  color: purple;
+  margin-top: 80px;
+}
+
+body {
+  color: rgb(80, 2, 80);
+  background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat-y;
+  background-size:cover;
+  background-color:bisque; 
+}
+
+#button1 {
+  padding: 3px; 
+  justify-items: auto;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 190px;
+  height: 45px;
+  border: 3px solid rgb(80, 2, 80);
+  border-radius: 15px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+#button2 {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 190px;
+  height: 90px;
+  border: 3px solid rgb(80, 2, 80);
+  border-radius: 15px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+
+#box1 {
+    width: 1000px;
+    height: 6600px;
+    /*border: 10px solid rgb(80, 2, 80);*/
+    image-rendering: auto url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+    width: 660;
+    height: 440;
+}
+
+.bodyColumn {
+  width: 200px
+  padding-top=20px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#boxBot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+    width: 500px;
+    height: 60px;
+}
+
+.box1 {
+    justify-content: center;  
+    padding: 10px;
+    width: 220px;
+    height: 160px;
+    border: 5px solid rgb(80, 2, 80);
+    background-color: bisque;
+    opacity: 0.88;
+    border-radius: 50px;   
+}
+
+.box2 {
+  justify-content: center;  
+  padding: 10px;
+  width: 220px;
+  height: 320px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.88;
+  border-radius: 50px;   
+}
+
+.bodyColumn {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#rightSideText {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding: 10px;
+  width: 500px;
+  height: 600px;
+}
+  

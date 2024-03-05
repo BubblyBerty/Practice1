@@ -29,15 +29,26 @@ header{
   justify-content: center;
 }
 
-.headBox {
+.headBox1 {
   float: right;
-  margin-top: -80px;
+  margin-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+.headBox2 {
+  float: right;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+
 #boxPosition{
   margin-top: 50px;
 }

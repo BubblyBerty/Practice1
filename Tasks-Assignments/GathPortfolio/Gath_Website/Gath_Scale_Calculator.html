@@ -6,119 +6,116 @@
     <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png"/>
     <link rel="stylesheet" href="Gath_Scale_Calculator.css">
 
-    <title>GathPortfolio</title>
+    <title>GathPortfolioScaleCalculator</title>
 </head>
 <body>
-<container class="all">
-<header>
-    <box class="headBox">
-        <h1 id="header"><center>The Gath Portfolio</center>               </h1>
-        <h3><center>Music Scale Calculator</center></h3>
-        
+    <container class="all">
+        <header class="headerBox">
+            <ul class="headerItems">
+                <li>
+                    <h1 class="header1"><center>The Gath Portfolio</center></h1>
+                    <h3 class="header2"><center>Scale/Mode Calculator</center></h3>
+                </li>
+                <li>       
+                <div class="asideH">        
+                    <img src="./images/Portfilio_Logo_purple.png" alt="Gath Portfilio Logo"
+                    title="GathPortfoliologo"
+                    width="275" height="137"
+                    color="purple">
+                </li>
+            </ul>    
+        </header>
+    </container> 
+    
+    
+    <container id="row1" class="row"> <!-- 1st container -->
+        <box class="box"> <!-- 1st button -->
+            <ul>
+                <center><li><button id="b1t" class="button1" onclick="selectedB1(this.id)">A&#9837</button></li></center>
+                <li><button id="b1b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
         </box>
-        <box id="boxPosition" class="headBox">
-        <img src="./images/Portfilio_Logo_purple.png" alt="Gath Portfilio Logo"
-            title="GathPortfoliologo"
-            width="275" height="137"
-            color="purple">
-        </box>        
-    </header>
-</container> 
-
-<container id="rowTop" class="row">
-        <article>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus maxime, quibusdam unde at illo voluptas temporibus possimus doloribus veritatis modi architecto. Consequatur qui fugiat voluptates tempora, itaque quidem quae modi!
-        </article>
-</container>
-
-<container id="row1" class="row">
-    <box class="box">
-        <ul>
-            <center><li><button id="b1t" class="button1" onclick="selectedB1(this.id)">A&#9837</button></li></center>
-            <li><button id="b1b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b2t" class="button1" onclick="selectedB1(this.id)">A</button></li></center>
-            <li><button id="b2b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b3t" class="button1" onclick="selectedB1(this.id)">B&#9837;</button></li></center>
-            <li><button id="b3b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b4t" class="button1" onclick="selectedB1(this.id)">B</button></li></center>
-            <li><button id="b4b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-</container>
-
-<container id="row2" class="row">
-    <box class="box">
-        <ul>
-            <center><li><button id="b5t" class="button1" onclick="selectedB1(this.id)">C</button></li></center>
-            <li><button id="b5b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b6t" class="button1" onclick="selectedB1(this.id)">D&#9837;</button></li></center>
-            <li><button id="b6b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b7t" class="button1" onclick="selectedB1(this.id)">D</button></li></center>
-            <li><button id="b7b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b8t" class="button1" onclick="selectedB1(this.id)">E&#9837;</button></li></center>
-            <li><button id="b8b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-</container>    
-
-<container id="row3" class="row">
-    <box class="box">
-        <ul>
-            <center><li><button id="b9t" class="button1" onclick="selectedB1(this.id)">E</button></li></center>
-            <li><button id="b9b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b10t" class="button1" onclick="selectedB1(this.id)">F</button></li></center>
-            <li><button id="b10b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b11t" class="button1" onclick="selectedB1(this.id)">G&#9837;</button></li></center>
-            <li><button id="b11b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-    <box class="box">
-        <ul>
-        <center><li><button id="b12t" class="button1" onclick="selectedB1(this.id)">G</button></li></center>
-            <li><button id="b12b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
-        </ul>      
-    </box>
-</container>
-<container id="rowBot" class="row">
-    <box id="boxBot" class="box">
-            <button id="search" onclick="searching(this.id)">Search</button>
-            <button id="reset" onclick="resetting(this.id)">Reset</button>
-    </box>
-</container>
-<script src="./Gath_Scale_Calculator.js"></script>
-</body>
+        <box class="box"> <!-- 2nd button -->
+            <ul>
+            <center><li><button id="b2t" class="button1" onclick="selectedB1(this.id)">A</button></li></center>
+                <li><button id="b2b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 3rd button -->
+            <ul>
+            <center><li><button id="b3t" class="button1" onclick="selectedB1(this.id)">B&#9837;</button></li></center>
+                <li><button id="b3b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 4th button -->
+            <ul>
+            <center><li><button id="b4t" class="button1" onclick="selectedB1(this.id)">B</button></li></center>
+                <li><button id="b4b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+    </container>
+    
+    <container id="row2" class="row"> <!-- 2nd container -->
+        <box class="box"> <!-- 5th button -->
+            <ul>
+                <center><li><button id="b5t" class="button1" onclick="selectedB1(this.id)">C</button></li></center>
+                <li><button id="b5b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 6th button -->
+            <ul>
+            <center><li><button id="b6t" class="button1" onclick="selectedB1(this.id)">D&#9837;</button></li></center>
+                <li><button id="b6b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 7th button -->
+            <ul>
+            <center><li><button id="b7t" class="button1" onclick="selectedB1(this.id)">D</button></li></center>
+                <li><button id="b7b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 8th button -->
+            <ul>
+            <center><li><button id="b8t" class="button1" onclick="selectedB1(this.id)">E&#9837;</button></li></center>
+                <li><button id="b8b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+    </container>    
+    
+    <container id="row3" class="row"> <!-- 3rd container -->
+        <box class="box"> <!-- 9th button -->
+            <ul>
+                <center><li><button id="b9t" class="button1" onclick="selectedB1(this.id)">E</button></li></center>
+                <li><button id="b9b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 10th button -->
+            <ul>
+            <center><li><button id="b10t" class="button1" onclick="selectedB1(this.id)">F</button></li></center>
+                <li><button id="b10b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 11th button -->
+            <ul>
+            <center><li><button id="b11t" class="button1" onclick="selectedB1(this.id)">G&#9837;</button></li></center>
+                <li><button id="b11b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+        <box class="box"> <!-- 12th button -->
+            <ul>
+            <center><li><button id="b12t" class="button1" onclick="selectedB1(this.id)">G</button></li></center>
+                <li><button id="b12b" class="button2" onclick="selectedB2(this.id)">Cancel selected note above</button></li>
+            </ul>      
+        </box>
+    </container>
+    <container id="rowBot" class="row"> <!-- Select/Reset container -->
+        <box id="boxBot" class="box">
+                <button id="search" onclick="searching(this.id)">Search</button>
+                <button id="reset" onclick="resetting(this.id)">Reset</button>
+        </box>
+    </container>
+    <script src="./Gath_Scale_Calculator.js"></script>
+    </body>
 <!--
 <footer>
     Add a footer detailing the usual items - Company details, T&C, support, product details, contact, media links, forum<br><br>
