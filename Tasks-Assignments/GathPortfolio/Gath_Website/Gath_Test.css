@@ -61,7 +61,7 @@ li {
   margin-bottom: -50px;
 }
 
-.myColumns {
+.flex-container {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
