@@ -10,11 +10,11 @@
 </head>
 
 <body>
-<header class="headerBox">
+<header class="homeHeaderBox">
     <ul class="headerItems">
         <li>
-            <h1 class="header1"><center>The Gath Portfolio</center></h1>
-            <h3 class="header2"><center>Home Page</center></h3>
+            <h1 class="header1">The Gath Portfolio</h1>
+            <h3 class="header2">Home Page</h3>
         </li>
         <li>       
         <div class="asideH">        
@@ -28,10 +28,73 @@
 
 <div class="myColumns">
     <div id="column1" class="bodyColumn"> <!-- 1st container -->
+        <box class="box1"> <!-- 5th button -->
+            <ul>
+                <li>
+                    <form action="./gath_Scales_Modes.html">
+                        <button id="button1">Scales/Modes</button>
+                    </form>
+                </li>
+                <center><b><p class="boxText">Major (or Ionian): C, D, E,...</p></b></center>
+                <center><b><p class="boxText">Minor (or Aeolian): A, B, C,...</p></b></center>
+                <center><b><p class="boxText">Blues: E, G, A, Bb, Cb, D,...</p></b></center>
+            </ul>
+        </box>
+        <box class="box2"> <!-- 6th button -->
+            <ul>
+                <li>
+                    <form action="./gath_Scale_Calculator.html">
+                        <button id="button2" onclick="selectedB1(this.id)">Scale/Mode Calculator</button>
+                     </form>
+                </li>
+                <li>
+                    <img src="./images/Calculator_screen.png" alt="Calculator_Screen" title="Calculator_Screen" width="200" height="150">
+                </li>
+            </ul>
+        </box>
+        <box class="box1"> <!-- 7th button -->
+            <ul>
+                <li>
+                    <form action="./gath_Guitars_Gear.html">              
+                    <button id="button1">Guitars/Gears</button>
+                </form>
+                </li>
+                <li><img src="./images/Ken_Bebensee.png" alt="Ken_Bebensee" title="Deadlock_Bob" width="90" height="90">
+                </li>
+            </ul>  
+        </box>
+        <box class="box1"> <!-- 8th button -->
+            <ul>
+                <li>
+                    <form action="./gath_Mathematics.html">
+                        <button id="button1">Mathematics</button>
+                    </form>
+                </li>     
+            </ul>
+                <script src="https://kit.fontawesome.com/0f9cea3bc1.js" crossorigin="anonymous"></script>     
+        </box>
+        <box class="box1"> <!-- 9th button -->
+            <form action="./gath_Nature.html">
+                <button id="button1">Nature</button>
+            </form>
+        </box>
+        <box class="box1"> <!-- 10th button -->
+            <form action="./gath_History.html">
+                <button id="button2">History / Archaeology</button>
+            </form>
+        </box>
+
+    </div>
+    <div id="column1" class="bodyColumn"> <!-- 2nd container -->
         <box class="box1"> <!-- 1st button -->
             <ul>
-                <li><button id="button1" onclick="selectedB1(this.id)">Home</button></li>
-                <li><img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo" width="111" height="88" color="purple">
+                <li>
+                    <form action="./gath_HomePage.html">              
+                        <button id="button1">Home
+                        </button>
+                    </form>
+                </li>
+                <li><img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo" width="111px" height="88">
                 </li>
                 <li><img src="./apple-touch-icon-57x57.png"/>
                 </li>
@@ -39,47 +102,38 @@
         </box>
         <box class="box2"> <!-- 2nd button -->
             <ul>
-                <li><button id="button2" onclick="selectedB1(this.id)">Software Development</button></li>     
+                <li>
+                    <form action="./gath_Software.html">
+                        <button id="button2">Software Development</button>
+                    </form>
+                </li>     
             </ul>
                 <script src="https://kit.fontawesome.com/0f9cea3bc1.js" crossorigin="anonymous"></script>     
         </box>
         <box class="box1"> <!--3rd button -->
-            <button id="button1" onclick="selectedB1(this.id)">Moi?</button>
+            <ul>
+                <li>
+                    <form action="./gath_Moi.html">
+                        <button id="button1" onclick="selectedB1(this.id)">Moi?</button>
+                    </form></li>
+                <li><img src="./images/1909508_1093580467038_3500281_n.jpg" alt="Deadlock_Bob" title="Deadlock_Bob" width="90" height="90">
+                </li>
+            </ul>      
         </box>
         <box class="box1"> <!-- 4th button -->
-            <button id="button1" onclick="selectedB1(this.id)">Compositions</button>
-        </box>
-        <box class="box1"> <!-- 5th button -->
-            <button id="button1" onclick="selectedB1(this.id)">Scales/Modes</button>
-        </box>
-        <box class="box1"> <!-- 6th button -->
-            <button id="button2" onclick="selectedB1(this.id)">Scale/Mode Calculator</button>
-        </box>
-    </div>
-</div>
-
-<div class="myColumns">
-    <div id="column2" class="bodyColumn"> <!-- 2nd container -->
-    <box class="box1"> <!-- 7th button -->
-                <button id="button1" onclick="selectedB1(this.id)">Guitars/Gear</button>     
-        </box>
-        <box class="box1"> <!-- 8th button -->
-            <ul>
-                <li><button id="button1" onclick="selectedB1(this.id)">Mathematics</button></li>     
-            </ul>
-            <script src="https://kit.fontawesome.com/0f9cea3bc1.js" crossorigin="anonymous"></script>     
-        </box>
-        <box class="box1"> <!-- 9th button -->
-            <button id="button1" onclick="selectedB1(this.id)">Nature</button>
-        </box>
-        <box class="box1"> <!-- 10th button -->
-            <button id="button2" onclick="selectedB1(this.id)">History / Archaeology</button>
+            <form action="./gath_Compositions.html">
+                <button id="button1">Compositions</button>
+            </form>
         </box>
         <box class="box1"> <!-- 11th button -->
-            <button id="button1" onclick="selectedB1(this.id)">Movies</button>
+            <form action="./gath_Movies.html">
+            <button id="button1">Movies</button>
+            </form>
         </box>
         <box class="box1"> <!-- 12th button -->
-            <button id="button1" onclick="selectedB1(this.id)">Theology</button>
+            <form action="./gath_Theology.html">
+                <button id="button1">Theology</button>
+            </form>
         </box>
     </div>
 </div>   

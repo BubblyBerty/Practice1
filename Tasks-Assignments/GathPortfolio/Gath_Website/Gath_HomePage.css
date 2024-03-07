@@ -22,7 +22,10 @@ li {
   flex-flow: column wrap;
 }
 
-.headerBox{ 
+.elements {
+  align-self: center;
+}
+.homeHeaderBox{ 
   background-repeat:no-repeat;
   background-size:cover;
   height: 200px;
@@ -36,32 +39,66 @@ li {
   border: 10px black solid;
   padding: 5px;
   background-color:bisque;
-  opacity: 0.88;
+  opacity: 1;
   display: flex;
-
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .headerItems {
-  margin-top: -70px
+  margin-top: -70px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .header1 {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: -50px;  
 }
 
 .header2 {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: -50px;
 }
 
 .myColumns {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: top;
+  justify-content: left;
+  align-items: center;
+}
+
+.box1 {
+  justify-content: center;  
+  padding: 10px;
+  width: 220px;
+  height: 160px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.88;
+  border-radius: 50px;   
+}
+
+.box2 {
+  justify-content: center;  
+  padding: 10px;
+  width: 220px;
+  height: 320px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.88;
+  border-radius: 50px;   
+}
+
+.bodyColumn {
+  width: 250px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
@@ -75,9 +112,13 @@ li {
   justify-content: center;
   image-rendering: auto url("./images/Gath Portfilio Logo.png");
   width: "275px";
-  height: "137px";
+  height: "200px";
   color: purple;
   margin-top: 80px;
+}
+
+.boxText {
+  margin-bottom: -10px;
 }
 
 body {
@@ -85,7 +126,7 @@ body {
   background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
   background-repeat: repeat-y;
   background-size:cover;
-  background-color:bisque; 
+  background-color:rgb(255, 228, 196); 
 }
 
 #button1 {
@@ -116,7 +157,6 @@ body {
   cursor: pointer;
 }
 
-
 #box1 {
     width: 1000px;
     height: 6600px;
@@ -126,16 +166,6 @@ body {
     height: 440;
 }
 
-.bodyColumn {
-  width: 200px
-  padding-top=20px;
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
 #boxBot{
   display: flex;
   flex-direction: row;
@@ -143,37 +173,6 @@ body {
   padding: 10px;
     width: 500px;
     height: 60px;
-}
-
-.box1 {
-    justify-content: center;  
-    padding: 10px;
-    width: 220px;
-    height: 160px;
-    border: 5px solid rgb(80, 2, 80);
-    background-color: bisque;
-    opacity: 0.88;
-    border-radius: 50px;   
-}
-
-.box2 {
-  justify-content: center;  
-  padding: 10px;
-  width: 220px;
-  height: 320px;
-  border: 5px solid rgb(80, 2, 80);
-  background-color: bisque;
-  opacity: 0.88;
-  border-radius: 50px;   
-}
-
-.bodyColumn {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 
 #rightSideText {
