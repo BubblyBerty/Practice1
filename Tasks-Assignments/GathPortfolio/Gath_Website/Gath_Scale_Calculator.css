@@ -1,17 +1,24 @@
-/* Specificy prioritisation of selectors:
-*, then explicit selectors, then .class, then #id
- */
-/* @font-face {
-  font-family: "myFont";
-  src: url("myFont.woff2");
-}*/
-.all{
+/* Home Page style file */
+ul {
+  list-style-type: none;
+}
+
+li {
+
+  padding: 10px;
+}
+
+.all {
   display: flex;
   flex-flow: column wrap;
 }
 
-.headerBox{ 
-  background-repeat:no-repeat;
+.elements {
+  align-self: center;
+}
+
+.HeaderBox{ 
+  background-repeat: no-repeat;
   background-size:cover;
   height: 200px;
   font-family: 'Times New Roman', Times, serif;
@@ -26,167 +33,255 @@
   background-color:bisque;
   opacity: 0.75;
   display: flex;
-
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .headerItems {
-  margin-top: -70px
+  margin-top: -70px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-header{ 
-  background-repeat:no-repeat;
-  background-size:cover;
-  height: 260px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: xxx-large;
-  font-style: italic;
-  color:rgb(80, 2, 80);
-  margin: 0px;
-  margin-top: 0px;
+.header1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -50px;  
+}
+
+.header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: -50px;
-  border: 10px black solid;
-  padding: 5px;
-  background-color:bisque;                                           opacity: 0.75;
+}
+
+.asideH {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: "275px";
+  height: "200px";
+  margin-top: 80px;
 }
 
-.headBox1 {
-  float: right;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+.navigation {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
-.headBox2 {
-  float: right;
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 100px;
+#pageColumns {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  padding: 10px;
+  width: 220px;
+  height: 770px;
+  opacity: 0.95;
 }
 
-#boxPosition{
-  margin-top: 50px;
+#myColumns {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  padding: 10px;
+  width: 220px;
+  height: 770px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.95;
+  border-radius: 50px;
+  margin: 2px;
 }
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  padding: 30px;
+  width: 500px;
+  height: 450px;
+  background-color: black;
+  margin: 2px;
+  opacity: 0.95;
+  border-radius: 50px; 
+}
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-between;  
+  padding: 10px;
+  width: 200px;
+  height: 770px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.75;
+  border-radius: 50px; 
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-between;  
+  padding: 10px;
+  width: 200px;
+  height: 750px;
+  background-color: rgb(80, 2, 80);
+  opacity: 1;
+  border-radius: 50px; 
+} 
+
 
 body {
   color: rgb(80, 2, 80);
   background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
   background-repeat: repeat-y;
   background-size:cover;
-  background-color:bisque; 
+  background-color:rgb(255, 228, 196); 
 }
-#topRow {
-  padding-top: 100px;
-  height: 500px;
+
+#mathFont {
+  font-size: 18px;
 }
-.disabled {
-  opacity: 0.6;
-}
-.button1{
+
+#button1 {
+  margin: -5px;
+  padding: 3px; 
+  justify-items: auto;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
+  text-wrap: wrap;
   color: rgb(80, 2, 80);
-  width: 80px;
+  width: 190px;
   height: 45px;
   border: 3px solid rgb(80, 2, 80);
   border-radius: 15px;
   background-color: aqua;
   cursor: pointer;
-  
 }
-.button2{
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif, bold;
+
+#button2 {
+  margin: -5px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 190px;
+  height: 90px;
+  border: 3px solid rgb(80, 2, 80);
+  border-radius: 15px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+#button3 {
+  padding-top: 1px;
+  width: 500px;
+  height: 80px;
+  border: 10px solid GREY;
+  border-radius: 5px;
+  background-color: silver;
+}
+
+#button4 {
+  margin: -25px;
+  margin-top: 3px;
+  margin-right: 40px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
   color: rgb(80, 2, 80);
   width: 200px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
+  height: 50px;
+  border: 3px solid whitesmoke;
   border-radius: 15px;
-  background-color: orange;
+  background-color: rgb(235, 77, 111);
   cursor: pointer;
 }
-#search{
+
+#button5 {
+  margin: -5px;
+  margin-top: 3px;
+  margin-left: 40px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
+  text-wrap: wrap;
   color: rgb(80, 2, 80);
-  width: 180px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
+  width: 200px;
+  height: 50px;
+  border: 3px solid whitesmoke;
   border-radius: 15px;
-  background-color: green;
+  background-color: greenyellow;
   cursor: pointer;
 }
-#reset{
-  align-self: right;
+
+#button6 {
+  margin: -5px;
+  margin-top: 3px;
+  margin-left: 40px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
+  text-wrap: wrap;
   color: rgb(80, 2, 80);
-  width: 180px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
+  width: 100px;
+  height: 50px;
+  border: 3px solid whitesmoke;
   border-radius: 15px;
-  background-color: red;
+  background-color: bisque;
   cursor: pointer;
 }
-#boxBot{
+
+#access {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 10px;
-    width: 500px;
-    height: 60px;
-}
-li {
-  padding: 10px;
-}
-.box {
-    justify-content: center;  
-    padding: 10px;
-    width: 250px;
-    height: 160px;
-    border: 5px solid rgb(80, 2, 80);
-    background-color: bisque;
-    border-radius: 50px;   
-}
-  #box1 {
-    width: 1000px;
-    height: 6600px;
-    /*border: 10px solid rgb(80, 2, 80);*/
-    image-rendering: auto url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
-    width: 660;
-    height: 440;
-}
-.row {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  padding: 5px;
+  width: 500px;
+  height: 60px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#rowBot {
+#notes {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  
- 
+  justify-content: space-around;
+  padding: 5px;
+  width: 300px;
+  height: 60px;
+  margin-left: 62px;
 }
- 
+
+#bisque {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: bisque;
+}
+
+#rightSideText {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding: 10px;
+  width: 500px;
+  height: 600px;
+}
   

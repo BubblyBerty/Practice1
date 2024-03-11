@@ -1,10 +1,4 @@
-/* Specificy prioritisation of selectors:
-*, then explicit selectors, then .class, then #id
- */
-/* @font-face {
-  font-family: "myFont";
-  src: url("myFont.woff2");
-}*/
+/* Home Page style file */
 ul {
   float: center;
   list-style-type: none;
@@ -25,8 +19,9 @@ li {
 .elements {
   align-self: center;
 }
+
 .homeHeaderBox{ 
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size:cover;
   height: 200px;
   font-family: 'Times New Roman', Times, serif;
@@ -39,7 +34,7 @@ li {
   border: 10px black solid;
   padding: 5px;
   background-color:bisque;
-  opacity: 1;
+  opacity: 0.88;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -63,6 +58,15 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: -50px;
+}
+
+.asideH {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: "275px";
+  height: "200px";
+  margin-top: 80px;
 }
 
 .myColumns {
@@ -106,16 +110,7 @@ li {
   align-items: center;
 }
 
-.asideH {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  image-rendering: auto url("./images/Gath Portfilio Logo.png");
-  width: "275px";
-  height: "200px";
-  color: purple;
-  margin-top: 80px;
-}
+
 
 .boxText {
   margin-bottom: -10px;
@@ -127,6 +122,14 @@ body {
   background-repeat: repeat-y;
   background-size:cover;
   background-color:rgb(255, 228, 196); 
+}
+
+#development {
+  font-size: 21px;
+}
+
+#mathFont {
+  font-size: 19px;
 }
 
 #button1 {

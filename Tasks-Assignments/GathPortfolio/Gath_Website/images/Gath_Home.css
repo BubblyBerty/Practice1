@@ -17,11 +17,13 @@ header{
   margin-bottom: 0px;
   border: 10px black solid;
   padding: 5px;
-  background-color:bisque;                                           opacity: 0.75;
+  background-color:bisque;
+  opacity: 0.75;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .headBox{
   margin-top: -80px;
   margin-left: 30px;
@@ -33,6 +35,7 @@ header{
 #boxPosition{
   margin-top: 50px;
 }
+
 button{
   font-size: large;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -43,6 +46,7 @@ button{
   border-radius: 15px;
   background-color: aqua;
 }
+
 .wider {
   width: 130px;  
 }
@@ -79,5 +83,6 @@ button{
   flex-flow: column wrap;
   justify-content: flex-end;
 }
+
  
   
