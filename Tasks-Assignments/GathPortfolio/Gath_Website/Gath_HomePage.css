@@ -34,7 +34,7 @@ li {
   border: 10px black solid;
   padding: 5px;
   background-color:bisque;
-  opacity: 0.88;
+  opacity: 0.9;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

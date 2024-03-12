@@ -81,8 +81,8 @@ li {
   justify-content: left;
   align-items: left;
   padding: 10px;
-  width: 220px;
-  height: 1000px;
+  width: 1250px;
+  height: 800px;
   opacity: 0.95;
 }
 
@@ -110,13 +110,10 @@ li {
   background-color: #2196F3;
   padding: 10px;
 }
-  
-#grid-container > div {
-  margin-left: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+
+#contents-table {
+  width: 1250px;
+  height: 780px;
 }
 
 
