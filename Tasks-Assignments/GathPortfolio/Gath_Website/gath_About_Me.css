@@ -18,7 +18,7 @@ li {
 }
 
 .HeaderBox{ 
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size:cover;
   height: 200px;
   font-family: 'Times New Roman', Times, serif;
@@ -31,7 +31,7 @@ li {
   border: 10px black solid;
   padding: 5px;
   background-color:bisque;
-  opacity: 0.88;
+  opacity: 0.75;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -74,14 +74,6 @@ li {
   justify-content: center;
 }
 
-#navSounds {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  justify-content: left;
-}
-
 #pageColumns {
   display: flex;
   flex-direction: column;
@@ -89,8 +81,8 @@ li {
   justify-content: left;
   align-items: left;
   padding: 10px;
-  width: 1250px;
-  height: 2000px;
+  width: 220px;
+  height: 770px;
   opacity: 0.95;
 }
 
@@ -102,7 +94,7 @@ li {
   align-items: left;
   padding: 10px;
   width: 220px;
-  height: 2000px;
+  height: 770px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.95;
@@ -110,21 +102,46 @@ li {
   margin: 2px;
 }
 
-#contents-table {
-  width: 1250px;
-  height: 4000px;
-}
-
-#myColumns2 {
-  align-items: center;
+#pageArticle {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
   padding: 10px;
-  width: 150px;
-  height: 2000px;
+  width: 1000px;
+  height: 3000px;
+  opacity: 0.95;
+}
+
+#myArticle {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  padding: 10px;
+
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.95;
   border-radius: 50px;
   margin: 2px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  padding: 30px;
+  width: 500px;
+  height: 450px;
+  background-color: black;
+  margin: 2px;
+  opacity: 0.95;
+  border-radius: 50px; 
 }
 
 #box1 {
@@ -133,22 +150,32 @@ li {
   flex-flow: column wrap;
   justify-content: space-between;  
   padding: 10px;
-  width: 200px;
-  height: 2000px;
+  width: 1000px;
+  height: 3000px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.75;
   border-radius: 50px; 
 }
 
-#box2 {
+.box2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  color:rgb(80, 2, 80);
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  border: 10px black solid;
+  padding: 5px;
+  background-color:bisque;
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
   justify-content: space-between;  
   padding: 10px;
-  width: 400px;
-  height: 2000px;
+  width: 1000px;
+  height: 3000px;
   background-color: rgb(80, 2, 80);
   opacity: 1;
   border-radius: 50px; 
@@ -161,16 +188,6 @@ body {
   background-repeat: repeat-y;
   background-size:cover;
   background-color:rgb(255, 228, 196); 
-}
-
-.SampleTitle {
-  width: 50px;
-  height: 10px;
-  background-color: aqua;
-}
-
-.sample {
-  margin-bottom: -5px;
 }
 
 #mathFont {
@@ -207,19 +224,28 @@ body {
   cursor: pointer;
 }
 
-.button3 {
-  margin: 5px;
+#button3 {
+  padding-top: 1px;
+  width: 500px;
+  height: 80px;
+  border: 10px solid GREY;
+  border-radius: 5px;
+  background-color: silver;
+}
+
+#button4 {
+  margin: -25px;
   margin-top: 3px;
   margin-right: 40px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: small;
+  font-size: xx-large;
   text-wrap: wrap;
   color: rgb(80, 2, 80);
-  width: 100px;
-  height: 20px;
-  border: 3px solid rgb(80, 2, 80);
+  width: 200px;
+  height: 50px;
+  border: 3px solid whitesmoke;
   border-radius: 15px;
-  background-color: aqua;
+  background-color: rgb(235, 77, 111);
   cursor: pointer;
 }
 
@@ -295,5 +321,4 @@ body {
   width: 500px;
   height: 600px;
 }
-
   
