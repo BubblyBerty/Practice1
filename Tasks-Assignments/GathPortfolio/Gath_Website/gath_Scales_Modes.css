@@ -74,6 +74,14 @@ li {
   justify-content: center;
 }
 
+#navSounds {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: left;
+}
+
 #pageColumns {
   display: flex;
   flex-direction: column;
@@ -116,7 +124,17 @@ li {
   height: 780px;
 }
 
-
+#myColumns2 {
+  align-items: center;
+  padding: 10px;
+  width: 150px;
+  height: 500px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.95;
+  border-radius: 50px;
+  margin: 2px;
+}
 
 #box1 {
   display: flex;
@@ -132,7 +150,7 @@ li {
   border-radius: 50px; 
 }
 
-.box2 {
+#box2 {
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
@@ -188,28 +206,19 @@ body {
   cursor: pointer;
 }
 
-#button3 {
-  padding-top: 1px;
-  width: 500px;
-  height: 80px;
-  border: 10px solid GREY;
-  border-radius: 5px;
-  background-color: silver;
-}
-
-#button4 {
-  margin: -25px;
+.button3 {
+  margin: 5px;
   margin-top: 3px;
   margin-right: 40px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
+  font-size: small;
   text-wrap: wrap;
   color: rgb(80, 2, 80);
-  width: 200px;
-  height: 50px;
-  border: 3px solid whitesmoke;
+  width: 100px;
+  height: 20px;
+  border: 3px solid rgb(80, 2, 80);
   border-radius: 15px;
-  background-color: rgb(235, 77, 111);
+  background-color: aqua;
   cursor: pointer;
 }
 
