@@ -18,7 +18,7 @@ li {
 }
 
 .HeaderBox{ 
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size:cover;
   height: 200px;
   font-family: 'Times New Roman', Times, serif;
@@ -90,7 +90,7 @@ li {
   align-items: left;
   padding: 10px;
   width: 1250px;
-  height: 800px;
+  height: 2000px;
   opacity: 0.95;
 }
 
@@ -102,7 +102,7 @@ li {
   align-items: left;
   padding: 10px;
   width: 220px;
-  height: 1000px;
+  height: 2000px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.95;
@@ -121,14 +121,14 @@ li {
 
 #contents-table {
   width: 1250px;
-  height: 780px;
+  height: 3000px;
 }
 
 #myColumns2 {
   align-items: center;
   padding: 10px;
   width: 150px;
-  height: 500px;
+  height: 2000px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.95;
@@ -143,7 +143,7 @@ li {
   justify-content: space-between;  
   padding: 10px;
   width: 200px;
-  height: 800px;
+  height: 2000px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.75;
@@ -156,8 +156,8 @@ li {
   flex-flow: column wrap;
   justify-content: space-between;  
   padding: 10px;
-  width: 200px;
-  height: 750px;
+  width: 400px;
+  height: 2000px;
   background-color: rgb(80, 2, 80);
   opacity: 1;
   border-radius: 50px; 
@@ -170,6 +170,16 @@ body {
   background-repeat: repeat-y;
   background-size:cover;
   background-color:rgb(255, 228, 196); 
+}
+
+.SampleTitle {
+  width: 50px;
+  height: 10px;
+  background-color: aqua;
+}
+
+.sample {
+  margin-bottom: -5px;
 }
 
 #mathFont {
@@ -294,4 +304,5 @@ body {
   width: 500px;
   height: 600px;
 }
+
   
