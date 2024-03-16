@@ -16,16 +16,18 @@ li {
   flex-flow: column wrap;
 }
 
+.mainBody {
+  display: flex; 
+  flex-flow: column wrap;
+  justify-content: left;
+}
+
 .video {
   max-width: fit-content;
   height: 330px;
   overflow-y: hidden;
   margin-bottom: 5px;
   border-bottom: 5px solid rgb(80, 2, 80);
-}
-
-.elements {
-  align-self: center;
 }
 
 .homeHeaderBox{ 
@@ -37,7 +39,7 @@ li {
   font-size: 50px;
   font-style: italic;
   color:rgb(80, 2, 80);
-  margin: 30px;
+  margin-left: 35px;
   margin-top: -700px;
   margin-bottom: 350px;
   border: 10px black solid;
@@ -80,7 +82,7 @@ li {
   margin-left: 35px;
 }
 
-.myColumns {
+.pageColumns {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
@@ -101,15 +103,17 @@ li {
 }
 
 .box2 {
-  justify-content: center;  
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-between;  
   padding: 10px;
-  width: 220px;
-  height: 320px;
-  border: 5px solid rgb(80, 2, 80);
-  background-color: bisque;
-  opacity: 0.88;
-  border-radius: 50px;   
-}
+  width: 200px;
+  height: 750px;
+  background-color: rgb(80, 2, 80);
+  opacity: 1;
+  border-radius: 50px; 
+} 
 
 .bodyColumn {
   width: 250px;
@@ -139,7 +143,29 @@ li {
   font-size: 19px;
 }
 
+.calculator {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  padding: 30px;
+  width: 500px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.805);
+  margin: 2px;
+  opacity: 0.95;
+  border-radius: 50px; 
+}
+
+#box1 {
+    width: 1000px;
+    height: 6600px;
+    image-rendering: auto url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+}
+
 #button1 {
+  margin: -5px;
   padding: 3px; 
   justify-items: auto;
   font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -155,6 +181,7 @@ li {
 }
 
 #button2 {
+  margin: -5px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
   text-wrap: wrap;
@@ -167,10 +194,87 @@ li {
   cursor: pointer;
 }
 
-#box1 {
-    width: 1000px;
-    height: 6600px;
-    image-rendering: auto url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+#button3 {
+  padding-top: 1px;
+  width: 500px;
+  height: 80px;
+  border: 10px solid GREY;
+  border-radius: 5px;
+  background-color: silver;
+}
+
+#button4 {
+  margin: -25px;
+  margin-top: 3px;
+  margin-right: 40px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 200px;
+  height: 50px;
+  border: 3px solid whitesmoke;
+  border-radius: 15px;
+  background-color: rgb(235, 77, 111);
+  cursor: pointer;
+}
+
+#button5 {
+  margin: -5px;
+  margin-top: 3px;
+  margin-left: 40px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 200px;
+  height: 50px;
+  border: 3px solid whitesmoke;
+  border-radius: 15px;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+#button6 {
+  margin: -5px;
+  margin-top: 3px;
+  margin-left: 40px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 100px;
+  height: 50px;
+  border: 3px solid whitesmoke;
+  border-radius: 15px;
+  background-color: bisque;
+  cursor: pointer;
+}
+
+#access {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+  width: 500px;
+  height: 60px;
+}
+
+#notes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+  width: 300px;
+  height: 60px;
+  margin-left: 62px;
+}
+
+#bisque {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: bisque;
 }
 
 #boxBot{
