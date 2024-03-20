@@ -1,0 +1,125 @@
+/* Template Page style file */
+ul {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  padding: 10px;
+}
+
+body {
+  color: rgb(80, 2, 80);
+  background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat-y;
+  background-size:cover;
+  background-color:rgb(255, 228, 196); 
+}
+
+.all {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.topNtail {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.backBox {
+  background-color: bisque;
+  padding: 10px;
+  width: 100%;
+  height:335px;
+}
+
+.video {
+  width: 100%;
+  height: 330px;
+  overflow-y: hidden;
+  border: 5px solid bisque
+}
+
+.homeHeaderBox{ 
+  background-repeat: no-repeat;
+  width: 1410px;
+  background-size: contain;
+  height: 270px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-style: italic;
+  color:rgb(80, 2, 80);
+  margin-left: 35px;
+  margin-top: -700px;
+  margin-bottom: 350px;
+  border: 10px black solid;
+  padding: 5px;
+  background-color:bisque;
+}
+
+.headerItems {
+  align-items: center;
+  margin-top: -158px;
+  margin-bottom: 100px;
+  display: flex; 
+  flex-flow: row wrap;
+}
+
+.header1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: -40px;
+  margin-left: 80px;  
+}
+
+.header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -50px;
+  margin-left: 80px;
+}
+
+.asideH {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  width: "275px";
+  height: "200px";
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.background {
+  color: rgb(80, 2, 80);
+  background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat-y;
+  background-size:cover; 
+  /*background-color: bisque;*/
+}
+
+.HeaderBox{ 
+  background-repeat: repeat;
+  background-size:cover;
+  height: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-style: italic;
+  color:rgb(80, 2, 80);
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  border: 10px black solid;
+  padding: 5px;
+  background-color:bisque;
+  opacity: 0.88;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
