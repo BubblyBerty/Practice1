@@ -8,7 +8,8 @@ h6 {
 .background {
   background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
   background-repeat: repeat-y;
-  background-size:cover; 
+  background-size:cover;
+  margin-bottom: 10px; 
 }
 
 ul {
@@ -173,7 +174,11 @@ li {
   border-radius: 50px; 
 }*/
 
-#button1 {
+#left {
+  margin-left: 50px;
+}
+
+.buttonMenu1 {
   padding: 3px; 
   justify-items: auto;
   font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -189,7 +194,7 @@ li {
   box-shadow: 5px 5px;
 }
 
-#button2 {
+.buttonMenu2 {
   padding: 3px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
@@ -197,69 +202,6 @@ li {
   color: rgb(80, 2, 80);
   width: 190px;
   height: 90px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#button3 {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#button4 {
-  padding: 3px;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 90px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#button5 {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#button6 {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 45px;
   border: 3px solid rgb(80, 2, 80);
   border-radius: 15px;
   background-color: aqua;

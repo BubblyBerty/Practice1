@@ -153,7 +153,7 @@ li {
   justify-content: left;  
   padding: 5px;
   width: 350px;
-  height: 950px;
+  height: 2025px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.88;
@@ -283,22 +283,6 @@ li {
   background-color: rgb(0, 38, 255);
   border: 5px solid  rgb(0, 38, 255);
   border-radius: 30px;
-}
-
-#buttonA {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
 }
 
 .buttonSound {
@@ -583,5 +567,3 @@ li {
 .sample {
   margin-bottom: 5px;
 }
-
-#buttonSound {}
