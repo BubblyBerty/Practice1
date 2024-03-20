@@ -38,6 +38,7 @@ li {
   padding: 10px;
   width: 100%;
   height:335px;
+  margin-bottom: 10px;
 }
 
 .video {
@@ -183,7 +184,7 @@ li {
   background-color: bisque;
 }
 
-#button1 {
+.button1 {
   padding: 3px; 
   justify-items: auto;
   font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -199,7 +200,7 @@ li {
   box-shadow: 5px 5px;
 }
 
-#button2 {
+.button2 {
   padding: 3px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
@@ -261,7 +262,7 @@ li {
   box-shadow: 5px 5px;
 }
 
-#button6 {
+#buttonMenu1 {
   padding: 3px; 
   justify-items: auto;
   font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -275,6 +276,13 @@ li {
   background-color: aqua;
   cursor: pointer;
   box-shadow: 5px 5px;
+}
+
+.audio {
+  opacity: 1;
+  background-color: rgb(0, 38, 255);
+  border: 5px solid  rgb(0, 38, 255);
+  border-radius: 30px;
 }
 
 #buttonA {
@@ -293,20 +301,22 @@ li {
   box-shadow: 5px 5px;
 }
 
-#buttonB {
-  padding: 3px; 
+.buttonSound {
+  margin-top: -10px;
+  padding-bottom: 5px;
+  margin-bottom: 7px; 
   justify-items: auto;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: large;
   text-wrap: wrap;
   color: rgb(80, 2, 80);
   width: 325px;
-  height: 30px;
+  height: 32px;
   border: 3px solid rgb(80, 2, 80);
   border-radius: 15px;
   background-color: aqua;
   cursor: pointer;
-  box-shadow: 5px 5px;
+  box-shadow: 5px 5px;  
 }
 
 #buttonC {
@@ -565,15 +575,6 @@ li {
   padding: 2;
   align-self: center;
 }
-/*
-#contents-table {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  justify-content: left;
-  width: 1250px;
-  height: 8000px;
-}*/
 
 .SampleTitle {
   width: 150px;
@@ -583,6 +584,4 @@ li {
   margin-bottom: 5px;
 }
 
-audio::-webkit-media-controls {
-  display: play;
-}
+#buttonSound {}

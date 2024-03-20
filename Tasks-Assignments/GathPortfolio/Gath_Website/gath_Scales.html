@@ -44,33 +44,33 @@
             <box id="box1">
                 <ul class="navigation">
                     <li> <!-- 1st button -->
-                        <form action="./gath_HomePageV2.html">              
-                            <button id="button1">Home</button>
+                        <form action="./gath_Home.html">              
+                            <button id="buttonMenu1" class="button1">Home</button>
                         </form>
                     </li>
                     <li> <!-- 2nd button -->
                         <form action="./gath_Software.html">
-                            <button id="button2">Software Development</button>
+                            <button id="buttonMenu2" class="button2">Software Development</button>
                         </form>
                     </li>
                     <li> <!-- 3rd button -->
                         <form action="./gath_Moi.html">
-                            <button id="button3">Moi?</button>
+                            <button id="buttonMenu3" class="button1">Moi?</button>
                         </form>
                     </li>
                     <li> <!-- 4th button -->
                         <form action="./gath_Compositions.html">
-                            <button id="button4">Compositions</button>
+                            <button id="buttonMenu4" class="button1">Compositions</button>
                         </form>
                     </li>
                     <li> <!-- 5th button -->
                         <form action="./gath_Scale_Calculator.html">
-                            <button id="button5">Scale/Mode Calculator</button>
+                            <button id="buttonMenu5" class="button2">Scale/Mode Calculator</button>
                         </form>
                     </li>                    
                     <li> <!-- 6th button -->
                         <form action="./gath_Mathematics.html">
-                            <button id="button6">Mathematics</button>
+                            <button id="buttonMenu6" class="button1">Mathematics</button>
                         </form>
                     </li>
                 </ul>
@@ -81,27 +81,35 @@
                 <ul id="navSounds" style="list-style-type:none;">
                     <li><h2 id="libHeader"><center>Selected Sample Library</center></h2>
                     </li>
+
+                    <!-- Music characters obtained from https://www.webnots.com/alt-code-shortcuts-for-music-symbols/ -->
+
                     <!-- https://www.geeksforgeeks.org/how-to-hide-audio-controls-in-html5/ -->
+
+                    <!-- Single closing brackets obtained from https://www.toptal.com/designers/htmlarrows/symbols/ -->
+
+                    <!-- Additional audio elements information obtained from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio -->
+                    
                     <li>
-                        <form action="./Sounds/1-5. Bebop Scales.mp3">
-                        <button id="buttonA">1-5. Bebop Scales</button>
-                        <audio>
-                            <source src="./Sounds/1-5. Bebop Scales.ogg" type="audio/ogg">
+                        <form action="./images/Bebop Scales.pdf">
+                            <button id="buttonSound1" class="buttonSound"><b>1 &#8594; 5&#10089; Bebop Scales</b></button>
+                        </form>
+                        <audio controls controlsList="nodownload" class="audio">
                             <source src="./Sounds/1-5. Bebop Scales.mp3" type="audio/mpeg">
+                            <source src="./Sounds/1-5. Bebop Scales.ogg" type="audio/ogg">
                         Your browser does not support the audio element.
                         </audio>
-                        </form>
                     </li>                   
                     <li>
-                        <button id="buttonB">6+42. 8 Tone & Hungarian Flamenco</button>
-                        <audio>
-                            <source src="./Sounds/6+42. 8 Tone & Hungarian Flamenco.ogg" type="audio/ogg">
+                        <button id="buttonSound2" class="buttonSound"><b>6 & 42&#10089; 8 Tone & Hungarian Flamenco</b></button>
+                        <audio controls controlsList="nodownload" class="audio">
                             <source src="./Sounds/6+42. 8 Tone & Hungarian Flamenco.mp3" type="audio/mpeg">
+                            <source src="./Sounds/6+42. 8 Tone & Hungarian Flamenco.ogg" type="audio/ogg">
                         Your browser does not support the audio element.
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonC">9. Ichikosucho</button>
+                        <button id="buttonC"><b>9&#10089; Ichikosucho</b></button>
                         <audio>
                             <source src="./Sounds/9. Ichikosucho.ogg" type="audio/ogg">
                             <source src="./Sounds/9. Ichikosucho.mp3" type="audio/mpeg">
@@ -109,7 +117,7 @@
                         </audio>
                     </li>                    
                     <li>
-                        <button id="buttonD">10. Ionian Choir</button>
+                        <button id="buttonD"><b>10&#10089; Ionian Choir</b></button>
                         <audio>
                             <source src="./Sounds/10. Ionian Choir.ogg" type="audio/ogg">
                             <source src="./Sounds/10. Ionian Choir.mp3" type="audio/mpeg">
@@ -120,7 +128,7 @@
                     <!-- Providencial note: Can this be Dorian b5 if the previous mode is Dorian #4? Are they not the same scale by definition? -->
                     
                     <li>
-                        <button id="buttonE">26. Myxolydian</button>
+                        <button id="buttonE"><b>26&#10089; Myxolydian</b></button>
                         <audio>
                             <source src="./Sounds/26. Myxolydian.ogg" type="audio/ogg">
                             <source src="./Sounds/26. Myxolydian.mp3" type="audio/mpeg">
@@ -128,7 +136,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonF">29. Aeolian</button>
+                        <button id="buttonF"><b>29&#10089; Aeolian</b></button>
                         <audio>
                             <source src="./Sounds/29. Aeolian.ogg" type="audio/ogg">
                             <source src="./Sounds/29. Aeolian.mp3" type="audio/mpeg">
@@ -136,7 +144,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonG">35. Superlocrian 7</button>
+                        <button id="buttonG"><b>35&#10089; Superlocrian 7</b></button>
                         <audio>
                             <source src="./Sounds/35. Superlocrian 7.ogg" type="audio/ogg">
                             <source src="./Sounds/35. Superlocrian 7.mp3" type="audio/mpeg">
@@ -144,7 +152,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonH">36. Harmonic Minor</button>
+                        <button id="buttonH"><b>36&#10089; Harmonic Minor</b></button>
                         <audio>
                             <source src="./Sounds/36. Harmonic Minor.ogg" type="audio/ogg">
                             <source src="./Sounds/36. Harmonic Minor.mp3" type="audio/mpeg">
@@ -152,7 +160,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonI">39. Arabian</button>
+                        <button id="buttonI"><b>39&#10089; Arabian</b></button>
                         <audio>
                             <source src="./Sounds/39. Arabian.ogg" type="audio/ogg">
                             <source src="./Sounds/39. Arabian.mp3" type="audio/mpeg">
@@ -160,7 +168,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonJ">45. Persian Thematic</button>
+                        <button id="buttonJ"><b>45&#10089; Persian Thematic</b></button>
                         <audio>
                             <source src="./Sounds/45. Persian Thematic.ogg" type="audio/ogg">
                             <source src="./Sounds/45. Persian Thematic.mp3" type="audio/mpeg">
@@ -168,7 +176,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonK">46. Purvi Theta</button>
+                        <button id="buttonK"><b>46&#10089; Purvi Theta</b></button>
                         <audio>
                             <source src="./Sounds/46. Purvi Theta.ogg" type="audio/ogg">
                             <source src="./Sounds/46. Purvi Theta.mp3" type="audio/mpeg">
@@ -176,7 +184,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonL">49-50. Mixed Blues</button>
+                        <button id="buttonL"><b>49, 50 & 54&#10089; Mixed Blues</b></button>
                         <audio>
                             <source src="./Sounds/49-50. Mixed Blues.ogg" type="audio/ogg">
                             <source src="./Sounds/49-50. Mixed Blues.mp3" type="audio/mpeg">
@@ -184,7 +192,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonM">50. Country-Gospel Train</button>
+                        <button id="buttonM"><b>50&#10089; Country-Gospel Train</b></button>
                         <audio>
                             <source src="./Sounds/50. Country-Gospel Train.ogg" type="audio/ogg">
                             <source src="./Sounds/50. Country-Gospel Train.mp3" type="audio/mpeg">
@@ -192,7 +200,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonN">56. Prometheus in D</button>
+                        <button id="buttonN"><b>56&#10089; Prometheus in D</b></button>
                         <audio>
                             <source src="./Sounds/56. Prometheus in D.ogg" type="audio/ogg">
                             <source src="./Sounds/56. Prometheus in D.mp3" type="audio/mpeg">
@@ -200,7 +208,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonO">60. Turkish-Weeping Women</button>
+                        <button id="buttonO"><b>60&#10089; Turkish (Weeping Women)</b></button>
                         <audio>
                             <source src="./Sounds/60. Turkish-Weeping Women.ogg" type="audio/ogg">
                             <source src="./Sounds/60. Turkish-Weeping Women.mp3" type="audio/mpeg">
@@ -208,7 +216,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonP">67. Indian Movie</button>
+                        <button id="buttonP"><b>67&#10089; Indian Movie</b></button>
                         <audio>
                             <source src="./Sounds/67. Indian Movie.ogg" type="audio/ogg">
                             <source src="./Sounds/67. Indian Movie.mp3" type="audio/mpeg">
@@ -216,7 +224,7 @@
                         </audio>
                     </li>
                     <li>
-                        <button id="buttonQ">70-71. 3&4 Tone Scales Teaching</button>
+                        <button id="buttonQ"><b>70 &#8594; 71&#10089; 3 & 4 Tone Scales Teaching</b></button>
                         <audio>
                             <source src="./Sounds/70-71. 3&4 Tone Scales Teaching.ogg" type="audio/ogg">
                             <source src="./Sounds/70-71. 3&4 Tone Scales Teaching.mp3" type="audio/mpeg">
@@ -227,7 +235,6 @@
             </box>        
         </div>
         <div id="myColumn3">            
-            <!-- Music characters obtained from https://www.webnots.com/alt-code-shortcuts-for-music-symbols/ -->
             <object
             data='./images/scales_list.pdf'
             type="application/pdf"

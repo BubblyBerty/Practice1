@@ -1,61 +1,61 @@
 // Gathering the buttons
-let button1 = document.getElementById('button1')
-let button2 = document.getElementById('button2')
-let button3 = document.getElementById('button3')
-let button4 = document.getElementById('button4')
-let button5 = document.getElementById('button5')
-let button6 = document.getElementById('button6')
-let buttonA = document.getElementById('buttonA')
+let buttonMenu1 = document.getElementById('buttonMenu1')
+let buttonMenu2 = document.getElementById('buttonMenu2')
+let buttonMenu3 = document.getElementById('buttonMenu3')
+let buttonMenu4 = document.getElementById('buttonMenu4')
+let buttonMenu5 = document.getElementById('buttonMenu5')
+let buttonMenu6 = document.getElementById('buttonMenu6')
+let buttonSound2 = document.getElementById('buttonSound2')
 
 // Creating the Event and Event Listener
 // (event type, function for each button)
-button1.addEventListener('mouseover', function run(){
-    button1.style.backgroundColor = 'orange'
+buttonMenu1.addEventListener('mouseover', function run(){
+    buttonMenu1.style.backgroundColor = 'orange'
 })
-button1.addEventListener('mouseleave', function run(){
-    button1.style.backgroundColor = 'aqua'
-})
-
-button2.addEventListener('mouseover', function run(){
-    button2.style.backgroundColor = 'orange'
-})
-button2.addEventListener('mouseleave', function run(){
-    button2.style.backgroundColor = 'aqua'
+buttonMenu1.addEventListener('mouseleave', function run(){
+    buttonMenu1.style.backgroundColor = 'aqua'
 })
 
-button3.addEventListener('mouseover', function run(){
-    button3.style.backgroundColor = 'orange'
+buttonMenu2.addEventListener('mouseover', function run(){
+    buttonMenu2.style.backgroundColor = 'orange'
 })
-button3.addEventListener('mouseleave', function run(){
-    button3.style.backgroundColor = 'aqua'
-})
-
-button4.addEventListener('mouseover', function run(){
-    button4.style.backgroundColor = 'orange'
-})
-button4.addEventListener('mouseleave', function run(){
-    button4.style.backgroundColor = 'aqua'
+buttonMenu2.addEventListener('mouseleave', function run(){
+    buttonMenu2.style.backgroundColor = 'aqua'
 })
 
-button5.addEventListener('mouseover', function run(){
-    button5.style.backgroundColor = 'orange'
+buttonMenu3.addEventListener('mouseover', function run(){
+    buttonMenu3.style.backgroundColor = 'orange'
 })
-button5.addEventListener('mouseleave', function run(){
-    button5.style.backgroundColor = 'aqua'
-})
-
-button6.addEventListener('mouseover', function run(){
-    button6.style.backgroundColor = 'orange'
-})
-button6.addEventListener('mouseleave', function run(){
-    button6.style.backgroundColor = 'aqua'
+buttonMenu3.addEventListener('mouseleave', function run(){
+    buttonMenu3.style.backgroundColor = 'aqua'
 })
 
-buttonA.addEventListener('mouseover', function run(){
-    buttonA.style.backgroundColor = 'pink'
+buttonMenu4.addEventListener('mouseover', function run(){
+    buttonMenu4.style.backgroundColor = 'orange'
 })
-buttonA.addEventListener('mouseleave', function run(){
-    buttonA.style.backgroundColor = 'aqua'
+buttonMenu4.addEventListener('mouseleave', function run(){
+    buttonMenu4.style.backgroundColor = 'aqua'
+})
+
+buttonMenu5.addEventListener('mouseover', function run(){
+    buttonMenu5.style.backgroundColor = 'orange'
+})
+buttonMenu5.addEventListener('mouseleave', function run(){
+    buttonMenu5.style.backgroundColor = 'aqua'
+})
+
+buttonMenu6.addEventListener('mouseover', function run(){
+    buttonMenu6.style.backgroundColor = 'orange'
+})
+buttonMenu6.addEventListener('mouseleave', function run(){
+    buttonMenu6.style.backgroundColor = 'aqua'
+})
+
+buttonSound2.addEventListener('mouseover', function run(){
+    buttonSound2.style.backgroundColor = 'lightgreen'
+})
+buttonSound2.addEventListener('mouseleave', function run(){
+    buttonSound2.style.backgroundColor = 'aqua'
 })
 
 document.addEventListener('DOMContentLoaded', function() {

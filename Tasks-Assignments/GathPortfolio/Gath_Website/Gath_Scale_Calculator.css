@@ -31,7 +31,7 @@ li {
   border: 10px black solid;
   padding: 5px;
   background-color:bisque;
-  opacity: 0.75;
+  opacity: 0.88;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -184,63 +184,6 @@ body {
   border: 3px solid rgb(80, 2, 80);
   border-radius: 15px;
   background-color: aqua;
-  cursor: pointer;
-}
-
-#button3 {
-  padding-top: 1px;
-  width: 500px;
-  height: 80px;
-  border: 10px solid GREY;
-  border-radius: 5px;
-  background-color: silver;
-}
-
-#button4 {
-  margin: -25px;
-  margin-top: 3px;
-  margin-right: 40px;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 200px;
-  height: 50px;
-  border: 3px solid whitesmoke;
-  border-radius: 15px;
-  background-color: rgb(235, 77, 111);
-  cursor: pointer;
-}
-
-#button5 {
-  margin: -5px;
-  margin-top: 3px;
-  margin-left: 40px;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 200px;
-  height: 50px;
-  border: 3px solid whitesmoke;
-  border-radius: 15px;
-  background-color: greenyellow;
-  cursor: pointer;
-}
-
-#button6 {
-  margin: -5px;
-  margin-top: 3px;
-  margin-left: 40px;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 100px;
-  height: 50px;
-  border: 3px solid whitesmoke;
-  border-radius: 15px;
-  background-color: bisque;
   cursor: pointer;
 }
 
