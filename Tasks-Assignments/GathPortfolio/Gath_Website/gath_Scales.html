@@ -41,6 +41,9 @@
 
     <div id="pageColumns">
         <div id="myColumn1">
+            <box id="box0">
+                <h3>These scales and modes were obtained two years ago and their sources were not recorded. However, the majority of them are freely available to be researched from the internet. If any are not found then it is to be assumed that I gave arbitary names to them (colored differently). Modes are specific types of scale that are related the the standard 8 note major scale in Western Music Tradition. Notwithstanding this, I have chosen to determine scale sizes ommitting the final note an octave higher than the root note. All scales are based on the Western Music Tradition of the octave being divided into 12 equal notes (Equal Temperment).</h3>
+            </box>
             <box id="box1">
                 <ul class="navigation">
                     <li> <!-- 1st button -->
@@ -64,7 +67,7 @@
                         </form>
                     </li>
                     <li> <!-- 5th button -->
-                        <form action="./gath_Scale_Calculator.html">
+                        <form action="./gath_Calculator.html">
                             <button id="buttonMenu5" class="button2">Scale/Mode Calculator</button>
                         </form>
                     </li>                    
@@ -79,7 +82,13 @@
         <div id="myColumn2">
             <box id="box2">
                 <ul id="navSounds" style="list-style-type:none;">
-                    <li><h2 id="libHeader"><center>Selected Sample Library</center></h2>
+                    <li>
+                        <h2 id="soundHeader1">Selected Sample Library</h2>
+                    </li>
+                    <li id="soundHeader2">
+                        <h3>
+                            Click the appropriate button to produce a downloadable PDF music score file for that sound sample
+                        </h3>
                     </li>
 <!-- Music characters obtained from https://www.webnots.com/alt-code-shortcuts-for-music-symbols/ -->
 
@@ -88,6 +97,12 @@
 <!-- Single closing brackets obtained from https://www.toptal.com/designers/htmlarrows/symbols/ -->
 
 <!-- Additional audio elements information obtained from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio -->
+
+<!-- <li class="missingItem"> -->
+
+                    <li><audio>
+                        <!-- This blank audio tag has been inserted because otherwise the first real audio tag is hidden somewhere off the page -->
+                    </audio></li>
                     <li>
                         <form action="./images/Bebop Scales.pdf" target="_blank">
                             <button id="buttonSound1" class="buttonSound"><b>1 &#8594; 5&#10089; Bebop Scales</b>
@@ -98,7 +113,7 @@
                             <source src="./Sounds/1-5. Bebop Scales.ogg" type="audio/ogg">
                             Your browser does not support the audio element.
                         </audio>
-                    </li>                    
+                    </li>                                        
                     <li>
                         <form action="./images/07b+38   8 Tone Spanish Scale Study in E - Flamenco Rumba.pdf" target="_blank">
                             <button id="buttonSound2" class="buttonSound"><b>6 & 42&#10089; 8 Tone & Hungarian Flamenco</b>
@@ -123,7 +138,7 @@
                     </li>
                     <li>
                         <form action="./images/11 Ioian_Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>10&#10089; Ionian Choir</b>
+                            <button id="buttonSound4" class="buttonSound"><b>10&#10089; Ionian Choir</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -133,8 +148,8 @@
                         </audio>
                     </li>
                     <li>
-                        <form action="./images/Myxolydian Study_in_Cpdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>26&#10089; Myxolydian</b>
+                        <form action="./images/Myxolydian Study_in_C.pdf" target="_blank">
+                            <button id="buttonSound5" class="buttonSound"><b>26&#10089; Myxolydian</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -144,8 +159,8 @@
                         </audio>
                     </li>
                     <li>
-                        <form action="./images/31 Aeolian Modal Study in Cpdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>29&#10089; Aeolian</b>
+                        <form action="./images/31 Aeolian Modal Study in C.pdf" target="_blank">
+                            <button id="buttonSound6" class="buttonSound"><b>29&#10089; Aeolian</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -156,18 +171,18 @@
                     </li>
                     <li>
                         <form action="./images/Superlocrian b7 Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>35&#10089; Superlocrian &#9837;7</b>
+                            <button id="buttonSound7" class="buttonSound"><b>35&#10089; Superlocrian &#9837;7</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
-                            <source src="./Sounds/Superlocrian b7.mp3" type="audio/mpeg">
-                            <source src="./Sounds/Superlocrian b7.ogg" type="audio/ogg">
+                            <source src="./Sounds/35. Superlocrian b7.mp3" type="audio/mpeg">
+                            <source src="./Sounds/35. Superlocrian b7.ogg" type="audio/ogg">
                             Your browser does not support the audio element.
                         </audio>
                     </li>
                     <li>
                         <form action="./images/Harmonic Minor Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>36&#10089; Harmonic Minor</b>
+                            <button id="buttonSound8" class="buttonSound"><b>36&#10089; Harmonic Minor</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -178,7 +193,7 @@
                     </li>
                     <li>
                         <form action="./images/Arabian Scale Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>39&#10089; Arabian</b>
+                            <button id="buttonSound9" class="buttonSound"><b>39&#10089; Arabian</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -189,7 +204,7 @@
                     </li>
                     <li>
                         <form action="./images/Neopolitan Scale  - Weeping Women.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>43&#10089; Neopolitan (Weeping Women)</b>
+                            <button id="buttonSound10" class="buttonSound"><b>43&#10089; Neopolitan (Weeping Women)</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -200,7 +215,7 @@
                     </li>
                     <li>
                         <form action="./images/Persian Scale Thematic Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>45&#10089; Persian Thematic</b>
+                            <button id="buttonSound11" class="buttonSound"><b>45&#10089; Persian Thematic</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -211,7 +226,7 @@
                     </li>
                     <li>
                         <form action="./images/Purvi Theta Scale Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>46&#10089; Purvi Theta</b>
+                            <button id="buttonSound12" class="buttonSound"><b>46&#10089; Purvi Theta</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -222,7 +237,7 @@
                     </li>
                     <li>
                         <form action="./images/Mixed Blues - Scale Study in C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>49, 50 & 54&#10089; Mixed Blues</b>
+                            <button id="buttonSound13" class="buttonSound"><b>49, 50 & 54&#10089; Mixed Blues</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -233,7 +248,7 @@
                     </li>
                     <li>
                         <form action="./images/Country-Gospel Scale Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>50&#10089; Country-Gospel Train</b>
+                            <button id="buttonSound14" class="buttonSound"><b>50&#10089; Country-Gospel Train</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -244,7 +259,7 @@
                     </li>
                     <li>
                         <form action="./images/Prometheus Scale Study_in_D.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>56&#10089; Prometheus in D</b>
+                            <button id="buttonSound15" class="buttonSound"><b>56&#10089; Prometheus in D</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -255,7 +270,7 @@
                     </li>                    
                     <li>
                         <form action="./images/Indian Scale Study_in_C.pdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>67&#10089; Indian Movie</b>
+                            <button id="buttonSound16" class="buttonSound"><b>67&#10089; Indian Movie</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -266,7 +281,7 @@
                     </li>
                     <li>
                         <form action="./images/X 4 Tone and 3 Tone Scales Study in_Cpdf" target="_blank">
-                            <button id="buttonSound2" class="buttonSound"><b>70 &#8594; 71&#10089; 3 & 4 Tone Scales Teaching</b>
+                            <button id="buttonSound17" class="buttonSound"><b>70 &#8594; 71&#10089; 3 & 4 Tone Scales (Teaching)</b>
                             </button>
                         </form>                        
                         <audio controls controlsList="nodownload" class="audio">
@@ -282,12 +297,12 @@
             <object
             data='./images/scales_list.pdf'
             type="application/pdf"
-            width="810"
-            height="1800">    
+            width="820"
+            height="1250">    
                 <iframe
                 src='./images/scales_list.pdf'
                 width="800"
-                height="790">
+                height="1200">
                 <p>This browser does not support PDF!</p>
                 </iframe>
             </object>            

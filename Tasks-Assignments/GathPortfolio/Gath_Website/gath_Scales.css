@@ -130,6 +130,22 @@ li {
   justify-content: top;
 }
 
+#box0 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center;  
+  padding: 10px;
+  width: 220px;
+  height: 550px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.88;
+  border-radius: 50px;
+  position: sticky;
+  top: 0px
+}
+
 #box1 {
   display: flex;
   flex-direction: column;
@@ -150,7 +166,7 @@ li {
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
-  justify-content: left;  
+  justify-content: center;  
   padding: 5px;
   width: 350px;
   height: 2025px;
@@ -160,28 +176,16 @@ li {
   border-radius: 50px;   
 }
 
-#box3 {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  justify-content: center;  
-  padding: 10px;
-  width: 220px;
-  height: 500px;
-  border: 5px solid rgb(80, 2, 80);
-  background-color: bisque;
-  opacity: 0.88;
-  border-radius: 50px;
-  position: sticky;
-  top: 0px
-}
-
 .background {
   color: rgb(80, 2, 80);
   background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
   background-repeat: repeat-y;
   background-size:cover; 
   background-color: bisque;
+}
+
+#buttonSound1 {
+  margin-top: 3px;
 }
 
 .button1 {
@@ -215,69 +219,6 @@ li {
   box-shadow: 5px 5px;
 }
 
-#button3 {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#button4 {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#button5 {
-  padding: 3px;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 90px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonMenu1 {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: xx-large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 190px;
-  height: 45px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
 .audio {
   opacity: 1;
   background-color: rgb(0, 38, 255);
@@ -303,246 +244,6 @@ li {
   box-shadow: 5px 5px;  
 }
 
-#buttonC {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonD {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonE {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonF {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonG {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonH {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonI {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonJ {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonK {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonL {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonM {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonN {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonO {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonP {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
-#buttonQ {
-  padding: 3px; 
-  justify-items: auto;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: large;
-  text-wrap: wrap;
-  color: rgb(80, 2, 80);
-  width: 325px;
-  height: 30px;
-  border: 3px solid rgb(80, 2, 80);
-  border-radius: 15px;
-  background-color: aqua;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-}
-
 .navigation {
   float: left;
   margin: 1;
@@ -550,8 +251,14 @@ li {
   justify-content: center;
 }
 
-#libHeader {
-  align-content: center;
+#soundHeader1 {
+  margin-top: 150px;
+  margin-bottom: -30px;
+}
+
+#soundHeader2 {
+  
+  margin-bottom: -50px;
 }
 
 #navSounds {
