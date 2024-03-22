@@ -110,12 +110,12 @@ li {
   height: 440px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
-  opacity: 0.88;
+  opacity: 1;
   border-radius: 50px;
   top: 0px
 }
 
-.buttonMenu1 {
+.button1 {
     padding: 3px; 
     justify-items: auto;
     font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -130,7 +130,7 @@ li {
     box-shadow: 5px 5px;
   }
   
-  .buttonMenu2 {
+  .button2 {
     padding: 3px;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     font-size: xx-large;
@@ -156,7 +156,7 @@ li {
     height: 450px;
     border: 5px solid rgb(80, 2, 80);
     background-color: bisque;
-    opacity: 0.88;
+    opacity: 1;
     border-radius: 50px;
     top: 0px
   }
@@ -179,7 +179,7 @@ li {
   padding: 30px;
   width: 500px;
   height: 500px;
-  background-color: rgb(23, 20, 20);
+  background-color: rgb(35, 31, 31);
   border-top: 10px;
   border-left: 10px;
   border-right: 20px;
@@ -204,7 +204,8 @@ border-color: rgb(97, 97, 97);
   width: 450px;
   height: 55px;
   background-color: silver;
-  border-width: 1px;
+  border-width: 5px;
+  border-color: black;
   animation-name: dummy;
   animation-duration: 10s;
   margin-left: 13px;
@@ -263,7 +264,7 @@ border-color: rgb(97, 97, 97);
   padding: 10px;
   width: 220px;
   height: 770px;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 body {
@@ -286,9 +287,9 @@ body {
   border-right: 5px;
   border-bottom: 5px;
   border-color: rgb(104, 2, 2);
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 5px 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #submitButton {
@@ -298,15 +299,14 @@ body {
   width: 190px;
   height: 45px;
   background-color: green;
-  border-width: 5px;
   border-top: 2px;
   border-left: 2px;
   border-right: 5px;
   border-bottom: 5px;
   border-color: rgb(1, 81, 1);
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 5px 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #notes {
@@ -328,9 +328,10 @@ body {
   width: 100px;
   height: 50px;
   margin-left: 0px;
-  margin: 10px;
-  border-radius: 15px;
-  background-color: yellowgreen;
+  margin: 15px;
+  border-radius: 25px;
+  background-color: greenyellow;
+  box-shadow: 5px 5px;
 }
 
 .noteFlat {
@@ -344,9 +345,10 @@ body {
   width: 100px;
   height: 50px;
   margin-left: 0px;
-  margin: 10px;
-  border-radius: 15px;
-  background-color: yellowgreen;
+  margin: 15px;
+  border-radius: 25px;
+  background-color: greenyellow;
+  box-shadow: 5px 5px;
 }
 
 #bisque {
