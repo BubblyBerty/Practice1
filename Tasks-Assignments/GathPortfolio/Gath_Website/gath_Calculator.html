@@ -4,66 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png"/>
-    <link rel="stylesheet" href="gath_Scale_Calculator.css">
+    <link rel="stylesheet" href="gath_Calculator.css">
 
-    <title>GathScaleCalculator</title>
+    <title>GathPortfolioHome</title>
 </head>
-
-<body>
-<header class="HeaderBox">
-    <ul class="headerItems">
-        <li>
-            <h1 class="header1">The Gath Portfolio</h1>
-            <h3 class="header2">Scale/Mode Calculator</h3>
-        </li>
-        <li>       
-        <div class="asideH">        
-            <img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo"
-            title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay"
-            width="275" height="200">
-        </li>
-    </ul>
-</header>
-
-<body>
+<body id="body" class="background">
+    <div class="topNtail">
+    <!-- Generalised header section consisting of background video and header box, along with the titles and logo elements-->
+        <box class="backBox">
+            <div class="video">
+                <video width="1500" autoplay loop muted>
+                    <source src="./images/Video by Mauricio Silva De Brito from Pixabay.mp4" type="video/mp4">
+                    <source src="./images/Video by Mauricio Silva De Brito from Pixabay.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.    
+                </video>        
+                <ul class="headerItems">
+                    <box class="homeHeaderBox">
+                        <li>
+                            <h1 class="header1">Robert Morris</h1>
+                            <h3 class="header2">Scale/Mode Calculator</h3>
+                            <h1> </h1>
+                            <h6>&#169; All materials copyright and remain the intellectual property of Gath Music / Gath Portfolio unless otherwise stated</h6>
+                        </li>
+                        <li>       
+                        <div class="asideH">        
+                            <img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="275" height="200">
+                        </li>
+                    </box>
+                </ul>
+            </div>
+        </box>         
+    </div>
+    <!-- End of generalised header section -->
+    <!-- Now the main body of the page -->
     <div id="pageColumns">
-        <div id="myColumns">
+        <div id="menuColumn">
             <box id="Box1">
                 <ul class="navigation">
                     <li> <!-- 1st button -->
-                        <form action="./gath_HomePage.html">              
-                            <button id="button1">Home</button>
+                        <form action="./gath_Home.html">              
+                            <button id="button1" class="buttonMenu1">Home</button>
                         </form>
                     </li>
                     <li>
                         <form action="./gath_Software.html">
-                            <button id="button2">Software Development</button>
+                            <button id="button2" class="buttonMenu2">Software Development</button>
                         </form>
                     </li>
                     <li>
                         <form action="./gath_Moi.html">
-                            <button id="button1">Moi?</button>
+                            <button id="button1" class="buttonMenu1">Moi?</button>
                         </form>
                     </li>
                     <li>
                         <form action="./gath_Compositions.html">
-                            <button id="button1">Compositions</button>
+                            <button id="button1" class="buttonMenu1">Compositions</button>
                         </form>
                     </li>
-                    <li> <!-- 1st button -->
-                        <form action="./gath_Scales_Modes.html">
-                            <button id="button1">Scales/Modes</button>
+                    <li>
+                        <form action="./gath_Scales.html">
+                            <button id="button1" class="buttonMenu1">Scales/Modes</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="./gath_Mathematics.html">
+                            <button id="button1" class="buttonMenu1">Mathematics</button>
                         </form>
                     </li>
                     <!-- <li>
                         <form action="./gath_Guitars_Gear.html">              
                         <button id="button1">Guitars/Gear</button>
                     </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Mathematics.html">
-                            <button id="button1">Mathematics</button>
-                        </form>
                     </li>
                     <li>
                         <form action="./gath_Movies.html">
@@ -93,71 +104,57 @@
                 </ul>
             </box>
         </div>
-        <div class="calculator">
-        </box>
-            <box class="Box2">
-                <form action="./gath_HomePage.html">              
-                    <button id="button3">
-                        <img src="./images/Dummy_Display.png" alt="Dummy_Display"
-                title="Dummy_Display"
-                width="475" height="60">
-                    </button>
-                </form>
-            </box>
-            <box id="bisque">
-                <h1><b><i>The Gath Scale/Mode Calculator</i></b></h1>
-            </box>
-            <box id="access">
-                <form action="./gath_HomePage.html">              
-                    <button id="button4"><b>Reset</b></button>
-                </form>
-                <form action="">
-                    <button id="button5"><b>Submit</b></button>
-                </form>
-            </box>
-            <!-- Musical flat characters obtained from https://www.alt-codes.net/music_note_alt_codes.php#google_vignette -->
-            <box id="notes">
-                <form action="./gath_HomePage.html">              
-                    <button id="button6"><b>A&#9837;</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>A</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>B&#9837;</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>B</b></button>
-                </form>
-            </box>
-            <box id="notes">
-                <form action="./gath_HomePage.html">              
-                    <button id="button6"><b>C</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>D&#9837;</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>D</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>E&#9837;</b></button>
-                </form>
-            </box>
-            <box id="notes">
-                <form action="./gath_HomePage.html">              
-                    <button id="button6"><b>E</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>F</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>G&#9837;</b></button>
-                </form>
-                <form action="">
-                    <button id="button6"><b>G</b></button>
-                </form>
-            </box>
+        <div id="calcColumn">
+            <div class="calculator">
+                <box id="box2">              
+                    <box id="box3">
+                        <img src="./images/Dummy_Display.png" alt="Dummy_Display" title="Dummy_Display" width="431" height="53">
+                    </box>
+                </box>
+                <box id="bisque">
+                    <h1><b><i>The Gath Scale/Mode Calculator</i></b></h1>
+                </box>
+                <ul>
+                    <li>
+                        <button id="resetButton"><b>Reset</b></button>
+                    </li>
+                    <li>
+                        <button id="submitButton"><b>Submit</b></button>
+                    </li>
+                </ul>
+                <!-- Musical flat characters obtained from https://www.alt-codes.net/music_note_alt_codes.php#google_vignette -->
+                <box id="notes">
+           
+                        <button id="buttonAb" class="noteFlat"><b>A&#9837;</b></button>
+
+                        <button id="buttonA" class="notes"><b>A</b></button>
+
+                        <button id="buttonBb" class="noteFlat"><b>B&#9837;</b></button>
+
+                        <button id="buttonB" class="notes"><b>B</b></button>
+
+                </box>
+                <box id="notes">
+                        <button id="buttonC" class="notes"><b>C</b></button>
+
+                        <button id="buttonDb" class="noteFlat"><b>D&#9837;</b></button>
+
+                        <button id="buttonD" class="notes"><b>D</b></button>
+                        <button id="buttonEb" class="noteFlat"><b>E&#9837;</b></button>
+
+                </box>
+                <box id="notes">
+             
+                        
+
+                        <button id="buttonE" class="notes"><b>E</b></button>
+
+                        <button id="buttonF" class="notes"><b>F</b></button>
+
+                        <button id="buttonGb" class="noteFlat"><b>G&#9837;</b></button>
+                        <button id="buttonG" class="notes"><b>G</b></button>
+                </box>
+            </div>
         </div>
     </div>
 </body>

@@ -169,7 +169,7 @@ li {
   justify-content: center;  
   padding: 5px;
   width: 350px;
-  height: 2025px;
+  height: 2175px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.88;
@@ -263,6 +263,7 @@ li {
 
 #navSounds {
   margin: 1;
+  margin-top: -190px;
   padding: 2;
   align-self: center;
 }
