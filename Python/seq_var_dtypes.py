@@ -36,7 +36,7 @@ print()  # Make : Use a different number and/or operator
 
 print("Refactored code\n")
 "Predict, then Run, and Investigate"
-#To DO: What is dfferent in the terminal when the code below ise executed?
+#To DO: What is dfferent in the terminal when the code below is executed?
 print(2 * 3, "\n", 2 + 3, "\n", 2 / 3, "\n", 21 - 3)
 
 # The python interpreter prints anything as it is, if placed between speech marks/ quotations

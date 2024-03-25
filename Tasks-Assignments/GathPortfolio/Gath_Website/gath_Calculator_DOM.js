@@ -19,6 +19,8 @@ let buttonE = document.getElementById('buttonE')
 let buttonF = document.getElementById('buttonF')
 let buttonGb = document.getElementById('buttonGb')
 let buttonG = document.getElementById('buttonG')
+let printButton = document.getElementById('printButton')
+let matchH = document.getElementById('matchH')
 
 /* Menu buttons */
 buttonMenu1.addEventListener('mouseover', function run(){
@@ -65,10 +67,10 @@ buttonMenu6.addEventListener('mouseleave', function run(){
 
 /* Access buttons */
 resetButton.addEventListener('mouseover', function run(){
-  resetButton.style.backgroundColor = 'rgb(104, 2, 2)'
+  resetButton.style.backgroundColor = 'red'
 })
 resetButton.addEventListener('mouseleave', function run(){
-  resetButton.style.backgroundColor = 'red'
+  resetButton.style.backgroundColor = 'rgb(201, 78, 16)'
 })
 
 submitButton.addEventListener('mouseover', function run(){
@@ -163,11 +165,33 @@ buttonG.addEventListener('mouseleave', function run(){
   buttonG.style.backgroundColor = 'greenyellow'
 })
 
-let buTT = document.getElementsByClassName("button1");
-let buTTS = document.getElementById("search");
+printButton.addEventListener('onclick', function run(){
+  printButton.style.backgroundColor = 'yellowgreen'
+})
+printButton.addEventListener('mouseleave', function run(){
+  printButton.style.backgroundColor = 'white'
+})
 
-//buTT.addEventListener('click', selectedB1());
-console.log(buTT);
+matchH.addEventListener('mouseover', function run(){
+  matchH.style.backgroundColor = 'orange'
+})
+matchH.addEventListener('mouseleave', function run(){
+  matchH.style.backgroundColor = 'blue'
+})
+
+function resetting(){
+  // reset all states, close any pop-ups & save spreadsheet on click
+}
+
+/* submitButton function on click is to set the appropriate cells to 1 & display results of search as a pop-up */
+
+/* Drilling down function to display details in a pop-up with soundbite and score */
+
+
+
+
+//submitButton.addEventListener('click', selectedB1());
+/*console.log(buTT);
 buTTS.addEventListener('click', searching());
 console.log(buTTS);
 
@@ -199,7 +223,7 @@ function selectedB1(){
     // set 'G' to true    
     break;
   }
-};
+};*/
 function selectedB1(){
   switch(button2.id){
     case "b1b":
@@ -262,10 +286,6 @@ function searching(){
     // import results from Excel and display as a pop-up
   }
 };
-
-function resetting(){
-  // reset all states and remove any pop-ups
-}
 
 
 

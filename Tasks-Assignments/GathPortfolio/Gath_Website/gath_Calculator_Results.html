@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png"/>
+    <link rel="stylesheet" href="gath_Calculator.css">
+
+    <title>gath_Calculator_Results</title>
+</head>
+<body id="body" class="background">
+
+    <!-- Generalised header section consisting of background video and header box, along with the titles and logo elements-->
+        <box class="backBoxResults">
+            <div class="videoResults">
+                <video width="1500" autoplay loop muted>
+                    <source src="./images/Video by Mauricio Silva De Brito from Pixabay.mp4" type="video/mp4">
+                    <source src="./images/Video by Mauricio Silva De Brito from Pixabay.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.    
+                </video>        
+                <ul class="headerItemsResults">
+                    <box class="homeHeaderBoxResults">
+                        <li>
+                            <h1 class="header1Results">Robert Morris</h1>
+                            <h3 class="header2Results">Scale / Mode Calculator (Closest Matches Results Sheet)</h3>
+                            <h1> </h1>
+                            <h6>&#169; All materials copyright and remain the intellectual property of Gath Music / Gath Portfolio unless otherwise stated</h6>
+                        </li>
+                        <li>       
+                        <div class="asideResults">        
+                            <img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="187" height="110">
+                        </li>
+                    </box>
+                </ul>
+            </div>
+        </box>         
+    </div>
+    <!-- End of generalised header section -->
+    <!-- Now the main body of the page -->
+    <div id="pageColumnsResults">
+        <ul class="columnTables">
+            <li>
+                <!-- I tried to use boxF and boxN ID's to even out the text vertically without success -->
+                <table id="table1" border="10">
+                    <tr>
+                        <td colspan="12"><b><center>Notes selected by user</center></td>
+                        <td colspan="3"><b><center>Tiers of Matches displayed</center>
+                        </td>                        
+                        <td rowspan="2">
+                            <form action="./gath_Calculator_DOM.js/print()">
+                            <button id="printButton"><b>Print Tables</b></button>
+                        </form>
+                        </td>
+                    <tr id="rowH">
+                        
+                        <th><center><box id="boxF"><i>A&#9837;</i></box></center></th>
+                        <th><center><box id="boxN"><i>A</i></box></center></th>
+                        <th><center><box id="boxF"><i>B&#9837;</i></box></center></th>
+                        <th><center><box id="boxN"><i>B</i></box></center></th>
+                        <th><center><box id="boxN"><i>C</i></box></center></th>
+                        <th><center><box id="boxF"><i>D&#9837;</i></box></center></th>
+                        <th><center><box id="boxN"><i>D</i></box></center></th>
+                        <th><center><box id="boxF"><i>E&#9837;</i></box></center></th>
+                        <th><center><box id="boxN"><i>E</i></box></center></th>
+                        <th><center><box id="boxN"><i>F</i></box></center></th>
+                        <th><center><box id="boxF"><i>G&#9837;</i></box></center></th>
+                        <th><center><box id="boxN"><i>G</i></box></center></th>
+                        <th>
+                            <form action="">
+                                <input id="matchH" type="checkbox" name="highestTier" value="highest" checked> Highest Tier of Matches<br>
+                            </form>
+                        </th>
+                        <th>
+                            <form action="">
+                                <input id="matchM" type="checkbox" name="middleTier" value="middle" unchecked> Middle Tier of Matches<br>
+                            </form>
+                        </th> 
+                        <th>
+                            <form action="">
+                                <input id="matchL" type="checkbox" name="lowestTier" value="lowest" unchecked> Lowest Tier of Matches<br>
+                            </form>
+                        </th>                         
+                </table>
+            </li>
+            <li>
+                <table id="table2" border="10">
+                    </tr>
+                        <td colspan="4"><b><center>Highest Tier (closest matches)</center></b></td>                    
+                        <td colspan="8"><center><b>Notes</b></center></td>
+                        <td colspan="8"><center><b>Chords</b></center></td>
+                        <td id="sound"><center><b>Play sound bite</b></center></td>
+                    </tr>
+                    <tr>
+                        <th id="wTier"><center>Match (%)</center></th>
+                        <th id="wIndex"><center>Index</center></th>
+                        <th id="wName"><center>Name</center></th>
+                        <th id="wKey"><center>Key</center></th>
+                        <th id="wNote"><center>i</center></th>
+                        <th id="wNote"><center>ii</center></th>
+                        <th id="wNote"><center>iii</center></th>
+                        <th id="wNote"><center>iv</center></th>
+                        <th id="wNote"><center>v</center></th>
+                        <th id="wNote"><center>vi</center></th>
+                        <th id="wNote"><center>vii</center></th>
+                        <th id="wNote"><center>viii</center></th>
+                        <th id="wChord"><center>Root</center></th>
+                        <th id="wChord"><center>2<sup>nd</sup></center></th>
+                        <th id="wChord"><center>3<sup>rd</sup></center></th>
+                        <th id="wChord"><center>4<sup>th</sup></center></th>
+                        <th id="wChord"><center>5<sup>th</sup></center></th>
+                        <th id="wChord"><center>6<sup>th</sup></center></th>
+                        <th id="wChord"><center>7<sup>th</sup></center></th>
+                        <th id="wChord"><center>8<sup>th</sup></center></th>
+                    </tr>
+                    <tr>
+                        <!-- 557	Muslim	G	G	Ab	Bb	C	Eb	Gb -->
+
+                        <td id="r4c1"><center>80.0%</center></td>
+                        <td id="r4c2"><center>557</center></td>
+                        <td id="r4c3">Muslim</td>
+                        <td id="r4c4"><center>G</center></td>
+                        <!-- C	D♭	E♭	E♮	G♭	G♮	A	B♭
+ -->
+                        <td id="r4c5"><center>G</center></td>
+                        <td id="r4c6"><center>A♭</center></td>
+                        <td id="r4c7"><center>B♭</center></td>
+                        <td id="r4c8"><center>C</center></td>
+                        <td id="r4c9"><center>E♭</center></td>
+                        <td id="r4c10"><center></center></td>
+                        <td id="r4c11"><center></center></td>
+                        <td id="r4c12"><center></center></td>
+                        <td id="r4c10"><center></center></td>
+                        <td id="r4c11"><center></center></td>
+                        <td id="r4c12"><center></center></td>
+                        <td id="r4c13"><center></center></td>
+                        <td id="r4c14"><center></center></td>
+                        <td id="r4c15"><center></center></td>
+                        <td id="r4c16"><center></center></td>
+                        <td id="r4c17"><center></center></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>                
+            </li>
+        </ul>         
+    <script src="./gath_Calculator_DOM.js"></script>
+</body>
