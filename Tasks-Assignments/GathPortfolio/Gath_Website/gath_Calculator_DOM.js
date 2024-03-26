@@ -20,7 +20,7 @@ let buttonF = document.getElementById('buttonF')
 let buttonGb = document.getElementById('buttonGb')
 let buttonG = document.getElementById('buttonG')
 let printButton = document.getElementById('printButton')
-let matchH = document.getElementById('matchH')
+
 
 /* Menu buttons */
 buttonMenu1.addEventListener('mouseover', function run(){
@@ -165,19 +165,13 @@ buttonG.addEventListener('mouseleave', function run(){
   buttonG.style.backgroundColor = 'greenyellow'
 })
 
-printButton.addEventListener('onclick', function run(){
+printButton.addEventListener('mouseover', function run(){
   printButton.style.backgroundColor = 'yellowgreen'
 })
 printButton.addEventListener('mouseleave', function run(){
   printButton.style.backgroundColor = 'white'
 })
 
-matchH.addEventListener('mouseover', function run(){
-  matchH.style.backgroundColor = 'orange'
-})
-matchH.addEventListener('mouseleave', function run(){
-  matchH.style.backgroundColor = 'blue'
-})
 
 function resetting(){
   // reset all states, close any pop-ups & save spreadsheet on click

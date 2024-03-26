@@ -44,8 +44,8 @@ li {
 .backBoxResults {
   background-color: bisque;
   padding: 5px;
-  width: 100%;
-  height:275px;
+  width: 2050px;
+  height:250px;
   margin-bottom: 10px;
 }
 
@@ -57,7 +57,7 @@ li {
 }
 
 .videoResults {
-  width: 100%;
+  width: 2035px;
   height: 150px;
   overflow-y: hidden;
   border: 5px solid bisque
@@ -82,14 +82,15 @@ li {
 
 .homeHeaderBoxResults{ 
   background-repeat: no-repeat;
-  width: 1410px;
+  width: 1800px;
   background-size: contain;
   height: 225px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
   font-style: italic;
   color:rgb(80, 2, 80);
-  margin-left: 35px;
+  margin-left: 100px;
+  margin-right: 0px;
   margin-top: -800px;
   margin-bottom: 350px;
   border: 10px black solid;
@@ -160,11 +161,11 @@ li {
 .asideResults {
   display: flex;
   flex-flow: row wrap;
-  justify-content: right;
+  justify-content: left;
   width: "187px";
   height: "100px";
   margin-top: 20px;
-  margin-left: 35px;
+  margin-left: 350px;
 }
 
 #box1 {
@@ -337,9 +338,8 @@ border-color: rgb(97, 97, 97);
 #pageColumnsResults {
   display: flex;
   flex-direction: column;
-
   padding: 10px;
-  width: 100%;
+  width: 2050px;
   height: 100%;
   opacity: 0.9;
 }
@@ -353,7 +353,8 @@ body {
 }
 
 #body {
-height: 200px;
+  width: 2050px;
+  height: 200px;
 }
 
 #resetButton {
@@ -433,9 +434,16 @@ height: 200px;
 }
 
 #printButton {
-  width: 100%;
-  height: 100%;
+  width: 110px;
+  height: 40px;
+  background-color: yellow;
   background-color: white;
+}
+
+#play {
+  width: 100%;
+  height: 40px;
+  background-color: aqua;
 }
 
 #bisque {
@@ -515,6 +523,42 @@ height: 200px;
 
 #wKey {
   width: 30px;
+}
+
+#r4c13 {
+  width: 245px;
+}
+
+#r4c14 {
+  width: 79px;
+}
+
+#r4c15 {
+  width: 174px;
+}
+
+#r4c16 {
+  width: 166px;
+}
+
+#r4c17 {
+  width: 178px;
+}
+
+#r4c18 {
+  width: 147px;
+}
+
+#r4c19 {
+  width: 174px;
+}
+
+#r4c20 {
+  width: 52px;
+}
+
+#r4c21 {
+  width: 120px;
 }
 
 .columnTables {
