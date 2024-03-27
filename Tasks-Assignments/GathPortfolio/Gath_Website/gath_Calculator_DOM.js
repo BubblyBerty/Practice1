@@ -67,102 +67,113 @@ buttonMenu6.addEventListener('mouseleave', function run(){
 
 /* Access buttons */
 resetButton.addEventListener('mouseover', function run(){
-  resetButton.style.backgroundColor = 'red'
+  resetButton.style.backgroundColor = 'orange'
 })
 resetButton.addEventListener('mouseleave', function run(){
-  resetButton.style.backgroundColor = 'rgb(201, 78, 16)'
+  resetButton.style.backgroundColor = 'red'
+})
+resetButton.addEventListener('onclick', function run(){
+  resetButton.style.backgroundColor = 'red'
+  return rBut = TRUE
 })
 
+
 submitButton.addEventListener('mouseover', function run(){
-  submitButton.style.backgroundColor = 'rgb(1, 81, 1)'
+  submitButton.style.backgroundColor = 'darkgreen'
 })
 submitButton.addEventListener('mouseleave', function run(){
   submitButton.style.backgroundColor = 'green'
 })
+submitButton.addEventListener('onclick', function run(){
+  submitButton.style.backgroundColor = 'green'
+  
+  return sBut = TRUE
+})
+
 
 /* Note buttons */
 buttonAb.addEventListener('mouseover', function run(){
-  buttonAb.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonAb.style.backgroundColor = 'yellow'
 })
 buttonAb.addEventListener('mouseleave', function run(){
-  buttonAb.style.backgroundColor = 'greenyellow'
+  buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonA.addEventListener('mouseover', function run(){
-  buttonA.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonA.style.backgroundColor = 'yellow'
 })
 buttonA.addEventListener('mouseleave', function run(){
-  buttonA.style.backgroundColor = 'greenyellow'
+  buttonA.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonBb.addEventListener('mouseover', function run(){
-  buttonBb.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonBb.style.backgroundColor = 'yellow'
 })
 buttonBb.addEventListener('mouseleave', function run(){
-  buttonBb.style.backgroundColor = 'greenyellow'
+  buttonBb.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonB.addEventListener('mouseover', function run(){
-  buttonB.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonB.style.backgroundColor = 'yellow'
 })
 buttonB.addEventListener('mouseleave', function run(){
-  buttonB.style.backgroundColor = 'greenyellow'
+  buttonB.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonC.addEventListener('mouseover', function run(){
-  buttonC.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonC.style.backgroundColor = 'yellow'
 })
 buttonC.addEventListener('mouseleave', function run(){
-  buttonC.style.backgroundColor = 'greenyellow'
+  buttonC.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonDb.addEventListener('mouseover', function run(){
-  buttonDb.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonDb.style.backgroundColor = 'yellow'
 })
 buttonDb.addEventListener('mouseleave', function run(){
-  buttonDb.style.backgroundColor = 'greenyellow'
+  buttonDb.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonD.addEventListener('mouseover', function run(){
-  buttonD.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonD.style.backgroundColor = 'yellow'
 })
 buttonD.addEventListener('mouseleave', function run(){
-  buttonD.style.backgroundColor = 'greenyellow'
+  buttonD.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonEb.addEventListener('mouseover', function run(){
-  buttonEb.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonEb.style.backgroundColor = 'yellow'
 })
 buttonEb.addEventListener('mouseleave', function run(){
-  buttonEb.style.backgroundColor = 'greenyellow'
+  buttonEb.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonE.addEventListener('mouseover', function run(){
-  buttonE.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonE.style.backgroundColor = 'yellow'
 })
 buttonE.addEventListener('mouseleave', function run(){
-  buttonE.style.backgroundColor = 'greenyellow'
+  buttonE.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonF.addEventListener('mouseover', function run(){
-  buttonF.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonF.style.backgroundColor = 'yellow'
 })
 buttonF.addEventListener('mouseleave', function run(){
-  buttonF.style.backgroundColor = 'greenyellow'
+  buttonF.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonGb.addEventListener('mouseover', function run(){
-  buttonGb.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonGb.style.backgroundColor = 'yellow'
 })
 buttonGb.addEventListener('mouseleave', function run(){
-  buttonGb.style.backgroundColor = 'greenyellow'
+  buttonGb.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 buttonG.addEventListener('mouseover', function run(){
-  buttonG.style.backgroundColor = 'rgb(128, 183, 18)'
+  buttonG.style.backgroundColor = 'yellow'
 })
 buttonG.addEventListener('mouseleave', function run(){
-  buttonG.style.backgroundColor = 'greenyellow'
+  buttonG.style.backgroundColor = 'rgb(88, 246, 88)'
 })
 
 printButton.addEventListener('mouseover', function run(){
@@ -173,11 +184,15 @@ printButton.addEventListener('mouseleave', function run(){
 })
 
 
-function resetting(){
+function reset(){
   // reset all states, close any pop-ups & save spreadsheet on click
 }
 
+function submit(){
 /* submitButton function on click is to set the appropriate cells to 1 & display results of search as a pop-up */
+
+}
+
 
 /* Drilling down function to display details in a pop-up with soundbite and score */
 

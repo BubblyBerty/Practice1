@@ -116,33 +116,52 @@
                 </box>
                 <ul>
                     <li>
-                        <button id="resetButton"><b>Reset</b></button>
+                        <input type="button" id="resetButton" value="Reset" onclick="reset()">                    
                     </li>
                     <li>
-                        <button id="submitButton"><b>Submit</b></button>
+                    <input type="button" id="submitButton" value="Submit" onclick="submit()">
                     </li>
                 </ul>
                 <!-- Musical flat characters obtained from https://www.alt-codes.net/music_note_alt_codes.php#google_vignette -->
                 <box id="notes">           
-                        <button id="buttonAb" class="noteFlat"><b>A&#9837;</b></button>
-                        <button id="buttonA" class="notes"><b>A</b></button>
-                        <button id="buttonBb" class="noteFlat"><b>B&#9837;</b></button>
-                        <button id="buttonB" class="notes"><b>B</b></button>
+                    <input type="button" id="buttonAb" class="noteFlat" value="G&#9839;  A&#9837;" onclick="buttonAb()"/>
+
+                    <input type="button" id="buttonA" class="notes"  value="A" onclick="buttonA()"/>
+
+                    <input type="button" id="buttonBb" class="noteFlat" value="A&#9839;  B&#9837;" onclick="buttonBb()"/>
+
+                    <input type="button" id="buttonB" class="notes"  value="B" onclick="buttonB()"/>
                 </box>
                 <box id="notes">
-                        <button id="buttonC" class="notes"><b>C</b></button>
-                        <button id="buttonDb" class="noteFlat"><b>D&#9837;</b></button>
-                        <button id="buttonD" class="notes"><b>D</b></button>
-                        <button id="buttonEb" class="noteFlat"><b>E&#9837;</b></button>
+                    <input type="button" id="buttonC" class="notes"  value="C" onclick="buttonC()"/>
+
+                    <input type="button" id="buttonDb" class="noteFlat" value="C&#9839;  D&#9837;" onclick="buttonDb()"/>
+
+                    <input type="button" id="buttonD" class="notes"  value="D" onclick="buttonD()"/>
+
+                    <input type="button" id="buttonEb" class="noteFlat" value="D&#9839;  E&#9837;" onclick="buttonEb()"/>
+
                 </box>
                 <box id="notes">
-                        <button id="buttonE" class="notes"><b>E</b></button>
-                        <button id="buttonF" class="notes"><b>F</b></button>
-                        <button id="buttonGb" class="noteFlat"><b>G&#9837;</b></button>
-                        <button id="buttonG" class="notes"><b>G</b></button>
+                    <input type="button" id="buttonE" class="notes"  value="E" onclick="buttonE()"/>
+
+                    <input type="button" id="buttonF" class="notes"  value="F" onclick="buttonF()"/>
+
+                    <input type="button" id="buttonGb" class="noteFlat" value="F&#9839;  G&#9837;" onclick="buttonGb()"/>
+
+                    <input type="button" id="buttonG" class="notes"  value="G" onclick="buttonG()"/>
                 </box>
             </div>
         </div>
     </div>
     <script src="./gath_Calculator_DOM.js"></script>
 </body>
+
+<!-- C:\Users\User\OneDrive\Documents\Bootcamp_GitHub\Tasks-Assignments\GathPortfolio\Gath_Website 
+    
+    Tasks-Assignments\GathPortfolio\Gath_Website
+
+https://www.youtube.com/watch?v=iIATJtruZBE
+https://docs.xlwings.org/en/stable/quickstart.html
+
+-->
