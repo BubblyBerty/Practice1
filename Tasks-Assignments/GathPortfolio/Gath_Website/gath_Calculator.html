@@ -116,45 +116,49 @@
                 </box>
                 <ul>
                     <li>
-                        <input type="button" id="resetButton" value="Reset" onclick="reset()">                    
+                        <input type="button" id="resetButton" value="Reset" onclick="reset()" />                    
                     </li>
                     <li>
-                    <input type="button" id="submitButton" value="Submit" onclick="submit()">
+                    <input type="button" id="submitButton" value="Submit" onclick="submit()" />                   
                     </li>
                 </ul>
                 <!-- Musical flat characters obtained from https://www.alt-codes.net/music_note_alt_codes.php#google_vignette -->
-                <box id="notes">           
-                    <input type="button" id="buttonAb" class="noteFlat" value="G&#9839;  A&#9837;" onclick="buttonAb()"/>
+                <box id="notes">                    
+                    <input type="button" id="buttonAb" class="noteFlat" value="G&#9839;  A&#9837;" onclick="standbyAb()" />
 
-                    <input type="button" id="buttonA" class="notes"  value="A" onclick="buttonA()"/>
+                    <input type="button" id="buttonA" class="notes"  value="A" onclick="standbyA()" />
 
-                    <input type="button" id="buttonBb" class="noteFlat" value="A&#9839;  B&#9837;" onclick="buttonBb()"/>
+                    <input type="button" id="buttonBb" class="noteFlat" value="A&#9839;  B&#9837;" onclick="standbyBb()"/>
 
-                    <input type="button" id="buttonB" class="notes"  value="B" onclick="buttonB()"/>
+                    <input type="button" id="buttonB" class="notes"  value="B" onclick="standbyB()"/>
                 </box>
                 <box id="notes">
-                    <input type="button" id="buttonC" class="notes"  value="C" onclick="buttonC()"/>
+                    <input type="button" id="buttonC" class="notes"  value="C" onclick="standbyC()"/>
 
-                    <input type="button" id="buttonDb" class="noteFlat" value="C&#9839;  D&#9837;" onclick="buttonDb()"/>
+                    <input type="button" id="buttonDb" class="noteFlat" value="C&#9839;  D&#9837;" onclick="standbyDb()"/>
 
-                    <input type="button" id="buttonD" class="notes"  value="D" onclick="buttonD()"/>
+                    <input type="button" id="buttonD" class="notes"  value="D" onclick="standbyD()"/>
 
-                    <input type="button" id="buttonEb" class="noteFlat" value="D&#9839;  E&#9837;" onclick="buttonEb()"/>
+                    <input type="button" id="buttonEb" class="noteFlat" value="D&#9839;  E&#9837;" onclick="standbyEb()"/>
 
                 </box>
                 <box id="notes">
-                    <input type="button" id="buttonE" class="notes"  value="E" onclick="buttonE()"/>
+                    <input type="button" id="buttonE" class="notes"  value="E" onclick="standbyE()"/>
 
-                    <input type="button" id="buttonF" class="notes"  value="F" onclick="buttonF()"/>
+                    <input type="button" id="buttonF" class="notes"  value="F" onclick="standbyF()"/>
 
-                    <input type="button" id="buttonGb" class="noteFlat" value="F&#9839;  G&#9837;" onclick="buttonGb()"/>
+                    <input type="button" id="buttonGb" class="noteFlat" value="F&#9839;  G&#9837;" onclick="standbyGb()"/>
 
-                    <input type="button" id="buttonG" class="notes"  value="G" onclick="buttonG()"/>
+                    <input type="button" id="buttonG" class="notes"  value="G" onclick="standbyG()"/>
+                </box>
+                <box id="boxScript">
+                    <p>Note buttons can be toggled on/off.<br><br>
+                    Those notes in the yellow state will be activated upon clicking the Submit button.</p>
                 </box>
             </div>
         </div>
     </div>
-    <script src="./gath_Calculator_DOM.js"></script>
+    <script src="./gath_Calculator_DOMtest.js"></script>
 </body>
 
 <!-- C:\Users\User\OneDrive\Documents\Bootcamp_GitHub\Tasks-Assignments\GathPortfolio\Gath_Website 

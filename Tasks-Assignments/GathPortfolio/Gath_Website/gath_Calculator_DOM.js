@@ -21,6 +21,21 @@ let buttonGb = document.getElementById('buttonGb')
 let buttonG = document.getElementById('buttonG')
 let printButton = document.getElementById('printButton')
 
+// Global variables
+let butR = false
+let butS = false
+let butAb = false
+let butA = false
+let butBb = false
+let butB = false
+let butC = false
+let butDb = false
+let butD = false
+let butEb = false
+let butE = false
+let butF = false
+let butGb = false
+let butG = false
 
 /* Menu buttons */
 buttonMenu1.addEventListener('mouseover', function run(){
@@ -65,6 +80,7 @@ buttonMenu6.addEventListener('mouseleave', function run(){
   buttonMenu6.style.backgroundColor = 'aqua'
 })
 
+
 /* Access buttons */
 resetButton.addEventListener('mouseover', function run(){
   resetButton.style.backgroundColor = 'orange'
@@ -72,9 +88,10 @@ resetButton.addEventListener('mouseover', function run(){
 resetButton.addEventListener('mouseleave', function run(){
   resetButton.style.backgroundColor = 'red'
 })
-resetButton.addEventListener('onclick', function run(){
+resetButton.addEventListener('onclick', function reset(){
   resetButton.style.backgroundColor = 'red'
-  return rBut = TRUE
+  submitButton.style.backgroundColor = 'green'
+  return butR = true
 })
 
 
@@ -84,10 +101,21 @@ submitButton.addEventListener('mouseover', function run(){
 submitButton.addEventListener('mouseleave', function run(){
   submitButton.style.backgroundColor = 'green'
 })
-submitButton.addEventListener('onclick', function run(){
-  submitButton.style.backgroundColor = 'green'
-  
-  return sBut = TRUE
+submitButton.addEventListener('onclick', function submit(){
+  submitButton.style.backgroundColor = 'darkgreen'
+  buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonA.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonBb.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonB.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonC.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonDb.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonD.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonEb.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonF.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonGb.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonG.style.backgroundColor = 'rgb(88, 246, 88)'
+  return butS = true
 })
 
 
@@ -97,6 +125,16 @@ buttonAb.addEventListener('mouseover', function run(){
 })
 buttonAb.addEventListener('mouseleave', function run(){
   buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
+})
+buttonAb.addEventListener('onclick', function run(){
+  //toggle control
+  if (butAb == false){
+    buttonAb.style.backgroundColor = 'yellow' // turning on
+    return butAb = true
+  } else {
+    buttonAb.style.backgroundColor = 'rgb(88, 246, 88)' // turning off
+    return butAb = false
+  }
 })
 
 buttonA.addEventListener('mouseover', function run(){

@@ -246,7 +246,7 @@ li {
   align-items: center;
   padding: 30px;
   width: 600px;
-  height: 525px;
+  height: 575px;
   background-color: rgb(50, 44, 44);
   border-top: 10px;
   border-left: 10px;
@@ -256,7 +256,7 @@ li {
   border-color: rgb(28, 24, 24);
   border-radius: 50px;
   box-shadow: 10px 10px 10px rgba(37, 34, 34, 0.6);
-  margin-top: -160px;
+  margin-top: -120px;
 }
 
 #box2 {
@@ -278,6 +278,15 @@ border-color: rgb(97, 97, 97);
   animation-duration: 10s;
   margin-left: 13px;
   margin-top: 25px;
+}
+
+#boxScript {
+  width: 450px;
+  font-size: large;
+  text-align: center;
+  color: bisque;
+  margin-top: -5px;
+  margin-bottom: -50px;
 }
 /*
   @keyframes dummy {
