@@ -1,0 +1,271 @@
+/* Style file for Results Page style file */
+.background {
+  background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat;
+  background-size: cover; 
+}
+
+h6 {
+  font-size: x-small;
+  margin-top: 100px;
+}
+
+ul {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  padding: 10px;
+}
+
+.all {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.topNtail {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.backBoxResults {
+  background-color: bisque;
+  padding: 5px;
+  width: 2050px;
+  height:250px;
+  margin-bottom: 10px;
+}
+
+.videoResults {
+  width: 2035px;
+  height: 150px;
+  overflow-y: hidden;
+  border: 5px solid bisque
+}
+
+.homeHeaderBoxResults{ 
+  background-repeat: no-repeat;
+  width: 1800px;
+  background-size: contain;
+  height: 225px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-style: italic;
+  color:rgb(80, 2, 80);
+  margin-left: 100px;
+  margin-right: 0px;
+  margin-top: -800px;
+  margin-bottom: 350px;
+  border: 10px black solid;
+  padding: 5px;
+  background-color: bisque;
+}
+
+.headerItemsResults {
+  align-items: center;
+  margin-top: -158px;
+  margin-bottom: 20px;
+  display: flex; 
+  flex-flow: row wrap;
+}
+
+.header1Results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: -20px;
+  margin-left: 80px;  
+}
+
+.header2Results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -80px;
+  margin-left: 80px;
+}
+
+.asideResults {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  width: "187px";
+  height: "100px";
+  margin-top: 20px;
+  margin-left: 350px;
+}
+
+#pageColumnsResults {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 2050px;
+  height: 100%;
+  opacity: 0.9;
+}
+
+body {
+  color: rgb(80, 2, 80);
+  background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat-y;
+  background-size:cover;
+  background-color:rgb(255, 228, 196); 
+}
+
+#body {
+  width: 2050px;
+  height: 200px;
+}
+
+#printButton {
+  width: 110px;
+  height: 40px;
+  background-color: yellow;
+  background-color: white;
+}
+
+#play {
+  width: 100%;
+  height: 40px;
+  background-color: aqua;
+}
+
+#bisque {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: bisque;
+}
+
+#rightSideText {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding: 10px;
+  width: 500px;
+  height: 600px;
+}
+
+#table1 {
+  width: 100%;
+  height: 35px;
+  margin-top: -20px;
+  margin-bottom: 3px;
+  column-count: 12;
+  color: black;
+  background-color: white;
+  opacity: 0.9;
+  padding-block: 3px;
+  
+}
+
+#table2 {
+  width: 100%;
+  height: 35px;
+  margin-top: -20px;
+  column-count: 19;
+  color: black;
+  background-color: white;
+  opacity: 0.9;
+  padding-block: 3px;
+}
+
+#rowH {
+  width: fit-content;
+  height: 30px;
+  margin-bottom: 7px;
+}
+
+#boxF {
+  width: 100px;
+  margin-top: -25px;
+  color: white;
+}
+
+#boxN {
+  width: 100px;
+  color: white;
+}
+
+#wTier {
+  width: 80px;
+}
+
+#wIndex {
+  width: 40px;
+}
+
+#wName {
+  width: 300px;
+}
+
+#wKey {
+  width: 30px;
+}
+
+#r4c13 {
+  width: 245px;
+}
+
+#r4c14 {
+  width: 79px;
+}
+
+#r4c15 {
+  width: 174px;
+}
+
+#r4c16 {
+  width: 166px;
+}
+
+#r4c17 {
+  width: 178px;
+}
+
+#r4c18 {
+  width: 147px;
+}
+
+#r4c19 {
+  width: 174px;
+}
+
+#r4c20 {
+  width: 52px;
+}
+
+#r4c21 {
+  width: 120px;
+}
+
+.columnTables {
+  display: flex;
+  flex-direction: column; 
+}
+
+#matchH {
+  width: 50px;
+  background-color: blue;
+  inline-size: 20px;
+}
+
+#matchM {
+  width: 50px;
+}
+
+#matchL {
+  width: 50px;
+}

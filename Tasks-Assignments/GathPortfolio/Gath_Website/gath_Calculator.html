@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png"/>
     <link rel="stylesheet" href="gath_Calculator.css">
+    <link rel="stylesheet" href="gath_Calculator_Results.css">
+    <link rel="stylesheet" href="gath_Scales_Modes.py">
 
     <title>GathPortfolioCalculator</title>
 </head>
@@ -116,10 +118,20 @@
                 </box>
                 <ul>
                     <li>
-                        <input type="button" id="resetButton" value="Reset" onclick="reset()" />
+                        <form action="./gath_Home.html">
+                            <button id="resetButton">Reset</button onclick="reset()">
+                        </form>
                     </li>
                     <li>
-                        <input type="button" id="submitButton" value="Submit" onclick="submit()" />
+                       <form action="./gath_Calculator_Results.html"  target="_blank">
+                            <input type="button" id="submitButton" value="Submit" onclick="submit()"/>
+                            </li>
+                            <li>
+                        </form>
+                    </li>
+                </ul>
+                <ul>
+                    <li><p id="resetComment">Pressing Reset button will take you back to the Home page. From there you can return to this Calculator page</p>
                     </li>
                 </ul>
 
