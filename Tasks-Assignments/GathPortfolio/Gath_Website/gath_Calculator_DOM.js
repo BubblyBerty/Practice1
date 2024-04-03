@@ -142,8 +142,8 @@ function submit(){
 
     console.log(noteStates)
 
-    @app.route('/getmethod/<noteStates>')
-      def get_javascript_data(noteStates):
+  //  @app.route('/getmethod/<noteStates>')
+  //    def get_javascript_data(noteStates):
 
     
     return noteStates
