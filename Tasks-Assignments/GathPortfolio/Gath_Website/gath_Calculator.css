@@ -509,21 +509,75 @@ body {
   padding-block: 3px;
 }
 
-#rowH {
-  width: fit-content;
-  height: 30px;
-  margin-bottom: 7px;
-}
-
-#boxF {
+#boxAb {
   width: 100px;
   margin-top: -25px;
   color: white;
 }
 
-#boxN {
+#boxA {
   width: 100px;
   color: white;
+}
+
+#boxBb {
+  width: 100px;
+  margin-top: -25px;
+  color: white;
+}
+
+#boxB {
+  width: 100px;
+  color: white;
+}
+
+#boxC {
+  width: 100px;
+  color: white;
+}
+
+#boxDb {
+  width: 100px;
+  margin-top: -25px;
+  color: white;
+}
+
+#boxD {
+  width: 100px;
+  color: white;
+}
+
+#boxEb {
+  width: 100px;
+  margin-top: -25px;
+  color: white;
+}
+
+#boxE {
+  width: 100px;
+  color: white;
+}
+
+#boxF {
+  width: 100px;
+  color: white;
+}
+
+#boxGb {
+  width: 100px;
+  margin-top: -25px;
+  color: white;
+}
+
+#boxG {
+  width: 100px;
+  color: white;
+}
+
+#rowH {
+  width: fit-content;
+  height: 30px;
+  margin-bottom: 7px;
 }
 
 #wTier {
@@ -595,4 +649,8 @@ body {
 
 #matchL {
   width: 50px;
+}
+
+#boxAb {
+  color: white;
 }

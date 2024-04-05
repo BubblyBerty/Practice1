@@ -24,7 +24,7 @@ let buttonMenu4 = document.getElementById('buttonMenu4')
 let buttonMenu5 = document.getElementById('buttonMenu5')
 let buttonMenu6 = document.getElementById('buttonMenu6')
 let resetButton = document.getElementById('resetButton')
-let resetComment = document.getElementById('comment')
+// let resetComment = document.getElementById('comment')
 let submitButton = document.getElementById('submitButton')
 let buttonAb = document.getElementById('buttonAb')
 let buttonA = document.getElementById('buttonA')
@@ -38,6 +38,13 @@ let buttonE = document.getElementById('buttonE')
 let buttonF = document.getElementById('buttonF')
 let buttonGb = document.getElementById('buttonGb')
 let buttonG = document.getElementById('buttonG')
+
+
+
+     
+  
+
+
 
 // Menu buttons
 
@@ -100,27 +107,6 @@ resetButton.addEventListener('mouseleave', function run(){
   resetButton.style.color = 'black'
 })
 
-// mouse click
-function reset(){
-  resetButton.addEventListener('mouseleave', function run(){
-    submitButton.style.background = 'green'
-    submitButton.style.color = 'black'
-    buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonA.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonBb.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonB.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonC.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonDb.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonD.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonEb.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonE.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonF.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonGb.style.backgroundColor = 'rgb(88, 246, 88)'
-    buttonG.style.backgroundColor = 'rgb(88, 246, 88)'
-  })
-  console.log('Button colors & states have been reset.\nButton states are now set to -\nS:',butS,'\nAb:',butAb,'\nA:',butA,'\nBb:',butBb,'\nB:',butB,'\nC:',butC,'\nDb:',butDb,'\nD:',butD,'\nEb:',butEb,'\nE:',butE,'\nF:',butF,'\nGb:',butGb,'\nG:',butG)
-
-}
   // close the 'results' page (& reset state[s]?), refresh the 'calculator' page and invoke function in Python file to set all inputs to spreadsheet to zero and save it.
 
 // Submit button colors
@@ -132,26 +118,11 @@ submitButton.addEventListener('mouseleave', function run(){
   submitButton.style.backgroundColor = 'green'
   submitButton.style.color = 'black'
 })
-function submit(){
-  console.log('Submit button is set to ',butS)
-  butS = true
-  console.log('Submit button is now set to ',butS)
-  submitButton.addEventListener('mouseleave', function run(){
-    submitButton.style.backgroundColor = 'rgb(22, 50, 9)'
-    submitButton.style.color = 'yellow'
-
-    console.log(noteStates)
-
-  //  @app.route('/getmethod/<noteStates>')
-  //    def get_javascript_data(noteStates):
-
-    
-    return noteStates
-  
-  })
-}
-  
-
+submitButton.addEventListener('onclick', function run(){
+  submitButton.style.backgroundColor = 'rgb(22, 50, 9)'
+  submitButton.style.color = 'yellow'
+  noteStates.submitButton = true
+})
   // https://www.wikihow.com/Code-an-Alert-with-a-Variable-Using-Javascript#:~:text=Alerts%20with%20variables%20are%20among,make%20a%20variable%2Dbased%20alert.
 
   
@@ -165,10 +136,12 @@ function submit(){
 // Ab button
 buttonAb.addEventListener('mouseover', function run(){
   buttonAb.style.backgroundColor = 'yellow'
+  buttonAb.style.color = 'blue'
   // console.log('Button G#/Ab was mouseover')
 })
 buttonAb.addEventListener('mouseleave', function run(){
   buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
+  buttonAb.style.color = 'black'
   // console.log('Button G#/Ab was mouseleave')
 })
 function standbyAb(){
@@ -179,6 +152,7 @@ function standbyAb(){
     console.log('Button G#/Ab is now set to ',noteStates.butAb)
     buttonAb.addEventListener('mouseleave', function run(){
       buttonAb.style.backgroundColor = 'yellow'
+      buttonAb.style.color = 'blue'
     })
     return noteStates.butAb
   } else {
@@ -187,6 +161,7 @@ function standbyAb(){
     console.log('Button G#/Ab is now set to ',noteStates.butAb)
     buttonAb.addEventListener('mouseleave', function run(){
       buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
+      buttonAb.style.color = 'black'
     })
     return noteStates.butAb
   }
@@ -544,3 +519,118 @@ function standbyG(){
     return noteStates.butG
   }
 }
+
+console.log(noteStates)
+
+// Upon submit button mouse click
+function submit(){
+  noteStates[0] = true
+  console.log(noteStates)
+  console.log('Submit button is set to ',butS)
+  butS = true
+  console.log('Submit button is now set to ',butS)
+  submitButton.style.backgroundColor = 'rgb(22, 50, 9)'
+  submitButton.style.color = 'yellow'
+
+  switch (noteStates){
+    case noteStates[1]:
+      if (noteStates[1] == true){
+      boxAb.style.color = 'black'
+      console.log(noteStates[1]," is now black")
+      }else{
+        break
+      }
+    case noteStates[2]:
+    if (noteStates[2] == true){
+      submitButton.style.color = 'black'
+    }else{
+      break
+    }  
+    case noteStates[3]:
+      if (noteStates[3] == true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates[4]:
+      if (noteStates[4] == true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates[5]:
+      if (noteStates[5] == true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates[6]:
+      if (noteStates[6] == true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates[7]:
+      if (noteStates[7] == true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates[8]:
+      if (noteStates[8] == true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+    }
+    case noteStates[9]:
+      if (noteStates[9] == true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+    case noteStates[10]:
+      if (noteStates[10] == true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+    case noteStates[11]:
+      if (noteStates[11] == true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+    case noteStates[12]:
+      if (noteStates[12] == true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+  return noteStates 
+  }
+}
+     
+// Upon reset button mouse click
+function reset(){
+  resetButton.addEventListener('mouseleave', function run(){
+    submitButton.style.background = 'green'
+    submitButton.style.color = 'black'
+    buttonAb.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonA.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonBb.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonB.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonC.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonDb.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonD.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonEb.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonE.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonF.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonGb.style.backgroundColor = 'rgb(88, 246, 88)'
+    buttonG.style.backgroundColor = 'rgb(88, 246, 88)'
+  })
+}
+
+console.log(noteStates)
+
+// Gathering the table inputs
+let boxAb = document.getElementById('boxAb')
