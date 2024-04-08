@@ -1,8 +1,8 @@
 /* Scales-Modes Page style file */
 .background {
   background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-position: top;
   background-repeat: repeat;
-  background-size: contain; 
 }
 
 h6 {
@@ -123,11 +123,18 @@ li {
 }
 
 #myColumn3 {
-  height: 1150px;
+  height: 9000px;
+  display: block;
+  
+}
+
+#object2 {
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
-  justify-content: top;
+  justify-content: center;
+  margin-top: 150px;
+  position: sticky;
 }
 
 #box0 {
@@ -137,7 +144,7 @@ li {
   justify-content: center;  
   padding: 10px;
   width: 220px;
-  height: 550px;
+  height: 575px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.88;
@@ -166,14 +173,16 @@ li {
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
-  justify-content: center;  
+  justify-content: center; 
   padding: 5px;
   width: 350px;
-  height: 2175px;
+  height: 9500px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.88;
-  border-radius: 50px;   
+  border-radius: 50px;
+  position: sticky;
+  top: 0px  
 }
 
 .background {
@@ -220,6 +229,8 @@ li {
 }
 
 .audio {
+  height: 30px;
+  width: 320px;
   opacity: 1;
   background-color: rgb(0, 38, 255);
   border: 5px solid  rgb(0, 38, 255);
@@ -227,7 +238,7 @@ li {
 }
 
 .buttonSound {
-  margin-top: -10px;
+  margin-top: -20px;
   padding-bottom: 5px;
   margin-bottom: 7px; 
   justify-items: auto;
@@ -252,18 +263,20 @@ li {
 }
 
 #soundHeader1 {
-  margin-top: 150px;
+  display: block;
+  margin-top: 1150px;
   margin-bottom: -30px;
 }
 
 #soundHeader2 {
-  
+  display: block;
   margin-bottom: -50px;
 }
 
 #navSounds {
+  display: block;
   margin: 1;
-  margin-top: -190px;
+  margin-top: -1140px;
   padding: 2;
   align-self: center;
 }
