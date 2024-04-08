@@ -176,7 +176,7 @@ li {
   justify-content: center; 
   padding: 5px;
   width: 350px;
-  height: 9500px;
+  height: 9550px;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.88;
@@ -264,7 +264,7 @@ li {
 
 #soundHeader1 {
   display: block;
-  margin-top: 1150px;
+  margin-top: 1160px;
   margin-bottom: -30px;
 }
 

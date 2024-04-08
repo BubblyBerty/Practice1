@@ -90,14 +90,14 @@ buttonSound3.addEventListener('mouseover', function run(){
 buttonSound3.addEventListener('mouseleave', function run(){
     buttonSound3.style.backgroundColor = 'aqua'
 })
-
-/* 7 note modes to be in lightseagreen */
 buttonSound4.addEventListener('mouseover', function run(){
-    buttonSound4.style.backgroundColor = 'lightseagreen'
+    buttonSound4.style.backgroundColor = 'lightgreen'
 })
 buttonSound4.addEventListener('mouseleave', function run(){
     buttonSound4.style.backgroundColor = 'aqua'
 })
+/* 7 note modes to be in lightseagreen */
+
 buttonSound5.addEventListener('mouseover', function run(){
     buttonSound5.style.backgroundColor = 'lightseagreen'
 })
