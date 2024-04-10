@@ -1,13 +1,15 @@
-import xlwings as xw
+#import xlwings as xw
 from flask import Flask
 
 app = Flask(__name__)
 
-app.route("/")
 
-def results():
+app.route("/")
+app.route("/home")
+
+def home():
     
-    return "Hello world, from Flask."
+    return src=".\gath_Home.html"
     return noteStates
 
 # https://stackoverflow.com/questions/29987323/how-do-i-send-data-from-js-to-python-with-flask
