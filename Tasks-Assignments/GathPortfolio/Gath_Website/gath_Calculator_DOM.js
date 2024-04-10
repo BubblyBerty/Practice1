@@ -71,7 +71,6 @@ buttonAb.addEventListener('mouseleave', function run(){
 function standbyAb(){
   //toggle control
   if (noteStates.butAb == false){
-    console.log('Button G#/Ab is set to ',noteStates.butAb)
     noteStates.butAb = true // turning on
     console.log('Button G#/Ab is now set to ',noteStates.butAb)
     buttonAb.addEventListener('mouseleave', function run(){
@@ -81,7 +80,6 @@ function standbyAb(){
     // .\gath_Calculator_Results.js/noteStates.butAb = noteStates.butAb
     return noteStates.butAb
   } else {
-    console.log('Button G#/Ab is set to ',noteStates.butAb)
     noteStates.butAb = false // turning off
     console.log('Button G#/Ab is now set to ',noteStates.butAb)
     buttonAb.addEventListener('mouseleave', function run(){
@@ -106,7 +104,6 @@ buttonA.addEventListener('mouseleave', function run(){
 function standbyA(){
   //toggle control
   if (noteStates.butA == false){
-    console.log('Button A is set to ',noteStates.butA)
     noteStates.butA = true // turning on
     console.log('Button A is now set to ',noteStates.butA)
     buttonA.addEventListener('mouseleave', function run(){
@@ -115,7 +112,6 @@ function standbyA(){
     })
     return noteStates.butA
   } else {
-    console.log('Button A is set to ',noteStates.butA)
     noteStates.butA = false // turning off
     console.log('Button A is now set to ',noteStates.butA)
     buttonA.addEventListener('mouseleave', function run(){
@@ -140,7 +136,6 @@ buttonBb.addEventListener('mouseleave', function run(){
 function standbyBb(){
   //toggle control
   if (noteStates.butBb == false){
-    console.log('Button A#/Bb is set to ',noteStates.butBb)
     noteStates.butBb = true // turning on
     console.log('Button A#/Bb is now set to ',noteStates.butBb)
     buttonBb.addEventListener('mouseleave', function run(){
@@ -149,7 +144,6 @@ function standbyBb(){
     })
     return noteStates.butBb
   } else {
-    console.log('Button A#/Bb is set to ',noteStates.butBb)
     noteStates.butBb = false // turning off
     console.log('Button A#/Bb is now set to ',noteStates.butBb)
     buttonBb.addEventListener('mouseleave', function run(){
@@ -174,7 +168,6 @@ buttonB.addEventListener('mouseleave', function run(){
 function standbyB(){
   //toggle control
   if (noteStates.butB == false){
-    console.log('Button B is set to ',noteStates.butB)
     noteStates.butB = true // turning on
     console.log('Button B is now set to ',noteStates.butB)
     buttonB.addEventListener('mouseleave', function run(){
@@ -183,7 +176,6 @@ function standbyB(){
     })
     return noteStates.butB
   } else {
-    console.log('Button B is set to ',noteStates.butB)
     buttonB.style.backgroundColor = 'rgb(88, 246, 88)' // turning off
     noteStates.butB = false
     console.log('Button B is now set to ',noteStates.butB)
@@ -209,7 +201,6 @@ buttonC.addEventListener('mouseleave', function run(){
 function standbyC(){
   //toggle control
   if (noteStates.butC == false){
-    console.log('Button C is set to ',noteStates.butC)
     noteStates.butC = true // turning on
     console.log('Button C is now set to ',noteStates.butC)
     buttonC.addEventListener('mouseleave', function run(){
@@ -218,7 +209,6 @@ function standbyC(){
     })
     return noteStates.butC
   } else {
-    console.log('Button C is set to ',noteStates.butC)
     buttonC.style.backgroundColor = 'rgb(88, 246, 88)' // turning off
     noteStates.butC = false
     console.log('Button C is now set to ',noteStates.butC)
@@ -244,7 +234,6 @@ buttonDb.addEventListener('mouseleave', function run(){
 function standbyDb(){
   //toggle control
   if (noteStates.butDb == false){
-    console.log('Button C#/Db is set to ',noteStates.butDb)
     noteStates.butDb = true // turning on
     console.log('Button C#/Db is now set to ',noteStates.butDb)
     buttonDb.addEventListener('mouseleave', function run(){
@@ -253,7 +242,6 @@ function standbyDb(){
     })
     return noteStates.butDb
   } else {
-    console.log('Button C#/Db is set to ',noteStates.butDb)
     noteStates.butDb = false // turning off
     console.log('Button C#/Db is now set to ',noteStates.butDb)
     buttonDb.addEventListener('mouseleave', function run(){
@@ -278,7 +266,6 @@ buttonD.addEventListener('mouseleave', function run(){
 function standbyD(){
   //toggle control
   if (noteStates.butD == false){
-    console.log('Button D is set to ',noteStates.butD)
     noteStates.butD = true // turning on
     console.log('Button D is now set to ',noteStates.butD)
     buttonD.addEventListener('mouseleave', function run(){
@@ -287,7 +274,6 @@ function standbyD(){
     })
     return noteStates.butD
   } else {
-    console.log('Button D is set to ',noteStates.butD)
     noteStates.butD = false // turning off
     console.log('Button D is now set to ',noteStates.butD)
     buttonD.addEventListener('mouseleave', function run(){
@@ -312,7 +298,6 @@ buttonEb.addEventListener('mouseleave', function run(){
 function standbyEb(){
   //toggle control
   if (noteStates.butEb == false){
-    console.log('Button D#/Eb is set to ',noteStates.butEb)
     noteStates.butEb = true // turning on
     console.log('Button D#/Eb is now set to ',noteStates.butEb)
     buttonEb.addEventListener('mouseleave', function run(){
@@ -321,7 +306,6 @@ function standbyEb(){
     })
     return noteStates.butEb
   } else {
-    console.log('Button D#/Eb is set to ',noteStates.butEb)
     noteStates.butEb = false // turning off
     console.log('Button D#/Eb is now set to ',noteStates.butEb)
     buttonEb.addEventListener('mouseleave', function run(){
@@ -346,7 +330,6 @@ buttonE.addEventListener('mouseleave', function run(){
 function standbyE(){
   //toggle control
   if (noteStates.butE == false){
-    console.log('Button E is set to ',noteStates.butE)
     noteStates.butE = true // turning on
     console.log('Button E is now set to ',noteStates.butE)
     buttonE.addEventListener('mouseleave', function run(){
@@ -355,7 +338,6 @@ function standbyE(){
     })
     return noteStates.butE
   } else {
-    console.log('Button E is set to ',noteStates.butE)
     buttonE.style.backgroundColor = 'rgb(88, 246, 88)' // turning off
     noteStates.butE = false
     console.log('Button E is now set to ',noteStates.butE)
@@ -381,7 +363,6 @@ buttonF.addEventListener('mouseleave', function run(){
 function standbyF(){
   //toggle control
   if (noteStates.butF == false){
-    console.log('Button F is set to ',noteStates.butF)
     noteStates.butF = true // turning on
     console.log('Button F is now set to ',noteStates.butF)
     buttonF.addEventListener('mouseleave', function run(){
@@ -390,7 +371,6 @@ function standbyF(){
     })
     return noteStates.butF
   } else {
-    console.log('Button F is set to ',noteStates.butF)
     buttonF.style.backgroundColor = 'rgb(88, 246, 88)' // turning off
     noteStates.butF = false
     console.log('Button F is now set to ',noteStates.butF)
@@ -416,7 +396,6 @@ buttonGb.addEventListener('mouseleave', function run(){
 function standbyGb(){
   //toggle control
   if (noteStates.butGb == false){
-    console.log('Button F#/Gb is set to ',noteStates.butGb)
     noteStates.butGb = true // turning on
     console.log('Button F#/Gb is now set to ',noteStates.butGb)
     buttonGb.addEventListener('mouseleave', function run(){
@@ -425,7 +404,6 @@ function standbyGb(){
     })
     return noteStates.butGb
   } else {
-    console.log('Button F#/Gb is set to ',noteStates.butGb)
     noteStates.butGb = false // turning off
     console.log('Button F#/Gb is now set to ',noteStates.butGb)
     buttonGb.addEventListener('mouseleave', function run(){
@@ -450,7 +428,6 @@ buttonG.addEventListener('mouseleave', function run(){
 function standbyG(){
   //toggle control
   if (noteStates.butG == false){
-    console.log('Button G is set to ',noteStates.butG)
     noteStates.butG = true // turning on
     console.log('Button G is now set to ',noteStates.butG)
     buttonG.addEventListener('mouseleave', function run(){
@@ -459,7 +436,6 @@ function standbyG(){
     })
     return noteStates.butG
   } else {
-    console.log('Button G is set to ',noteStates.butG)
     noteStates.butG = false // turning off
     console.log('Button G is now set to ',noteStates.butG)
     buttonG.addEventListener('mouseleave', function run(){
@@ -545,3 +521,99 @@ resetButton.addEventListener('mouseleave', function run(){
   resetButton.style.backgroundColor = 'red'
   resetButton.style.color = 'black'
 })
+console.log(noteStates)
+
+function submit(noteStates){
+  noteStates.butS = true
+  console.log(noteStates)
+  console.log('Submit button is set to ',noteStates.butS)
+  console.log('Submit button is now set to ',noteStates.butS)
+  submitButton.style.backgroundColor = 'rgb(22, 50, 9)'
+  submitButton.style.color = 'yellow'
+  console.log(noteStates.noteStates)
+
+  switch (noteStates){
+    case noteStates.butAb:
+      if (noteStates.butAb === true){
+      boxAb.style.color = 'black'
+      console.log(noteStates.butAb," is now black")
+      }else{
+        break
+      }
+    case noteStates.butA:
+    if (noteStates.butA === true){
+      submitButton.style.color = 'black'
+    }else{
+      break
+    }  
+    case noteStates.butBb:
+      if (noteStates.butBb === true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates.butB:
+      if (noteStates.butB === true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates.butC:
+      if (noteStates.butC === true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates.butDb:
+      if (noteStates.butDb === true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates.butD:
+      if (noteStates.butD === true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+      }  
+    case noteStates.butEb:
+      if (noteStates.butEb === true){
+        submitButton.style.color = 'black'
+      }else{
+        break
+    }
+    case noteStates.butE:
+      if (noteStates.butE === true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+    case noteStates.butF:
+      if (noteStates.butF === true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+    case noteStates.butGb:
+      if (noteStates.butGb === true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+    case noteStates.butG:
+      if (noteStates.butG === true){
+        submitButton.style.color = 'black'
+        }else{
+          break
+        }
+  return noteStates 
+  }
+}
+
+// Upon reset button mouse click
+function reset(){
+  resetButton.addEventListener('mouseleave', function run(){
+    submitButton.style.background = 'green'
+    submitButton.style.color = 'black'
+  })
+}

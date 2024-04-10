@@ -1,5 +1,5 @@
 // Global control variables
-var noteStates = {
+/*var noteStates = {
     butS: false,
     butAb: false,
     butA: false,
@@ -13,18 +13,17 @@ var noteStates = {
     butF: false,
     butGb: false,
     butG: false
-  };
+  };*/
   
   // Gathering results access buttons
-  let resetButton = document.getElementById('resetButton')
+/*  let resetButton = document.getElementById('resetButton')
   let submitButton = document.getElementById('submitButton')
-
+*/
   // Upon submit button mouse click
 function submit(noteStates){
     noteStates.butS = true
     console.log(noteStates)
     console.log('Submit button is set to ',noteStates.butS)
-    noteStates.butS = true
     console.log('Submit button is now set to ',noteStates.butS)
     submitButton.style.backgroundColor = 'rgb(22, 50, 9)'
     submitButton.style.color = 'yellow'
@@ -32,74 +31,74 @@ function submit(noteStates){
   
     switch (noteStates){
       case noteStates.butAb:
-        if (noteStates.butAb == true){
+        if (noteStates.butAb === true){
         boxAb.style.color = 'black'
         console.log(noteStates.butAb," is now black")
         }else{
           break
         }
-      case noteStates[2]:
-      if (noteStates[2] == true){
+      case noteStates.butA:
+      if (noteStates.butA === true){
         submitButton.style.color = 'black'
       }else{
         break
       }  
-      case noteStates[3]:
-        if (noteStates[3] == true){
+      case noteStates.butBb:
+        if (noteStates.butBb === true){
           submitButton.style.color = 'black'
         }else{
           break
         }  
-      case noteStates[4]:
-        if (noteStates[4] == true){
+      case noteStates.butB:
+        if (noteStates.butB === true){
           submitButton.style.color = 'black'
         }else{
           break
         }  
-      case noteStates[5]:
-        if (noteStates[5] == true){
+      case noteStates.butC:
+        if (noteStates.butC === true){
           submitButton.style.color = 'black'
         }else{
           break
         }  
-      case noteStates[6]:
-        if (noteStates[6] == true){
+      case noteStates.butDb:
+        if (noteStates.butDb === true){
           submitButton.style.color = 'black'
         }else{
           break
         }  
-      case noteStates[7]:
-        if (noteStates[7] == true){
+      case noteStates.butD:
+        if (noteStates.butD === true){
           submitButton.style.color = 'black'
         }else{
           break
         }  
-      case noteStates[8]:
-        if (noteStates[8] == true){
+      case noteStates.butEb:
+        if (noteStates.butEb === true){
           submitButton.style.color = 'black'
         }else{
           break
       }
-      case noteStates[9]:
-        if (noteStates[9] == true){
+      case noteStates.butE:
+        if (noteStates.butE === true){
           submitButton.style.color = 'black'
           }else{
             break
           }
-      case noteStates[10]:
-        if (noteStates[10] == true){
+      case noteStates.butF:
+        if (noteStates.butF === true){
           submitButton.style.color = 'black'
           }else{
             break
           }
-      case noteStates[11]:
-        if (noteStates[11] == true){
+      case noteStates.butGb:
+        if (noteStates.butGb === true){
           submitButton.style.color = 'black'
           }else{
             break
           }
-      case noteStates[12]:
-        if (noteStates[12] == true){
+      case noteStates.butG:
+        if (noteStates.butG === true){
           submitButton.style.color = 'black'
           }else{
             break
