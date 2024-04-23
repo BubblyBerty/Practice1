@@ -1,10 +1,30 @@
 /* Home Page style file */
-ul {
-  list-style-type: none;
+
+h6 {
+  font-size: x-small;
+  margin-top: 100px;
 }
 
-li {
+p {
+  color: blue;
+}
 
+.background {
+  background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat-y;
+  background-size:cover;
+  margin-bottom: 10px; 
+}
+
+#ul {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#li {
+  float: left;
   padding: 10px;
 }
 
@@ -13,33 +33,48 @@ li {
   flex-flow: column wrap;
 }
 
-.elements {
-  align-self: center;
+.topNtail {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
 }
 
-.HeaderBox{ 
+.backBox {
+  background-color: bisque;
+  padding: 10px;
+  width: 100%;
+  height:335px;
+}
+
+.video {
+  width: 100%;
+  height: 330px;
+  overflow-y: hidden;
+  border: 5px solid bisque
+}
+
+.homeHeaderBox{ 
   background-repeat: no-repeat;
-  background-size:cover;
-  height: 200px;
+  width: 1410px;
+  background-size: contain;
+  height: 270px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 50px;
   font-style: italic;
   color:rgb(80, 2, 80);
-  margin: 0px;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin-left: 35px;
+  margin-top: -1025px;
+  margin-bottom: 350px;
   border: 10px black solid;
   padding: 5px;
   background-color:bisque;
-  opacity: 0.75;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
 
 .headerItems {
-  margin-top: -70px;
-  display: flex;
+  align-items: center;
+  margin-top: -158px;
+  margin-bottom: 100px;
+  display: flex; 
   flex-flow: row wrap;
 }
 
@@ -47,7 +82,9 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: -50px;  
+  margin-top: -10px;
+  margin-bottom: -40px;
+  margin-left: 80px;  
 }
 
 .header2 {
@@ -55,15 +92,17 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: -50px;
+  margin-left: 80px;
 }
 
 .asideH {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: right;
   width: "275px";
   height: "200px";
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-left: 35px;
 }
 
 .navigation {
@@ -81,7 +120,6 @@ li {
   justify-content: left;
   align-items: left;
   padding: 10px;
-  width: 220px;
   height: 770px;
   opacity: 0.95;
 }
@@ -104,12 +142,12 @@ li {
 
 #pageArticle {
   display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
+  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: left;
   align-items: left;
   padding: 10px;
-  width: 1000px;
+  width: 1200px;
   height: 3000px;
   opacity: 0.95;
 }
@@ -121,7 +159,9 @@ li {
   justify-content: left;
   align-items: left;
   padding: 10px;
-
+  height: 6000px;
+  width: 1200px;
+  opacity: 0.95;
   border: 5px solid rgb(80, 2, 80);
   background-color: bisque;
   opacity: 0.95;
@@ -158,24 +198,22 @@ li {
   border-radius: 50px; 
 }
 
-.box2 {
+#box2 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: large;
+  font-size: 2cqmax;
   color:rgb(80, 2, 80);
   margin: 0px;
   margin-top: 5px;
   margin-bottom: 0px;
   border: 10px black solid;
-  padding: 5px;
   background-color:bisque;
-  opacity: 0.9;
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
   justify-content: space-between;  
   padding: 10px;
   width: 1000px;
-  height: 3000px;
+  height: 6000px;
   background-color: rgb(80, 2, 80);
   opacity: 1;
   border-radius: 50px; 
@@ -195,7 +233,7 @@ body {
 }
 
 #button1 {
-  margin: -5px;
+  margin: 5px;
   padding: 3px; 
   justify-items: auto;
   font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -211,7 +249,7 @@ body {
 }
 
 #button2 {
-  margin: -5px;
+  margin: 5px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
   text-wrap: wrap;
@@ -313,7 +351,7 @@ body {
   flex-flow: row wrap;
   justify-content: right;
   font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: 50px;
+  font-size: x-large;
   display: flex;
   flex-direction: column;
   justify-content: right;

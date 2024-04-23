@@ -9,7 +9,6 @@ let buttonSound015 = document.getElementById('buttonSound015')
 let buttonSound3a = document.getElementById('buttonSound3a')
 let buttonSound6 = document.getElementById('buttonSound6')
 let buttonSound6318 = document.getElementById('buttonSound6318')
-let buttonSound7 = document.getElementById('buttonSound7')
 let buttonSound78 = document.getElementById('buttonSound78')
 let buttonSound9 = document.getElementById('buttonSound9')
 let buttonSound10 = document.getElementById('buttonSound10')
@@ -159,12 +158,6 @@ buttonSound6318.addEventListener('mouseover', function run(){
 })
 buttonSound6318.addEventListener('mouseleave', function run(){
     buttonSound6318.style.backgroundColor = 'aqua'
-})
-buttonSound7.addEventListener('mouseover', function run(){
-    buttonSound7.style.backgroundColor = 'lightgreen'
-})
-buttonSound7.addEventListener('mouseleave', function run(){
-    buttonSound7.style.backgroundColor = 'aqua'
 })
 buttonSound78.addEventListener('mouseover', function run(){
     buttonSound78.style.backgroundColor = 'lightgreen'
