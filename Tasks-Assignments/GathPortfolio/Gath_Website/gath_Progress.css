@@ -1,0 +1,268 @@
+/* Home Page style file */
+
+h6 {
+  font-size: x-small;
+  margin-top: 100px;
+}
+
+.background {
+  background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat-y;
+  background-size:cover;
+  margin-bottom: 10px; 
+}
+
+ul {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  padding: 10px;
+}
+
+.all {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.backBox {
+  background-color: bisque;
+  padding: 10px;
+  width: 100%;
+  height:335px;
+}
+
+.video {
+  width: 100%;
+  height: 330px;
+  overflow-y: hidden;
+  border: 5px solid bisque
+}
+
+.homeHeaderBox{ 
+  background-repeat: no-repeat;
+  width: 1410px;
+  background-size: contain;
+  height: 270px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-style: italic;
+  color:rgb(80, 2, 80);
+  margin-left: 35px;
+  margin-top: -700px;
+  margin-bottom: 350px;
+  border: 10px black solid;
+  padding: 5px;
+  background-color:bisque;
+}
+
+.headerItems {
+  align-items: center;
+  margin-top: -158px;
+  margin-bottom: 100px;
+  display: flex; 
+  flex-flow: row wrap;
+}
+
+.header1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+  margin-bottom: -40px;
+  margin-left: 80px;  
+}
+
+.header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -50px;
+  margin-left: 80px;
+}
+
+.asideH {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  width: "275px";
+  height: "200px";
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.topNtail {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.pageColumns {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: top;
+  justify-content: left;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.bodyColumn {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.box1 {
+  justify-content: center;  
+  padding: 10px;
+  width: 220px;
+  height: 160px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.88;
+  border-radius: 50px;   
+}
+
+#column1 {
+  width: 3000px;
+  height: 10000px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: -3000px;
+  font-size: xx-small;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  font-size: xx-small;
+  justify-content: center;  
+  padding: 10px;
+  width: 3000px;
+  height: 10000px;
+  border: 5px solid rgb(80, 2, 80);
+  background-color: bisque;
+  opacity: 0.95;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-top: -3000px;
+}
+
+#table {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  font-size: 1px;
+  border: 10px solid rgb(80, 2, 80);
+  width: 880px;
+  text-align: center;
+  padding: 3px;
+  margin-top: -3000px;
+}
+
+#mainH {
+  border: 10px solid rgb(80, 2, 80);
+  column-width: 1000px;
+  text-align: center;
+}
+
+#page {
+  border: 10px solid rgb(80, 2, 80);
+  width: 40px;
+}
+
+#issue {
+  border: 10px solid rgb(80, 2, 80);
+  width: 150px;
+}
+
+#priority {
+  border: 10px solid rgb(80, 2, 80);
+  width: 30px;
+}
+
+.date {
+  border: 10px solid rgb(80, 2, 80);
+  width: 100px;
+}
+
+.status {
+  border: 10px solid rgb(80, 2, 80);
+  width: 100px;
+}
+
+#development {
+  font-size: 21px;
+}
+
+#mathFont {
+  font-size: 19px;
+}
+
+/*.calculator {
+  justify-content: left;
+  align-items: left;
+  padding: 30px;
+  width: 500px;
+  height: 420px;
+  background-color: rgba(14, 12, 12, 0.829);
+  opacity: 1;
+  border-radius: 50px; 
+}*/
+
+#left {
+  margin-left: 30px;
+}
+
+.buttonMenu1 {
+  padding: 3px; 
+  justify-items: auto;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 190px;
+  height: 45px;
+  border: 3px solid rgb(80, 2, 80);
+  border-radius: 15px;
+  background-color: aqua;
+  cursor: pointer;
+  box-shadow: 5px 5px;
+  margin-top: 15px;
+}
+
+.buttonMenu2 {
+  padding: 3px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: xx-large;
+  text-wrap: wrap;
+  color: rgb(80, 2, 80);
+  width: 190px;
+  height: 90px;
+  border: 3px solid rgb(80, 2, 80);
+  border-radius: 15px;
+  background-color: aqua;
+  cursor: pointer;
+  box-shadow: 5px 5px;
+}
+
+#box1 {
+    width: 1000px;
+    height: 6600px;
+    /*border: 10px solid rgb(80, 2, 80);*/
+    image-rendering: auto url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+    width: 660;
+    height: 440;
+}
+
+  
