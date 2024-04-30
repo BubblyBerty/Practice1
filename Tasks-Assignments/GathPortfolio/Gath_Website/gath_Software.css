@@ -100,149 +100,78 @@ li {
   flex-direction: column;
   flex-flow: column wrap;
 }
-
 .pageColumns {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  justify-content: top;
-  justify-content: left;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 15px;
 }
 
 .bodyColumn {
+  width: 250px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 15px;
+  margin: 15px;
+}
+
+#column1 {
+    margin-top: -950px;
+    margin-left: 10px;
+    height: 1000px;
 }
 
 .box1 {
   justify-content: center;  
   padding: 10px;
   width: 220px;
-  height: 60px;
+  height: 73px;
   border: 5px solid rgb(80, 2, 80);
-  background-color: bisque;
+  background-color: rgb(255, 228, 196);
   opacity: 0.88;
-  border-radius: 50px;
-  margin-top: 15px;   
-}
-
-#column1 {
-  width: 950px;
-  height: 10000px;
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  align-items: center;
-  margin-top: -3000px;
-  font-size: xx-small;
+  border-radius: 50px;   
 }
 
 .box2 {
   justify-content: center;  
   padding: 10px;
-  width: 220px;
+  width: 215px;
   height: 120px;
   border: 5px solid rgb(80, 2, 80);
-  background-color: bisque;
+  background-color: rgb(255, 228, 196);
   opacity: 0.88;
-  border-radius: 50px;
-  margin-top: 15px;    
+  border-radius: 50px;   
 }
 
-.box3 {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  font-size: xx-small;
-  justify-content: center;  
+#box3 {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 35px;
+  justify-content: flex-start;  
   padding: 10px;
-  width: 950px;
-  height: 10000px;
+  width: 1000px;
+  height: 1500px;
   border: 5px solid rgb(80, 2, 80);
   background-color: rgb(255, 228, 196);
   opacity: 0.95;
   border-radius: 50px;
-  margin-left: 10px;
-  margin-top: -3000px;
-}
-
-#table {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  font-size: 1px;
-  border: 10px solid rgb(80, 2, 80);
-  width: 900px;
-  text-align: center;
-  padding: 3px;
-  margin-top: 0px;
-}
-
-#mainH {
-  border: 10px solid rgb(80, 2, 80);
-  column-width: 900px;
   text-align: center;
 }
-
-#page {
-  border: 2px solid rgb(80, 2, 80);
-  width: 40px;
-}
-
-#issue {
-  border: 2px solid rgb(80, 2, 80);
-  width: 150px;
-}
-
-#priority {
-  border: 2px solid rgb(80, 2, 80);
-  width: 30px;
-}
-
-.date {
-  border: 2px solid rgb(80, 2, 80);
-  width: 100px;
-}
-
-.status {
-  border: 2px solid rgb(80, 2, 80);
-  width: 100px;
-}
-
-#development {
-  font-size: 21px;
-}
-
-#mathFont {
-  font-size: 19px;
-}
-
-/*.calculator {
-  justify-content: left;
-  align-items: left;
-  padding: 30px;
-  width: 500px;
-  height: 420px;
-  background-color: rgba(14, 12, 12, 0.829);
-  opacity: 1;
-  border-radius: 50px; 
-}*/
 
 #left {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .buttonMenu1 {
   padding: 3px; 
-  justify-items: auto;
+  /*justify-items: auto;*/
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
-  text-wrap: wrap;
+  text-wrap: normal;
   color: rgb(80, 2, 80);
   width: 190px;
   height: 45px;
@@ -251,14 +180,13 @@ li {
   background-color: aqua;
   cursor: pointer;
   box-shadow: 5px 5px;
-  margin-top: -2px;
 }
 
 .buttonMenu2 {
   padding: 3px;
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: xx-large;
-  text-wrap: wrap;
+  text-wrap: normal;
   color: rgb(80, 2, 80);
   width: 190px;
   height: 90px;
@@ -269,13 +197,83 @@ li {
   box-shadow: 5px 5px;
 }
 
+#cert {
+  width: 216px;
+  height: 303px;
+  opacity: 0;
+}
 #box1 {
-    width: 1000px;
-    height: 6600px;
     /*border: 10px solid rgb(80, 2, 80);*/
-    image-rendering: auto url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+    /*image-rendering: auto url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");*/
     width: 660;
     height: 440;
 }
 
+#rightSideText {
+  margin-top: -950px;
+  margin-left: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: 50px;
+  flex-direction: column;
+  padding: 10px;
+  width: 1000px;
+  height: 1000px;
+}
   
+#table {
+  Margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  font-size: 15px;
+  color:rgb(80, 2, 80);
+  border: 2px solid rgb(80, 2, 80);
+  width: 900px;
+  text-align: center;
+  padding: 3px;
+  margin-top: 0px;
+  opacity: 0.95;
+}
+
+#image {
+  border: 2px solid rgb(80, 2, 80);
+  width: 214px;
+}
+
+#demo {
+  border: 2px solid rgb(80, 2, 80);
+  width: 786px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+}
+
+#hor {
+  float: left;
+  margin-top: -30px;
+}
+
+.hori {
+  float: left;  
+}
+
+#hor2 {
+  margin-bottom: -200px; 
+}
+
+#box4 {
+  float: right;
+  margin-top: 20px;
+}
+
+.h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 23px;
+  color:rgb(80, 2, 80);
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
