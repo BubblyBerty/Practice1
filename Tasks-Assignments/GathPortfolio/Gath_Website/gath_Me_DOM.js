@@ -9,6 +9,9 @@ let button7 = document.getElementById('button7')
 let button8 = document.getElementById('button8')
 let button9 = document.getElementById('button9')
 let button10 = document.getElementById('button10')
+let button11 = document.getElementById('button11')
+let button12 = document.getElementById('button12')
+let button13 = document.getElementById('button13')
 
 // Creating the Event and Event Listener
 // (event type, function for each button)
@@ -80,4 +83,25 @@ button10.addEventListener('mouseover', function run(){
 })
 button10.addEventListener('mouseleave', function run(){
     button10.style.backgroundColor = 'aqua'
+})
+
+button11.addEventListener('mouseover', function run(){
+    button11.style.backgroundColor = 'orange'
+})
+button11.addEventListener('mouseleave', function run(){
+    button11.style.backgroundColor = 'aqua'
+})
+
+button12.addEventListener('mouseover', function run(){
+    button12.style.backgroundColor = 'orange'
+})
+button12.addEventListener('mouseleave', function run(){
+    button12.style.backgroundColor = 'aqua'
+})
+
+button13.addEventListener('mouseover', function run(){
+    button13.style.backgroundColor = 'orange'
+})
+button13.addEventListener('mouseleave', function run(){
+    button13.style.backgroundColor = 'aqua'
 })

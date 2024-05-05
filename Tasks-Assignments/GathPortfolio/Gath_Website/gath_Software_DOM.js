@@ -10,6 +10,8 @@ let button7 = document.getElementById('button7')
 let button8 = document.getElementById('button8')
 let button9 = document.getElementById('button9')
 let button10 = document.getElementById('button10')
+let butText = document.getElementById('butText')
+let butUser = document.getElementById('butUser')
 
 // Creating the Event and Event Listener
 // (event type, function for each button)
@@ -70,96 +72,99 @@ button8.addEventListener('mouseleave', function run(){
     button8.style.backgroundColor = 'aqua'
 })
 
-button9.addEventListener('mouseover', function run(){
-    button9.style.backgroundColor = 'orange'
+butText.addEventListener('mouseover', function run(){
+    butText.style.backgroundColor = 'orange'
 })
 
-button9.addEventListener('mouseleave', function run(){
-    button9.style.backgroundColor = 'aqua'
+butText.addEventListener('mouseleave', function run(){
+    butText.style.backgroundColor = 'aqua'
 })
 
-button10.addEventListener('mouseover', function run(){
-    button10.style.backgroundColor = 'orange'
+butUser.addEventListener('mouseover', function run(){
+    butUser.style.backgroundColor = 'orange'
 })
 
-button10.addEventListener('mouseleave', function run(){
-    button10.style.backgroundColor = 'aqua'
+butUser.addEventListener('mouseleave', function run(){
+    butUser.style.backgroundColor = 'aqua'
 })
+function capital(){
 
-//////////////////////
+    // returning capitilsation of each word in the string
+    // create the string for the capital function
+    userString = "so, you want to be a hero, do you?"
+    console.log("Capitalising the string")
 
-// returning capitilsation of each word in the string
-document.write("<br><br>Capitalising the string - lines 749-787<br>");
-console.log("Capitalising the string");
-// First test to find where the spaces in the text are
-// Should be 0, 11, 14, 20, 26, 32, 44.
-console.log(userString.indexOf(" ")); // returns 0
-console.log(userString.indexOf(" ",1)); // returns 11
-console.log(userString.indexOf(" ",12)); // returns 14
-console.log(userString.indexOf(" ",15)); // returns 20
-console.log(userString.indexOf(" ",21)); // returns 26
-console.log(userString.indexOf(" ",27)); // returns 32
-console.log(userString.indexOf(" ",33)); // returns 44
-console.log(userString.indexOf(" ",45)); // returns -1
+    // First test to find where the spaces in the text are
+    // Should be 3, 7, 12, 15, 18, 20, 26, 29.
+    console.log('1st space character at index - ',userString.indexOf(" ")); // returns 3
+    console.log('2nd space character at index - ',userString.indexOf(" ",4)); // returns 7
+    console.log('3rd space character at index - ',userString.indexOf(" ",8)); // returns 12
+    console.log('4th space character at index - ',userString.indexOf(" ",13)); // returns 15
+    console.log('5th space character at index - ',userString.indexOf(" ",16)); // returns 18
+    console.log('6th space character at index - ',userString.indexOf(" ",19)); // returns 20
+    console.log('7th space character at index - ',userString.indexOf(" ",21)); // returns 26
+    console.log('8th space character at index - ',userString.indexOf(" ",27)); // returns 29
+    console.log('9th space character at index - ',userString.indexOf(" ",30)); // returns -1, indicates that the search has started from 30 back to minus one because no other space was found.
+    console.log('String spacing test successful')
 
-console.log(`${userString.lastIndexOf(" ")}, `); // returns 44
+    // Now to create the new string - the substring method does not include the final position index
+    let tempString = userString[0].toUpperCase()+userString.substring(1, 4)
+    +userString[4].toUpperCase()+userString.substring(5, 8)
+    +userString[8].toUpperCase()+userString.substring(9, 13)
+    +userString[13].toUpperCase()+userString.substring(14, 16)
+    +userString[16].toUpperCase()+userString.substring(17, 19)
+    +userString[19].toUpperCase()+userString.substring(20, 27)
+    +userString[27].toUpperCase()+userString.substring(28, 30)
+    +userString[30].toUpperCase()+userString.substring(31, userString.length);
 
-for (xx = 0; xx <= userString.length; xx++){
-    console.log(xx," = ",userString[xx]);
-};
+    // document.write(`</br>First character of new string is: "${tempString[0]}"`);
+    console.log(`Capitalised string is: ${tempString}`);
+    console.log("Returns capitilsation of each word/substring within userString");
 
-// Now to create a new string (note that the space at index 0 has been removed)
-let tempString = userString[0]+userString[1].toUpperCase()+userString.substring(2, 11)+" "+userString[12].toUpperCase()+userString.substring(13, 14)+" "+userString[15].toUpperCase()+userString.substring(16, 20)+" "+userString[21].toUpperCase()+userString.substring(22, 26)+" "+userString[27].toUpperCase()+userString.substring(28, 32)+" "+userString[33].toUpperCase()+userString.substring(34, 44)+" "+userString[45].toUpperCase()+userString.substring(46, userString.length);
-
-document.write(`</br>First character of new string is: "${tempString[0]}"`);
-document.write(`</br></br>Capitalised string is: ${tempString}`);
-console.log("Returns capitilsation of each word/substring within userString");
-
-//•	Display in the browser/console out the first letter of all the sub strings in capital letters.
-displayArray = [];
-displayArray.push(tempString[1].toUpperCase());
-displayArray.push(tempString[12].toUpperCase());
-displayArray.push(tempString[15].toUpperCase());
-displayArray.push(tempString[21].toUpperCase());
-displayArray.push(tempString[27].toUpperCase());
-displayArray.push(tempString[33].toUpperCase());
-displayArray.push(tempString[45].toUpperCase());
-
-document.write(`</br></br> Capitalised letters of each word: ${displayArray}`);
-console.log(displayArray);
-
-//////////////////////
-
-document.write("<br><br>Self-learning challenge - To create a loop to capitalise a text - lines 791-968");
-console.log("Create a loop to capitalise text entered by user");
-// Goal. Create a loop to capitalise sentences AND to assign new text to a string variable. 
-// 1. Create a loop to assign substrings to an array.
-// 2. Convert and assign array elements to a new string.
-
-// The following loop will not achieve my goal because the methods make no permanent changes to a string - https://www.w3schools.am/js/js_string_methods.html#gsc.tab=0
-
-userString2 = "so, you want to be a hero, do you?";
-userString3 = "";
-y = 0;
-z = 0;
-userString3 = userString2.replace(userString2[z], userString2[z].toUpperCase());
-console.log(userString2);
-console.log(userString3);
-console.log(userString2);
-
+    return capped.value = tempString;
+}
+/* DEPRECATED
+function capitalise(){
 /*
-while (z < userString2.length){
-    userString3 = userString2.replace(userString2[z], userString2[z].toUpperCase());
-    y = userString2.indexOf(" ",z);
-    userString3 = userString3.concat([z], y);
-    z = y;
-};
-document.write(`</br></br>Capitalised letters of each word: ${userString2} log Z`);
-console.log("Capitalised letters of each word: ",userString2," log Z");
-*/
-// So far I have been unable to assign upper case characters to a string because every loop I create iterates without a break
+    let userString2 = prompt("Enter your text: ");
 
-// Initial testing of string and array behaviour (10 loops)
+    Self-learning challenge - To create a loop to capitalise a text
+    Create a loop to capitalise text entered by user
+
+    // Goal. Create a loop to capitalise sentences AND to assign new text to a string variable. 
+    // 1. Create a loop to assign substrings to an array.
+    // 2. Convert and assign array elements to a new string.
+
+    // The following loop will not achieve my goal because the methods make no permanent changes to a string - https://www.w3schools.am/js/js_string_methods.html#gsc.tab=0
+
+    userString2 = "so, you want to be a hero, do you?";
+    userString3 = "";
+    y = 0;
+    z = 0;
+    userString3 = userString2.replace(userString2[z], userString2[z].toUpperCase());
+    console.log(userString2);
+    console.log(userString3);
+    console.log(userString2);
+
+    
+    while (z < userString2.length){
+        userString3 = userString2.replace(userString2[z], userString2[z].toUpperCase());
+        y = userString2.indexOf(" ",z);
+        userString3 = userString3.concat([z], y);
+        z = y;
+    };
+    document.write(`</br></br>Capitalised letters of each word: ${userString2} log Z`);
+    console.log("Capitalised letters of each word: ",userString2," log Z");
+    
+    So far I have been unable to assign upper case characters to a string because every loop I create iterates without a break so I will build another method (comments left in code to show learning process)
+   
+    console.log("Length of string is ",userString2.length+1," characters");
+
+    // Now to create a loop to generate a new capitalised string. This works as expected if the for and do loops are written sequentially. Any attempt I made to combine them, nesting the loops, has only resulted in iterations never breaking regardless of loop type.
+
+    // Lines 169 - 317 were my original code but I found and implemented a much more efficient and economic method below that.
+
+    /* // Initial testing of string and array behaviour (10 loops)
 
 userString2 = "so, you want to be a hero, do you?";
 console.log("Length of string = ",userString2.length);
@@ -309,3 +314,65 @@ for(x = 0; x <= count; x++){
 }
 document.write(`<br><br>${capitals}`);
 
+*/
+function capitalise(){
+
+    let userString2 = prompt("Enter your text (only 70 characters will be displayed): ");
+    console.log("Length of string is ",userString2.length+1," characters");
+    
+    let counta = 0; // Keeps track of spaces & beginning of each substring
+    let tempCount = 0; // Keeps track of the end of each substring  
+    let spaceCount = 0; // Counts the number of space characters in the string
+    let spaces = 0; // Keeps track of the space number to break the loop
+    let tempText1 = ""; // Temporary working string
+    let tempText2 = ""; // Concatenating string
+
+    /* Test text: "if my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven, and I will forgive their sin and will heal their land."*/
+
+    do {
+        // Find the total number of space characters in the text as the break benchmark to end the loop
+        
+        counta = userString2.indexOf(" ",counta);       
+        spaceCount++;
+        counta++;
+        //tempCount = counta;
+        console.log('line 337');
+    } while(counta > 0)
+    console.log('No of space characters in string = ',spaceCount -1);
+
+    spaceCount--;
+    // reset temporary counters
+    counta = 0;
+    tempCount = 0;
+
+    while (spaces <= spaceCount){
+        // Find the next space character in the string and set the temporary counter to that index
+        tempCount = userString2.indexOf(" ",counta);
+        console.log("Temporary counter = ",counta);
+        console.log('line 347');
+        // Create and capitalise the next substring
+        tempText1 = userString2[counta].toUpperCase()+userString2.substring(counta+1, tempCount+1);
+
+        // I couldn't get the text-wrap style in CSS to work so I introduced an 'if/else' statement to force text wrapping. In order to implement this my research led me to (1)'\r\n' in JS along with 'white-space: pre-line;' in CSS, (2) ASCII code for a carriage return in JS. I could get neither to work so I opted for creating a number of temporary strings to hold the text in several lines and setting a limit to the number of them. https://stackoverflow.com/questions/9980416/how-can-i-insert-new-line-carriage-returns-into-an-element-textcontent
+
+        // Concatenate this substring to tempText2
+
+/*        if (tempText2 + tempText1 > 70)
+            {
+                tempText2;
+            }
+        else
+            {tempText2 = tempText2 + tempText1};
+*/
+        // Update counters
+        spaces++;
+        counta = tempCount +1;;
+
+    // Since I couldn't get text to wrap or implement a carriage return I have tempoarily set the constraint on the do/while loop to 70 characters
+        tempText2 = tempText2 + tempText1
+    
+//    } while (tempCount < 70);
+    }
+    console.log(tempText2)
+    return cappedUser.value = tempText2;
+}
