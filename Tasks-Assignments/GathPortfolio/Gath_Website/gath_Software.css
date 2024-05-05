@@ -343,3 +343,19 @@ li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.fa-brands {
+  font-size: x-large;
+}
+
+td {
+  border: 2px solid rgb(80, 2, 80);
+}
+
+#pic2Head {
+  float: none;
+}
+
+#pic2 {
+  float: none;
+}
