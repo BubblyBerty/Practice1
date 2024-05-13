@@ -6,114 +6,145 @@
     <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png"/>
     <link rel="stylesheet" href="gath_Home.css">
 
-    <title>GathPortfolioHome</title>
+    <title>Gath Home</title>
 </head>
 <body id="body" class="background">
-<div class="topNtail">
-<!-- Generalised header section consisting of background video and header box, along with the titles and logo elements-->
-    <box class="backBox">
-        <div class="video">
-            <video width="1500" autoplay loop muted>
-                <source src="./images/Video by Mauricio Silva De Brito from Pixabay.mp4" type="video/mp4">
-                <source src="./images/Video by Mauricio Silva De Brito from Pixabay.ogg" type="video/ogg">
-                Your browser does not support HTML5 video.    
-            </video>        
-            <ul class="headerItems">
-                <box class="homeHeaderBox">
-                    <li>
-                        <h1 class="header1">Robert Morris</h1>
-                        <h3 class="header2">Full Stack Software Developer</h3>
-                        <h1> </h1>
-                        <h6>&#169; All materials copyright and remain the intellectual property of Gath Music / Gath Portfolio unless otherwise stated</h6>
-                    </li>
-                    <li>       
-                    <div class="asideH">        
-                        <img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="275" height="200">
-                    </li>
-                </box>
-            </ul>
-        </div>
-    </box>         
-</div>
-<!-- End of generalised header section -->
-<!-- Now the main body of the page -->
-<div class="topNtail"> 
+    <div class="topNtail">
+    <!-- Generalised header section consisting of background video and header box, along with the titles and logo elements-->
+        <box class="backBox">
+            <div class="video">
+                <video width="1500" autoplay loop muted>
+                    <source src="./images/Video by Mauricio Silva De Brito from Pixabay.mp4" type="video/mp4">
+                    <source src="./images/Video by Mauricio Silva De Brito from Pixabay.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.    
+                </video>        
+                <ul class="headerItems">
+                    <box class="homeHeaderBox">
+                        <li>
+                            <h2 class="header1">Robert Morris (Big Bad Bob)</h2>
+                            <h4 class="header2">Software Developer&nbsp;<i>[under development]</i></h4>
+                            <h1> </h1>
+                            <h6>&#169; All materials copyright and remain the intellectual property of Gath Music / Gath Portfolio unless otherwise stated</h6>
+                        </li>
+                        <li>       
+                        <div class="asideH">        
+                            <img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="275" height="200">
+                        </li>
+                    </box>
+                </ul>
+            </div>
+        </box>         
+    </div>
+    <!-- End of generalised header section -->
+
+    <!-- Now the main body of the page starting with the menu buttobs/boxes-->
     <div class="pageColumns">
-        <div class="bodyColumn"> <!-- 1st container -->
-            <box class="box1"> <!-- 1st button -->
+        <div id="column1" class="bodyColumn"> <!-- 1st container -->
+            <box id="box1"> <!-- 1st button -->
+                <ul>
+                    <li>
+                        <form action="./gath_HomePage.html">              
+                            <button id="homeButton" class="buttonMenu1">Home
+                            </button>
+                        </form>
+                    </li>
+                    <li><img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="111px" height="88">
+                    </li>
+                    <li><img src="./apple-touch-icon-57x57.png"/>
+                    </li>
+                </ul>
+            </box>
+            <box id="box1"> <!--2nd button -->
                 <ul>
                     <li>
                         <form action="./gath_Scales.html">
-                            <button id="button1" class="buttonMenu1">Scales/Modes</button>
+                            <button id="scalesButton" class="buttonMenu1">Scales/Modes</button>
                         </form>
                     </li>
                     <li>
-                        <img src="./images/treble-Welcome to all and thank you for your visit ! ツ from Pixabay.png" alt="Scale-Modes" title="Scale-Modes-stave&clef by-Welcome to all and thank you for your visit ! ツ from Pixabay" width="250" height="80">
+                        <img src="./images/treble-Welcome to all and thank you for your visit from Pixabay.png" alt="Scale-Modes" title="treble-Welcome to all and thank you for your visit ! ツ from Pixabay" width="250" height="80">
                     </li>
-                </ul>
+                </ul>      
             </box>
-            <box class="box2"> <!-- 2nd button -->
+            <box id="box2"> <!-- 3rd button -->
                 <ul>
                     <li>
                         <form action="./gath_Calculator.html">
-                            <button id="button2" class="buttonMenu2">Scale/Mode Calculator</button>
+                            <button id="calculatorButton" class="buttonMenu2">Scale/Mode Calculator</button>
                         </form>
                     </li>
                     <li>
-                        <img src="./images/Calculator.png" alt="Calculator_Screen" title="Calculator_Screen" width="200" height="150">
+                        <img src="./images/calculator.png" alt="Calculator_Screen" title="Calculator_Screen" width="200" height="150">
                     </li>
                 </ul>
             </box>
-
-            <box class="box1"> <!-- 3rd button -->
+            <box id="box1"> <!-- 4th button -->
                 <ul>
                     <li>
                         <form action="./gath_Mathematics.html">
-                            <button id="button3" Class="buttonMenu1">Mathematics</button>
+                            <button id="mathsButton" Class="buttonMenu1">Mathematics</button>
                         </form>
                     </li>
                     <li id="mathFont">
-                        <p><b><i>x<sup> n</sup> &#43 y<sup> n</sup> &#61 z<sup> n</sup></b>,  </i><b>&#8877 &#8704 <i>n</i> &#62  </b>2 (Fermat's last theorem &#8718)</p><br>
+                        <p><b><i>x<sup> n</sup> &#43; y<sup> n</sup> &#61; z<sup> n</sup>,  </i>&#8877; &#8704; <i>n</i> &#62;  </b>2 (Fermat's last theorem &#8718;)</p><br>
                     </li>     
                 </ul>     
             </box>
-            
-    <!--    <box class="box1"> --> <!-- 1st button --> <!--
+            <box id="box5"> <!-- 5th button -->
                 <ul>
                     <li>
-                        <form action="./gath_HomePage.html">              
-                            <button id="button1">Home
-                            </button>
+                        <form action="./gath_Nature.html">
+                            <button id="natureButton" Class="buttonMenu1">Nature</button>
                         </form>
                     </li>
-                    <li><img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="111px" height="88">
+                    <li>
+                        <img src="./images/fly-PublicDomainPictures from Pixabay_21685_640.jpg" alt="Fly_Agaric" title="Fly_Agaric" width="200" height="150">
+                    </li>     
+                </ul>     
+            </box>
+            <box id="box5"> <!-- 6th button -->
+                <ul>
+                    <li>
+                        <form action="./gath_SciFi.html">
+                            <button id="scifiButton" Class="buttonMenu1">Sci-Fi</button>
+                        </form>
                     </li>
-                    <li><img src="./apple-touch-icon-57x57.png"/>
+                    <li>
+                        <img src="./images/spaceship-Gerhard Janson from Pixabay.png" alt="USS_Entprise" title="USS_Entprise" width="200" height="150">
+                    </li>     
+                </ul>     
+            </box>
+            <box id="box5"> <!-- 7th button -->
+                <ul>
+                    <li>
+                        <form action="./gath_Theology.html">
+                            <button id="theologyButton" Class="buttonMenu1">Theology</button>
+                        </form>
                     </li>
-                </ul>      
-            </box> -->
+                    <li>
+                        <img src="./images/passion-congerdesign from Pixabay_3111247_640.jpg" alt="Calculator_Screen" title="Calculator_Screen" width="200" height="150">
+                    </li>
+                </ul>     
+            </box>
         </div>
-        <div id="column1" class="bodyColumn"> <!-- 2nd container -->
-    <!--    <box class="box1"> --> <!-- 1st button --> <!--
+        <div id="column2" class="bodyColumn"> <!-- 2nd container -->
+            <box id="box5"> <!-- 1st button -->
                 <ul>
                     <li>
-                        <form action="./gath_HomePage.html">              
-                            <button id="button1">Home
-                            </button>
+                        <form action="./gath_Me.html">
+                            <button id="meButton" class="buttonMenu2">Moi? & Contact</button>
                         </form>
                     </li>
-                    <li><img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="111px" height="88">
-                    </li>
-                    <li><img src="./apple-touch-icon-57x57.png"/>
-                    </li>
-                </ul>      
-            </box> -->
-    
-            <box class="box2"> <!-- 4th button -->
-                <ul id="development">
                     <li>
-                        <form action="./gath_Development.html">
-                            <button id="button4" class="buttonMenu2">Software Development</button>
+                        <img id="left2" src="./images/1909508_1093580467038_3500281_n.jpg" alt="Deadlock_Bob" title="Deadlock_Bob" width="110" height="120">
+                    </li>
+                </ul>
+            </box>    
+            <box id="box2"> <!-- 2nd button -->
+                <ul id="software">
+                    <li>
+                        <form action="./gath_Software.html">
+                            <button id="softwareButton" class="buttonMenu2">Software & Progress</button>
                         </form>
                     </li>
                     <li>
@@ -144,51 +175,71 @@
                         <b>VScode</b>
                     </li>        
                 </ul>    
-            </box>
-            <box class="box1"> <!--5th button -->
-                <ul>
-                    <li>
-                        <form action="./gath_Me.html">
-                            <button id="button5" class="buttonMenu1">Moi?</button>
-                        </form>
-                    </li>
-                    <li>
-                        <img id="left" src="./images/1909508_1093580467038_3500281_n.jpg" alt="Deadlock_Bob" title="Deadlock_Bob" width="90" height="90">
-                    </li>
-                </ul>      
-            </box>
-            <box class="box1"> <!-- 6th button -->
+            </box>            
+            <box id="box5">   <!-- 3rd button --> 
                 <ul>
                     <li>
                         <form action="./gath_Compositions.html">
-                            <button id="button6" class="buttonMenu1">Compositions</button>
+                            <button id="musicButton" class="buttonMenu1">Compositions</button>
                         </form>
                     </li>
                     <li>
                         <form>
-                            <img id="left" src="./images/symphony2cover.jpg" alt="Opus 2 - Excerpts From 1st Movement" title="Symphony No.2" width="90" height="90">
+                            <img id="left" src="./images/Symphony2cover.jpg" alt="Opus 2 - Excerpts From 1st Movement" title="Symphony No.2" width="145" height="145">
                         </form>
+                    </li>
+                </ul>
+            </box>
+            <box id="box5"> <!-- 4th button -->
+                <ul>
+                    <li>
+                        <form action="./gath_Guitar.html">
+                            <button id="guitarButton" class="buttonMenu1">Guitars/Gear</button>
+                        </form>
+                    </li>
+                    <li>
+                        <img id="left2" src="./images/Ken_Bebensee.png" alt="Ken_Bebensee_Mr_Bojangle" title="Ken_Bebensee_Mr_Bojangle" width="130" height="150">
+                    </li>
+                </ul>
+            </box>
+            <box id="box1"> <!-- 5th button -->
+                <ul>
+                    <li>
+                        <form action="./gath_movies.html">
+                            <button id="moviesButton" class="buttonMenu1">Movies</button>
+                        </form>
+                    </li>
+                    <li>
+                        <img id="left2" src="./images/universal-studios-Fabian from Pixabay_1640516_640.jpg" alt="Universal_Pictures" title="Universal_Pictures" width="100" height="90">
+                    </li>
+                </ul>
+            </box>
+            <box id="box2"> <!-- 6th button -->
+                <ul>
+                    <li>
+                        <form action="./gath_History.html">
+                            <button id="historyButton" class="buttonMenu2">History / Archaeology</button>
+                        </form>
+                    </li>
+                    <li>
+                        <img id="left3" src="./images/rosetta-stone-Image by WONHO SON from Pixabay.png" alt="Rosetta_Stone" title="Rosetta_Stone" width="170" height="180">
                     </li>
                 </ul>
             </box>            
         </div>
         <div class="bodyColumn">
-            <box class="box3">
-            <h2>
-                <p>Hi folks; my lords, ladies and gentlemen; chaps, chapesses and brethren: welcome to the bizarre world of Robert Morris A.K.A. Big Bad Bob A.K.A. Monsieur Robért Rumbustiére, <i>et al</i>.</p>
-    
-                <p>Being a performer of many years I have developed a unique blend of glorious and 'sbrilliant' <i>[sic.]</i> abilities of communicating effectively at many different levels.</p>
-
-                <p>I have an unbounded playful nature but don't let that lull you into thinking that I am not serious and profound in all that I put my mind to.</p>
-    
-                <p>But don't take my word for it, see for yourself by delving into my modest portfolio (go on, click one of the blue buttons to the left of this page). Ta muchness.</p>
-    
-            </h2>
+            <box id="box3">
+                <h2>
+                    <p>Hi folks; my lords, ladies and gentlemen; chaps, chapesses and brethren: welcome to the bizarre world of Robert Morris A.K.A. Big Bad Bob A.K.A. Monsieur Robért Rumbustiére, <i>et al</i>.</p><hr><hr>  
+                    <p>Being a performer of many years I have developed a unique blend of glorious and 'sbrilliant' <i>[sic.]</i> abilities of communicating effectively at many different levels.</p><hr><hr>
+                    <p>I have an unbounded playful nature but don't let that lull you into thinking that I am not serious and profound in all that I put my mind to.</p><hr><hr>    
+                    <p>But don't take my word for it, see for yourself by delving into my modest portfolio (go on, click one of the blue buttons to the left of this page). Ta muchness.</p>        
+                </h2>
+            </box>
         </div>
-    </box>
-</div>
-<script src="./gath_Home_DOM.js"></script>   
-</body>   
+    </div>
+    <script src="./gath_Home_DOM.js"></script>   
+</body>
 
 <!--
     https://help.one.com/hc/en-us/articles/115005585809-Using-one-com-File-Manager

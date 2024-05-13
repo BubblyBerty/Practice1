@@ -1,107 +1,126 @@
 // Gathering the buttons
-let button1 = document.getElementById('button1')
-let button2 = document.getElementById('button2')
-let button3 = document.getElementById('button3')
-let button4 = document.getElementById('button4')
-let button5 = document.getElementById('button5')
-let button6 = document.getElementById('button6')
-let button7 = document.getElementById('button7')
-let button8 = document.getElementById('button8')
-let button9 = document.getElementById('button9')
-let button10 = document.getElementById('button10')
-let button11 = document.getElementById('button11')
-let button12 = document.getElementById('button12')
-let button13 = document.getElementById('button13')
+// Menu buttons
+let homeButton = document.getElementById('homeButton');
+let meButton = document.getElementById('meButton');
+let softwareButton = document.getElementById('softwareButton');
+let progressButton = document.getElementById('progressButton');
+let scalesButton = document.getElementById('scalesButton');
+let calculatorButton = document.getElementById('calculatorButton');
+let musicButton = document.getElementById('musicButton');
+let guitarButton = document.getElementById('guitarButton');
+let mathsButton = document.getElementById('mathsButton');
+let moviesButton = document.getElementById('moviesButton');
+let natureButton = document.getElementById('natureButton');
+let scifiButton = document.getElementById('scifiButton');
+let historyButton = document.getElementById('historyButton');
+let theologyButton = document.getElementById('theologyButton');
+let topButton = document.getElementById('topButton');
+
+// Menu buttons
 
 // Creating the Event and Event Listener
 // (event type, function for each button)
-button1.addEventListener('mouseover', function run(){
-    button1.style.backgroundColor = 'orange'
-})
-button1.addEventListener('mouseleave', function run(){
-    button1.style.backgroundColor = 'aqua'
-})
+homeButton.addEventListener('mouseover', function run(){
+  homeButton.style.backgroundColor = 'orange';
+});
+homeButton.addEventListener('mouseleave', function run(){
+  homeButton.style.backgroundColor = 'aqua';
+});
 
-button2.addEventListener('mouseover', function run(){
-    button2.style.backgroundColor = 'orange'
-})
-button2.addEventListener('mouseleave', function run(){
-    button2.style.backgroundColor = 'aqua'
-})
+meButton.addEventListener('mouseover', function run(){
+  meButton.style.backgroundColor = 'orange';
+});
+meButton.addEventListener('mouseleave', function run(){
+  meButton.style.backgroundColor = 'aqua';
+});
 
-button3.addEventListener('mouseover', function run(){
-    button3.style.backgroundColor = 'orange'
-})
-button3.addEventListener('mouseleave', function run(){
-    button3.style.backgroundColor = 'aqua'
-})
+softwareButton.addEventListener('mouseover', function run(){
+  softwareButton.style.backgroundColor = 'orange';
+});
+softwareButton.addEventListener('mouseleave', function run(){
+  softwareButton.style.backgroundColor = 'aqua';
+});
 
-button4.addEventListener('mouseover', function run(){
-    button4.style.backgroundColor = 'orange'
-})
-button4.addEventListener('mouseleave', function run(){
-    button4.style.backgroundColor = 'aqua'
-})
+progressButton.addEventListener('mouseover', function run(){
+  progressButton.style.backgroundColor = 'orange';
+});
+progressButton.addEventListener('mouseleave', function run(){
+  progressButton.style.backgroundColor = 'aqua';
+});
 
-button5.addEventListener('mouseover', function run(){
-    button5.style.backgroundColor = 'orange'
-})
-button5.addEventListener('mouseleave', function run(){
-    button5.style.backgroundColor = 'aqua'
-})
+scalesButton.addEventListener('mouseover', function run(){
+  scalesButton.style.backgroundColor = 'orange';
+});
+scalesButton.addEventListener('mouseleave', function run(){
+  scalesButton.style.backgroundColor = 'aqua';
+});
 
-button6.addEventListener('mouseover', function run(){
-    button6.style.backgroundColor = 'orange'
-})
-button6.addEventListener('mouseleave', function run(){
-    button6.style.backgroundColor = 'aqua'
-})
+calculatorButton.addEventListener('mouseover', function run(){
+  calculatorButton.style.backgroundColor = 'orange';
+});
+calculatorButton.addEventListener('mouseleave', function run(){
+  calculatorButton.style.backgroundColor = 'aqua';
+});
 
-button7.addEventListener('mouseover', function run(){
-    button7.style.backgroundColor = 'orange'
-})
-button7.addEventListener('mouseleave', function run(){
-    button7.style.backgroundColor = 'aqua'
-})
+musicButton.addEventListener('mouseover', function run(){
+  musicButton.style.backgroundColor = 'orange';
+});
+musicButton.addEventListener('mouseleave', function run(){
+  musicButton.style.backgroundColor = 'aqua';
+});
 
-button8.addEventListener('mouseover', function run(){
-    button8.style.backgroundColor = 'orange'
-})
-button8.addEventListener('mouseleave', function run(){
-    button8.style.backgroundColor = 'aqua'
-})
+guitarButton.addEventListener('mouseover', function run(){
+  guitarButton.style.backgroundColor = 'orange';
+});
+guitarButton.addEventListener('mouseleave', function run(){
+  guitarButton.style.backgroundColor = 'aqua';
+});
 
-button9.addEventListener('mouseover', function run(){
-    button9.style.backgroundColor = 'orange'
-})
-button9.addEventListener('mouseleave', function run(){
-    button9.style.backgroundColor = 'aqua'
-})
+mathsButton.addEventListener('mouseover', function run(){
+  mathsButton.style.backgroundColor = 'orange';
+});
+mathsButton.addEventListener('mouseleave', function run(){
+  mathsButton.style.backgroundColor = 'aqua';
+});
 
-button10.addEventListener('mouseover', function run(){
-    button10.style.backgroundColor = 'orange'
-})
-button10.addEventListener('mouseleave', function run(){
-    button10.style.backgroundColor = 'aqua'
-})
+moviesButton.addEventListener('mouseover', function run(){
+  moviesButton.style.backgroundColor = 'orange';
+});
+moviesButton.addEventListener('mouseleave', function run(){
+  moviesButton.style.backgroundColor = 'aqua';
+});
 
-button11.addEventListener('mouseover', function run(){
-    button11.style.backgroundColor = 'orange'
-})
-button11.addEventListener('mouseleave', function run(){
-    button11.style.backgroundColor = 'aqua'
-})
+natureButton.addEventListener('mouseover', function run(){
+  natureButton.style.backgroundColor = 'orange';
+});
+natureButton.addEventListener('mouseleave', function run(){
+  natureButton.style.backgroundColor = 'aqua';
+});
 
-button12.addEventListener('mouseover', function run(){
-    button12.style.backgroundColor = 'orange'
-})
-button12.addEventListener('mouseleave', function run(){
-    button12.style.backgroundColor = 'aqua'
-})
+scifiButton.addEventListener('mouseover', function run(){
+  scifiButton.style.backgroundColor = 'orange';
+});
+scifiButton.addEventListener('mouseleave', function run(){
+  scifiButton.style.backgroundColor = 'aqua';
+});
 
-button13.addEventListener('mouseover', function run(){
-    button13.style.backgroundColor = 'orange'
-})
-button13.addEventListener('mouseleave', function run(){
-    button13.style.backgroundColor = 'aqua'
-})
+historyButton.addEventListener('mouseover', function run(){
+  historyButton.style.backgroundColor = 'orange';
+});
+historyButton.addEventListener('mouseleave', function run(){
+  historyButton.style.backgroundColor = 'aqua';
+});
+
+theologyButton.addEventListener('mouseover', function run(){
+  theologyButton.style.backgroundColor = 'orange';
+});
+theologyButton.addEventListener('mouseleave', function run(){
+  theologyButton.style.backgroundColor = 'aqua';
+});
+
+topButton.addEventListener('mouseover', function run(){
+  topButton.style.backgroundColor = 'orange';
+});
+topButton.addEventListener('mouseleave', function run(){
+  topButton.style.backgroundColor = 'aqua';
+});

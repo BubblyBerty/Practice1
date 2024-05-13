@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png"/>
     <link rel="stylesheet" href="gath_Calculator.css">
-    <link rel="stylesheet" href="gath_Scales_Modes.py">
+<!--    <link rel="stylesheet" href="gath_Scales_Modes.py"> -->
     <link rel="stylesheet" href="gath_Calculator_Results.html">
 
-    <title>GathPortfolioCalculator</title>
+    <title>Gath Portfolio Calculator</title>
 </head>
 <body id="body" class="background">
     <div class="topNtail">
@@ -39,71 +39,91 @@
     <!-- End of generalised header section -->
     <!-- Now the main body of the page -->
     <div id="pageColumns">
-        <div id="myColumns">
-            <box id="Box1">
-                <ul class="navigation">
-                    <li> <!-- 1st button -->
-                        <form action="./gath_Home.html">              
-                            <button id="buttonMenu1" class="button1">Home</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Software.html">
-                            <button id="buttonMenu2" class="button2">Software Development</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Moi.html">
-                            <button id="buttonMenu3" class="button1">Moi?</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Compositions.html">
-                            <button id="buttonMenu4" class="button1">Compositions</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Scales.html">
-                            <button id="buttonMenu5" class="button1">Scales/Modes</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Mathematics.html">
-                            <button id="buttonMenu6" class="button1">Mathematics</button>
-                        </form>
-                    </li>
-                    <!-- <li>
-                        <form action="./gath_Guitars_Gear.html">              
-                        <button id="button1">Guitars/Gear</button>
+        <box id="Box1">
+            <ul class="navigation">
+                <li> <!-- 1st button -->
+                    <form action="./gath_Home.html">              
+                        <button id="homeButton" class="buttonMenu1">Home</button>
                     </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Movies.html">
-                            <button id="button1">Movies</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Nature.html">
-                            <button id="button1">Nature</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Theology.html">
-                            <button id="button1">Theology</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_History.html">
-                            <button id="button2">History / Archaeology</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form action="./gath_Sci_Fi.html">
-                            <button id="button1">Sci-Fi</button>
-                        </form>
-                    </li> -->
-                </ul>
-            </box>
+                </li>
+                <li> <!-- 2nd button -->
+                    <form action="./gath_Me.html">             
+                        <button id="meButton" class="buttonMenu2">Moi? & Contact</button>
+                    </form>
+                </li>                    
+                <li> <!-- 3rd button -->
+                    <form action="./gath_Software.html">              
+                        <button id="softwareButton" class="buttonMenu2">Bootcamp Software</button>
+                    </form>
+                </li>
+                <li> <!-- 4th button -->
+                    <form action="./gath_Progress.html">              
+                        <button id="progressButton" class="buttonMenu2">
+                            Website Progress</button>
+                    </form>
+                </li>                    
+                <li> <!-- 5th button -->
+                    <form action="./gath_Compositions.html">              
+                        <button id="musicButton" class="buttonMenu1">Compositions</button>
+                    </form>
+                </li>
+                <li> <!-- 6th button -->
+                    <form action="./gath_Scales.html">
+                        <button id="scalesButton" class="buttonMenu1">Scales/Modes</button>
+                    </form>
+                </li>
+                <li> <!-- 7th button -->
+                    <form action="./gath_Calculator.html">
+                        <button id="calculatorButton" class="buttonMenu2">Scale Calculator</button>
+                    </form>
+                </li>
+                <li> <!-- 8th button -->
+                    <form action="./gath_Guitars_Gear.html" target="_blank">
+                    <button id="guitarButton" class="buttonMenu1">Guitars/Gear</button>
+                </form>
+                </li>
+                <li> <!-- 9th button -->
+                    <form action="./gath_Mathematics.html">
+                        <button id="mathsButton" class="buttonMenu1">Mathematics</button>
+                    </form>
+                </li>                    
+                <li> <!-- 10th button -->
+                    <form action="./gath_Movies.html" target="_blank">
+                        <button id="moviesButton" class="buttonMenu1">Movies</button>
+                    </form>
+                </li>
+                <li> <!-- 11th button -->
+                    <form action="./gath_Nature.html" target="_blank">
+                        <button id="natureButton" class="buttonMenu1">Nature</button>
+                    </form>
+                </li>
+                <li> <!-- 12th button -->
+                    <form action="./gath_Sci_Fi.html" target="_blank">
+                        <button id="scifiButton" class="buttonMenu1">Sci-Fi</button>
+                    </form>
+                </li>
+                <li> <!-- 13th button -->
+                    <form action="./gath_History.html" target="_blank">
+                        <button id="historyButton" class="buttonMenu2">History / Archaeology</button>
+                    </form>
+                </li>                    
+                <li> <!-- 14th button -->
+                    <form action="./gath_Theology.html" target="_blank">
+                        <button id="theologyButton" class="buttonMenu1">Theology</button>
+                    </form>
+                </li>                    
+            </ul>
+        </box>    
+        <div id="myColumns">
+            <h2>
+                I have a friend. Nothing unusual in that methinks. Now this friend is a talented and gifted singer/songwriter but her songs are based on her own unusual chord inversions on guitar and she can never seem to find other chords that will work with them. However she has asked me in the past how I construct a chord progression for a song. I explained that knowing the key is the first step. But that really only works for the modes of Western Music Theory (the major scale is the Ionian mode and the related minor scale is the Aeolian mode).
+            </h2>
+            <h2>
+                So I had this idea to gather what knowledge I have and condense it into a scale/mode calculator. Basically it works on the premise that a beginner/intermediate player of guitar or keyboard knows what notes they are playing on their chosen instrument. If they can determine what those notes are in their chords and/or melodies they can enter those notes into the calculator, which will provide the closest matches of scale/mode/key for them, along with the relative chords. It should be noted that I have often used chord substitutes in my sound-bites in order to enhance the flavour of each scale/mode to help boost the idiosyncracies of each one.
+            </h2>
+            <h2>
+                I have listed the 71 scales/modes that I have discovered on my Scales/Modes webpage with short examples of sound-bites and PDF files of the appropriate music score to provide ideas of how they can be played. All these are listed in the key of C - whether major, minor, augmented, diminished, sustained or simply indeterminate.
+            </h2>
         </div>
         <div id="calcColumn">
             <div class="calculator">

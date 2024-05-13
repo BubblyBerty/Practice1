@@ -1,92 +1,155 @@
 // Gathering the buttons
+// Menu buttons
+let homeButton = document.getElementById('homeButton');
+let meButton = document.getElementById('meButton');
+let softwareButton = document.getElementById('softwareButton');
+let progressButton1 = document.getElementById('progressButton1');
+let progressButton = document.getElementById('progressButton');
+let scalesButton = document.getElementById('scalesButton');
+let calculatorButton = document.getElementById('calculatorButton');
+let musicButton = document.getElementById('musicButton');
+let guitarButton = document.getElementById('guitarButton');
+let mathsButton = document.getElementById('mathsButton');
+let moviesButton = document.getElementById('moviesButton');
+let natureButton = document.getElementById('natureButton');
+let scifiButton = document.getElementById('scifiButton');
+let historyButton = document.getElementById('historyButton');
+let theologyButton = document.getElementById('theologyButton');
+let textButton = document.getElementById('textButton');
+let userButton = document.getElementById('userButton');
+let replitButton = document.getElementById('replitButton');
 
-let button1 = document.getElementById('button1')
-let button2 = document.getElementById('button2')
-let button3 = document.getElementById('button3')
-let button4 = document.getElementById('button4')
-let button5 = document.getElementById('button5')
-let button6 = document.getElementById('button6')
-let button7 = document.getElementById('button7')
-let button8 = document.getElementById('button8')
-let button9 = document.getElementById('button9')
-let button10 = document.getElementById('button10')
-let butText = document.getElementById('butText')
-let butUser = document.getElementById('butUser')
+// Menu buttons
 
 // Creating the Event and Event Listener
 // (event type, function for each button)
+homeButton.addEventListener('mouseover', function run(){
+    homeButton.style.backgroundColor = 'orange';
+});
+homeButton.addEventListener('mouseleave', function run(){
+    homeButton.style.backgroundColor = 'aqua';
+});
 
-button1.addEventListener('mouseover', function run(){
-    button1.style.backgroundColor = 'orange'
-})
-button1.addEventListener('mouseleave', function run(){
-    button1.style.backgroundColor = 'aqua'
-})
+meButton.addEventListener('mouseover', function run(){
+    meButton.style.backgroundColor = 'orange';
+});
+meButton.addEventListener('mouseleave', function run(){
+    meButton.style.backgroundColor = 'aqua';
+});
 
-button2.addEventListener('mouseover', function run(){
-    button2.style.backgroundColor = 'orange'
-})
-button2.addEventListener('mouseleave', function run(){
-    button2.style.backgroundColor = 'aqua'
-})
+softwareButton.addEventListener('mouseover', function run(){
+    softwareButton.style.backgroundColor = 'orange';
+});
+softwareButton.addEventListener('mouseleave', function run(){
+    softwareButton.style.backgroundColor = 'aqua';
+});
 
-button3.addEventListener('mouseover', function run(){
-    button3.style.backgroundColor = 'orange'
-})
-button3.addEventListener('mouseleave', function run(){
-    button3.style.backgroundColor = 'aqua'
-})
+progressButton1.addEventListener('mouseover', function run(){
+    progressButton1.style.backgroundColor = 'orange';
+});
+progressButton1.addEventListener('mouseleave', function run(){
+    progressButton1.style.backgroundColor = 'aqua';
+});
 
-button4.addEventListener('mouseover', function run(){
-    button4.style.backgroundColor = 'orange'
-})
-button4.addEventListener('mouseleave', function run(){
-    button4.style.backgroundColor = 'aqua'
-})
+progressButton.addEventListener('mouseover', function run(){
+    progressButton.style.backgroundColor = 'orange';
+});
+progressButton.addEventListener('mouseleave', function run(){
+    progressButton.style.backgroundColor = 'aqua';
+});
 
-button5.addEventListener('mouseover', function run(){
-    button5.style.backgroundColor = 'orange'
-})
-button5.addEventListener('mouseleave', function run(){
-    button5.style.backgroundColor = 'aqua'
-})
+scalesButton.addEventListener('mouseover', function run(){
+    scalesButton.style.backgroundColor = 'orange';
+});
+scalesButton.addEventListener('mouseleave', function run(){
+    scalesButton.style.backgroundColor = 'aqua';
+});
 
-button6.addEventListener('mouseover', function run(){
-    button6.style.backgroundColor = 'orange'
-})
-button6.addEventListener('mouseleave', function run(){
-    button6.style.backgroundColor = 'aqua'
-})
+calculatorButton.addEventListener('mouseover', function run(){
+    calculatorButton.style.backgroundColor = 'orange';
+});
+calculatorButton.addEventListener('mouseleave', function run(){
+    calculatorButton.style.backgroundColor = 'aqua';
+});
 
-button7.addEventListener('mouseover', function run(){
-    button7.style.backgroundColor = 'orange'
-})
-button7.addEventListener('mouseleave', function run(){
-    button7.style.backgroundColor = 'aqua'
-})
+musicButton.addEventListener('mouseover', function run(){
+    musicButton.style.backgroundColor = 'orange';
+});
+musicButton.addEventListener('mouseleave', function run(){
+    musicButton.style.backgroundColor = 'aqua';
+});
 
-button8.addEventListener('mouseover', function run(){
-    button8.style.backgroundColor = 'orange'
-})
-button8.addEventListener('mouseleave', function run(){
-    button8.style.backgroundColor = 'aqua'
-})
+guitarButton.addEventListener('mouseover', function run(){
+    guitarButton.style.backgroundColor = 'orange';
+});
+guitarButton.addEventListener('mouseleave', function run(){
+    guitarButton.style.backgroundColor = 'aqua';
+});
 
-butText.addEventListener('mouseover', function run(){
-    butText.style.backgroundColor = 'orange'
-})
+mathsButton.addEventListener('mouseover', function run(){
+    mathsButton.style.backgroundColor = 'orange';
+});
+mathsButton.addEventListener('mouseleave', function run(){
+    mathsButton.style.backgroundColor = 'aqua';
+});
 
-butText.addEventListener('mouseleave', function run(){
-    butText.style.backgroundColor = 'aqua'
-})
+moviesButton.addEventListener('mouseover', function run(){
+    moviesButton.style.backgroundColor = 'orange';
+});
+moviesButton.addEventListener('mouseleave', function run(){
+    moviesButton.style.backgroundColor = 'aqua';
+});
 
-butUser.addEventListener('mouseover', function run(){
-    butUser.style.backgroundColor = 'orange'
-})
+natureButton.addEventListener('mouseover', function run(){
+    natureButton.style.backgroundColor = 'orange';
+});
+natureButton.addEventListener('mouseleave', function run(){
+    natureButton.style.backgroundColor = 'aqua';
+});
 
-butUser.addEventListener('mouseleave', function run(){
-    butUser.style.backgroundColor = 'aqua'
-})
+scifiButton.addEventListener('mouseover', function run(){
+    scifiButton.style.backgroundColor = 'orange';
+});
+scifiButton.addEventListener('mouseleave', function run(){
+    scifiButton.style.backgroundColor = 'aqua';
+});
+
+historyButton.addEventListener('mouseover', function run(){
+    historyButton.style.backgroundColor = 'orange';
+});
+historyButton.addEventListener('mouseleave', function run(){
+    historyButton.style.backgroundColor = 'aqua';
+});
+
+theologyButton.addEventListener('mouseover', function run(){
+    theologyButton.style.backgroundColor = 'orange';
+});
+theologyButton.addEventListener('mouseleave', function run(){
+    theologyButton.style.backgroundColor = 'aqua';
+});
+  
+
+textButton.addEventListener('mouseover', function run(){
+    textButton.style.backgroundColor = 'orange';
+});
+textButton.addEventListener('mouseleave', function run(){
+    textButton.style.backgroundColor = 'aqua';
+});
+
+userButton.addEventListener('mouseover', function run(){
+    userButton.style.backgroundColor = 'orange';
+});
+userButton.addEventListener('mouseleave', function run(){
+    userButton.style.backgroundColor = 'aqua';
+});
+
+replitButton.addEventListener('mouseover', function run(){
+    replitButton.style.backgroundColor = 'orange';
+});
+replitButton.addEventListener('mouseleave', function run(){
+    replitButton.style.backgroundColor = 'aqua';
+});
+
 function capital(){
 
     // returning capitilsation of each word in the string
