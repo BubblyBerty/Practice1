@@ -2,6 +2,7 @@
 .background {
   background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
   background-repeat: repeat-y;
+  background-repeat: repeat-x;
   background-size: cover;
   margin-bottom: 10px; 
 }
@@ -284,8 +285,9 @@ margin-bottom: -50px;
 body {
   color: rgb(80, 2, 80);
   background-image: url("./images/manuel-nageli-NsgsQjHA1mM-unsplash.jpg");
+  background-repeat: repeat-x;
   background-repeat: repeat-y;
-  background-size:contain;
+  background-size:cover;
   background-color:rgb(255, 228, 196); 
 }
 
@@ -414,7 +416,7 @@ body {
 }
 
 #table1 {
-  width: 2500px;
+  width: 2200px;
   height: 35px;
   margin-top: -20px;
   margin-bottom: 3px;
@@ -427,7 +429,7 @@ body {
 }
 
 #table2 {
-  width: 2500px;
+  width: 2200px;
   height: 35px;
   margin-top: -20px;
   column-count: 19;
@@ -507,7 +509,7 @@ body {
 }
 
 #wIndex {
-  width: 40px;
+  width: 42px;
 }
 
 #wName {
@@ -515,11 +517,11 @@ body {
 }
 
 #wKey {
-  width: 30px;
+  width: 31px;
 }
 
 #r4c13 {
-  width: 245px;
+  width: 250px;
 }
 
 #r4c14 {
@@ -577,33 +579,42 @@ body {
   color: white;
 }
 
+#wnote {
+  width: 8.05%;
+}
+
+#wChord8 
+{
+  width: 50px;
+}
+
 .backBoxResults {
   background-color: bisque;
   padding: 5px;
-  width: 1500px;
-  height:250px;
+  width: 2200px;
+  height:260px;
   margin-bottom: 10px;
 }
 
 .videoResults {
-  width: 1500px;
-  height: 150px;
+  width: 2210px;
+  height: 260px;
   overflow-y: hidden;
   border: 5px solid bisque
 }
 
 .homeHeaderBoxResults{ 
   background-repeat: no-repeat;
-  width: 1405px;
+  width: 1900px;
   background-size: contain;
-  height: 225px;
+  height: 200px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
   font-style: italic;
   color:rgb(80, 2, 80);
   margin-left: 100px;
   margin-right: 0px;
-  margin-top: -800px;
+  margin-top: -1562px;
   margin-bottom: 350px;
   border: 10px black solid;
   padding: 5px;
@@ -613,7 +624,7 @@ body {
 .headerItemsResults {
   align-items: center;
   margin-top: -158px;
-  margin-bottom: 20px;
+  margin-bottom: 400px;
   display: flex; 
   flex-flow: row wrap;
 }
@@ -624,7 +635,7 @@ body {
   justify-content: center;
   margin-top: 0px;
   margin-bottom: -20px;
-  margin-left: 80px;  
+  margin-left: 150px;  
 }
 
 .header2Results {
@@ -632,24 +643,24 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: -80px;
-  margin-left: 80px;
+  margin-left: 150px;
 }
 
 .asideResults {
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
+  justify-content: flex-start;
   width: "187px";
   height: "100px";
   margin-top: 20px;
-  margin-left: 350px;
+  margin-right: 350px;
 }
 
 #pageColumnsResults {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  width: 1500px;
+  width: 2200px;
   height: 100%;
   opacity: 0.9;
 }
