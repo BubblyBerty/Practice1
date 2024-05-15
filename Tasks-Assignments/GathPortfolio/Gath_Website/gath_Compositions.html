@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./apple-touch-icon-57x57.png"/>
-    <link rel="stylesheet" href="gath_Scales.css">
+    <link rel="stylesheet" href="gath_Me.css">
+    <script src="https://kit.fontawesome.com/52f61966ff.js"></script>
 
-    <title>GathScalesModes</title>
+    <title>Gath Music</title>
 </head>
+
 <body id="body" class="background">
     <div class="topNtail">
     <!-- Generalised header section consisting of background video and header box, along with the titles and logo elements-->
@@ -18,70 +20,115 @@
                     <source src="./images/Video by Mauricio Silva De Brito from Pixabay.ogg" type="video/ogg">
                     Your browser does not support HTML5 video.    
                 </video>        
-                <ul class="headerItems">
+                <ul id="ul" class="headerItems">
                     <box class="homeHeaderBox">
-                        <li>
-                            <h2 class="header1">Robert Morris (Gath Portfolio)</h2>
-                            <h4 class="header2">Music Scales & Modes</h4>
-                            <h1> </h1>
+                        <li id="li">
+                            <h2 class="header1">Robert Morris - Gath Music</h2>
+                            <h5 class="header2">A.K.A. Big Bad Bob A.K.A. Rob&eacute;rt Rumbusti&eacute;re</h5>
+                            <!-- For Lowercase e-acute - https://websitebuilders.com/tools/html-codes/french/-->
+                            <h5> </h5>
                             <h6>&#169; All materials copyright and remain the intellectual property of Gath Music / Gath Portfolio unless otherwise stated</h6>
                         </li>
-                        <li>       
-                            <div class="asideH">        
-                                <img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo"
-                                title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay"
-                                width="275" height="200">
-                            </div>
+                        <li id="li">       
+                        <div class="asideH">        
+                            <img src="./images/LogoCartoon2.png" alt="Gath Portfilio Logo" title="GathPortfoliologo-guitar-image by Clker-Free-Vector-Images from Pixabay" width="275" height="200">
                         </li>
                     </box>
                 </ul>
             </div>
         </box>         
     </div>
-<!-- End of generalised header section -->
-
+<body>
     <div id="pageColumns">
-        <div id="myColumn1">
-            <box id="box1">
+        <div id="myColumns">
+            <box id="Box1">
                 <ul class="navigation">
                     <li> <!-- 1st button -->
                         <form action="./gath_Home.html">              
-                            <button id="buttonMenu1" class="button1">Home</button>
+                            <button id="homeButton" class="buttonMenu1">Home</button>
                         </form>
                     </li>
                     <li> <!-- 2nd button -->
-                        <form action="./gath_Software.html">
-                            <button id="buttonMenu2" class="button2">Software Development</button>
+                        <form action="./gath_Me.html">             
+                            <button id="meButton" class="buttonMenu2">Moi? & Contact</button>
                         </form>
-                    </li>
+                    </li>                    
                     <li> <!-- 3rd button -->
-                        <form action="./gath_Moi.html">
-                            <button id="buttonMenu3" class="button1">Moi?</button>
+                        <form action="./gath_Software.html">              
+                            <button id="softwareButton" class="buttonMenu2">Bootcamp Software</button>
                         </form>
                     </li>
                     <li> <!-- 4th button -->
-                        <form action="./gath_Compositions.html">
-                            <button id="buttonMenu4" class="button1">Compositions</button>
-                        </form>
-                    </li>
-                    <li> <!-- 5th button -->
-                        <form action="./gath_Calculator.html">
-                            <button id="buttonMenu5" class="button2">Scale/Mode Calculator</button>
+                        <form action="./gath_Progress.html">              
+                            <button id="progressButton" class="buttonMenu2">
+                                Website Progress</button>
                         </form>
                     </li>                    
-                    <li> <!-- 6th button -->
-                        <form action="./gath_Mathematics.html">
-                            <button id="buttonMenu6" class="button1">Mathematics</button>
+                    <li> <!-- 5th button -->
+                        <form action="./gath_Compositions.html">              
+                            <button id="musicButton" class="buttonMenu1">Compositions</button>
                         </form>
                     </li>
+                    <li> <!-- 6th button -->
+                        <form action="./gath_Scales.html">
+                            <button id="scalesButton" class="buttonMenu1">Scales/Modes</button>
+                        </form>
+                    </li>
+                    <li> <!-- 7th button -->
+                        <form action="./gath_Calculator.html">
+                            <button id="calculatorButton" class="buttonMenu2">Scale Calculator</button>
+                        </form>
+                    </li>
+                    <li> <!-- 8th button -->
+                        <form action="./gath_Guitars_Gear.html" target="_blank">
+                        <button id="guitarButton" class="buttonMenu1">Guitars/Gear</button>
+                    </form>
+                    </li>
+                    <li> <!-- 9th button -->
+                        <form action="./gath_Mathematics.html">
+                            <button id="mathsButton" class="buttonMenu1">Mathematics</button>
+                        </form>
+                    </li>                    
+                    <li> <!-- 10th button -->
+                        <form action="./gath_Movies.html" target="_blank">
+                            <button id="moviesButton" class="buttonMenu1">Movies</button>
+                        </form>
+                    </li>
+                    <li> <!-- 11th button -->
+                        <form action="./gath_Nature.html" target="_blank">
+                            <button id="NatureButton" class="buttonMenu1">Nature</button>
+                        </form>
+                    </li>
+                    <li> <!-- 12th button -->
+                        <form action="./gath_Sci_Fi.html" target="_blank">
+                            <button id="scifiButton" class="buttonMenu1">Sci-Fi</button>
+                        </form>
+                    </li>
+                    <li> <!-- 13th button -->
+                        <form action="./gath_History.html" target="_blank">
+                            <button id="historyButton" class="buttonMenu2">History / Archaeology</button>
+                        </form>
+                    </li>                    
+                    <li> <!-- 14th button -->
+                        <form action="./gath_Theology.html" target="_blank">
+                            <button id="theologyButton" class="buttonMenu1">Theology</button>
+                        </form>
+                    </li>                    
                 </ul>
             </box>
         </div>
-        <div id="myColumn2">
-            <box id="box2">
-                <h3>do something</h3>
-                <h3>show something</h3>
-                <h3>throw me a frigging bone here people</h3>
+        <div id="myColumn1">
+            <box id="Box2">
+                <ul  style="list-style-type:none;">
+                    <li>
+                    <h1><i class="fa-brands fa-square-youtube"></i> My YouTube Account - Monsieur Rob&eacute;rt Rumbusti&eacute;re</h1>
+                    </li>
+                </ul>
+                <ul  style="list-style-type:none;">
+                    <li>
+                    <h1><i class="fa-brands fa-soundcloud"></i> My SoundCloud Account - Big Bad Bob (Gath Music)</h1>
+                    </li>
+                </ul>
             </box>
         </div>
     </div>
